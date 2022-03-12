@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px 12px;
+  }
+  
+  .head__logo a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000080;
+  }
+  
+  .head__logo i {
+    color: skyblue;
+    font-size: 30px;
+  }
+  
+  .head__search {
+    background-color: #a9a9a9;
+    width: 500px;
+    height: 50px;
+  }
+
+  .head__btn {
+    display: flex;
+    justify-content: space-between;
+}
+  
+ .btn1 {
+    border: 3px solid red;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn2 {
+    border: 3px solid gray;
+    padding: 10px;
+    margin-left: 10px;
+}
+  
+  .navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #4682b4;
+  }
+  
+  .navbar__menu li {
+    display: inline;
+    color: white;
+  }
+  
+  .navbar__menu a {
+    display: inline-block;
+  }
+  
+  .navbar__menu li a {
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .navbar__menu li a:hover {
+    background-color: pink;
+    border-radius: 4px;
+  } 
+  
+  
+  .content {
+      width: 1500px;
+      height: 800px;
+      background-color: #ffffff;
+      padding: 8px 12px;
+  }
+  
+  .content h1 {
+    font-size: 20px;
+    color: gray;
+    border-bottom: 3px solid #7c7b7b;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .edit {
+      width: 1000px;
+      height: 500px; 
+      position: relative;
+      margin: auto;
+  }
+
+  table.ed {
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 3;
+    margin: auto;
+}
+
+table.ed tbody th {
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border: 2px solid #ccc;
+    background: lightgray;
+}
+
+table.ed tbody td {
+    width: 1000px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    background: white;
+}
+  
+  .button {
+      width: 1000px;
+      height: 100px;
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 8px 12px;
+  }
+  
+  .bttn1 {
+      width: 200px;
+      height: 30px;
+      border: 3px solid skyblue;
+      position: relative;
+      margin: auto;
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .bttn2 {
+      width: 200px;
+      height: 30px;
+     background-color: skyblue;
+      position: relative;
+      margin: auto;
+      text-align: center;
+      padding: 10px;
+  } 
+  
+  .foot {
+    height: 100px;
+    background-color:darkseagreen;
+    padding: 8px 12px;
+    margin-top: 20px;
+  }
+  
+    
+  @media screen and (max-width: 768px) {
+    .head, .navbar, .content, .foot {
+        flex-direction: column;
+    }
+  }

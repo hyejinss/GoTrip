@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loginbox">
+        <h1>LOGIN</h1>
+        <form name="login" action="../mainPage/index.html">
+            <label for="loginid" class="labelid"></label>
+            <input type="text" id="loginid" placeholder="  아이디를 입력하세요."><br />
+            <label for="loginpw" class="labelpw"></label>
+            <input type="text" id="loginpw" placeholder="  비밀번호를 입력하세요.">
+            <div class="chk">
+                <input type="checkbox" id="idchk">
+                <label for="idchk">아이디 저장</label>
+                <a href="../signupPage/index.html">회원가입</a>
+            </div>
+
+            <div class="btn">
+                <input type="submit" id="loginbtn" value="로그인">
+                <label for="loginbtn"></label>
+            </div>
+
+            <div class="search">
+                <a href="../idPage/index.html">아이디찾기</a>
+                <a href="../pwPage/index.html">비밀번호찾기</a>
+            </div>
+
+            <div class="sns">
+                <p>sns계정으로 로그인하기</p>
+                </div>
+
+                <div class="snslog">
+                    <a href="#">naver</a>
+                    <a href="#">kakao</a>
+                    <a href="#">google</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

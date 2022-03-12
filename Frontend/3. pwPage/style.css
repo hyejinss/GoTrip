@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pwbox {
+    width: 50%;
+    height: 300px;
+    margin: 20px;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 10%);
+}
+
+.pwbox h1 {
+    width: 79%;
+    height: 50px;
+    font-size: 30px;
+    color: #000000;
+    border-bottom: 3px solid #7c7b7b;
+    padding-left: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pwbox p {
+   margin-left: 210px;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    border: 3px solid #dcdcdc;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    margin-left: -280px;
+    margin-top: 60px;
+}
