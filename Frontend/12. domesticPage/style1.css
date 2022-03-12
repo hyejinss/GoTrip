@@ -41,12 +41,14 @@ a {
   padding: 8px 12px;
 }
 
-.navbar {
+.navbar ul{
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
   background-color: #4682b4;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar__menu li {
@@ -69,6 +71,30 @@ a {
   background-color: pink;
   border-radius: 4px;
 } 
+
+.navbar__menu li ul {
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 200px;
+  z-index: 200;    
+}
+
+.navbar__menu li ul a{
+  display: block;
+  height: 30px;
+  font-size: 15px;
+  font-style: normal;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  }
+
+.navbar__menu li:hover ul {
+  display: block;
+}
 
 .content {
   width: 1500px;

@@ -13,24 +13,24 @@ a {
   background-color: #f5f5f5;
   padding: 8px 12px;
 }
- 
+
 .head__logo a {
   font-size: 15px;
   font-weight: bold;
   color: #000080;
 }
- 
+
 .head__logo i {
   color: skyblue;
   font-size: 30px;
 }
- 
+
 .head__search {
   background-color: #a9a9a9;
   width: 500px;
   height: 50px;
 }
- 
+
 .head__icons {
   list-style: none;
   display: flex;
@@ -40,7 +40,7 @@ a {
 .head__icons li {
   padding: 8px 12px;
 }
- 
+
 .navbar ul{
   list-style: none;
   margin: 0;
@@ -97,119 +97,137 @@ a {
 }
 
 .content {
-  width: 1500px;
-  height: 700px;
+  height: 1000px;
   background-color: #ffffff;
   padding: 8px 12px;
 }
 
-.domestic__tripp1 h1 {
+.content h1 {
   font-size: 20px;
   color: gray;
   border-bottom: 3px solid #7c7b7b;
   padding: 20px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.domestic__tripp2 h1 {
-  font-size: 20px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.domestic__tripp1 {
-  width: 1500px;
-  height: 350px;
-  margin: auto;
-}
-
-.domestic__tripp2 {
-  width: 1500px;
-  height: 350px;
-  margin: auto;
-}
-
-.tripp1 {
+.photo1 {
   display: flex;
   justify-content: space-between;
 }
 
-.tripimg1 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
+.photo2 {
   display: flex;
   justify-content: space-between;
 }
 
-.tripex1 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
+.button1 {
   display: flex;
   justify-content: space-between;
 }
 
-.triploc1 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
-  position: relative
+.button2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pho1 {
+    width: 500px;
+    height: 250px;
+    border: 3px solid coral;
+    margin: 30px 0px 0px 30px;
+}
+
+.pho2 {
+  width: 500px;
+  height: 250px;
+  border: 3px solid coral;
+  margin: 30px 0px 0px 30px;
+}
+
+.pho3 {
+  width: 500px;
+  height: 250px;
+  border: 3px solid coral;
+  margin: 30px 0px 0px 30px;
+}
+
+.pho4 {
+  width: 500px;
+  height: 250px;
+  border: 3px solid coral;
+  margin: 60px 0px 0px 30px;
+}
+
+.pho5 {
+  width: 500px;
+  height: 250px;
+  border: 3px solid coral;
+  margin: 60px 0px 0px 30px;
+}
+
+.pho6 {
+  width: 500px;
+  height: 250px;
+  border: 3px solid coral;
+  margin: 60px 0px 0px 30px;
 }
 
 .btn1 {
-  width: 90%;
-  height: 50px;
-  border: 3px solid aqua;
-  position: absolute;
-  bottom: 5px;
-  margin-left: 20px;
-}
-
-.tripp2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tripimg2 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
-  display: flex;
-  justify-content: space-between;
-}
-
-.tripex2 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
-  display: flex;
-  justify-content: space-between;
-}
-
-.triploc2 {
-  width: 370px;
-  height: 200px;
-  border: 3px solid aqua;
-  position: relative
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
 }
 
 .btn2 {
-  width: 90%;
-  height: 50px;
-  border: 3px solid aqua;
-  position: absolute;
-  bottom: 5px;
-  margin-left: 20px;
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
+}
+
+.btn3 {
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
+}
+
+.btn4 {
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
+}
+
+.btn5 {
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
+}
+
+.btn6 {
+  width: 500px;
+  height: 40px;
+  border: 3px solid purple;
+  margin: 30px 0px 0px 30px;
+}
+
+.btn__draw{
+  float: right;
+  width: 100px;
+  padding: 10px;
+  border: 3px solid skyblue;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .foot {
   height: 100px;
   background-color:darkseagreen;
   padding: 8px 12px;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
