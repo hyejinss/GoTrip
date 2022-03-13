@@ -10,19 +10,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   padding: 8px 12px;
-}
-
-.head__logo a {
-  font-size: 15px;
-  font-weight: bold;
-  color: #000080;
-}
-
-.head__logo i {
-  color: skyblue;
-  font-size: 30px;
 }
 
 .head__search {
@@ -32,21 +21,27 @@ a {
 }
 
 .head__icons {
+  text-decoration: none;
   list-style: none;
   display: flex;
-  color: #000080;
-}
- 
+} 
+
 .head__icons li {
   padding: 8px 12px;
 }
- 
+
+.head__icons li a {
+  text-align: center;
+  font-size: 10px;
+  color: #485170;
+}
+
 .navbar ul{
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #4682b4;
+  background-color: #485170;
   display: flex;
   justify-content: space-around;
 }
@@ -68,7 +63,7 @@ a {
 }
 
 .navbar__menu li a:hover {
-  background-color: pink;
+  background-color: lightgray;
   border-radius: 4px;
 } 
 
@@ -90,74 +85,75 @@ a {
   margin: 10px;
   padding: 10px;
   text-align: left;
-}
+  }
 
 .navbar__menu li:hover ul {
   display: block;
 }
-
-.content {
-  width: 1500px;
-  height: 700px;
-  background-color: #ffffff;
-  padding: 8px 12px;
-}
-
-.content h1 {
-  font-size: 20px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.signup {
-  width: 1000px;
-  height: 500px; 
-  border: 3px solid #000080;
-  position: relative;
-  margin: auto;
-}
-
-.button {
-  width: 1000px;
-  height: 100px;
-  border: 3px solid beige;
-  position: relative;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 8px 12px;
-}
-
-.btn1 {
-  width: 300px;
-  height: 50px;
-  border: 3px solid #ffff00;
-  position: relative;
-  margin: auto;
-}
-
-.btn2 {
-  width: 300px;
-  height: 50px;
-  border: 3px solid #ffff00;
-  position: relative;
-  margin: auto;
-} 
-
-.foot {
-  height: 100px;
-  background-color:darkseagreen;
-  padding: 8px 12px;
-  margin-top: 20px;
-}
-   
-@media screen and (max-width: 768px) {
-  .head, .navbar, .content, .foot {
-      flex-direction: column;
+  
+  
+  .content {
+      width: 1500px;
+      height: 700px;
+      background-color: #ffffff;
+      padding: 8px 12px;
   }
+  
+  .content h1 {
+    font-size: 20px;
+    color: gray;
+    border-bottom: 3px solid #7c7b7b;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .signup {
+      width: 1000px;
+      height: 500px; 
+      border: 3px solid #000080;
+      position: relative;
+      margin: auto;
+  }
+  
+  .button {
+      width: 1000px;
+      height: 100px;
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 8px 12px;
+  }
+  
+  .btn1 {
+      width: 300px;
+      height: 50px;
+      border: 3px solid #ffff00;
+      position: relative;
+      margin: auto;
+  }
+  
+  .btn2 {
+      width: 300px;
+      height: 50px;
+      border: 3px solid #ffff00;
+      position: relative;
+      margin: auto;
+  } 
+  
+  .foot {
+    height: 100px;
+    background-color:#485170;
+    padding: 8px 12px;
+    margin-top: 20px;
 }
+  
+    
+  @media screen and (max-width: 768px) {
+    .head, .navbar, .content, .foot {
+        flex-direction: column;
+    }
+  }

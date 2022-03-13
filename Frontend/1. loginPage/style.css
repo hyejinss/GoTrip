@@ -4,36 +4,41 @@
 }
 
 .loginbox {
-    width: 600px;
+    width: 1500px;
+    height: 500px;
+    margin: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 100px;
 }
 
 .loginbox h1 {
-    width: 100%;
+    width: 500px;
     height: 50px;
     font-size: 30px;
     color: #000000;
     border-bottom: 3px solid #7c7b7b;
-    padding-left: 10px;
     text-align: center;
+    margin: auto;
 }
 
 #loginid{
-    width: 100%;
+    width: 500px;
     height: 50px;
     border: 2px solid #ccc;
-    margin-bottom: 5px;
-    margin-top: 15px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    margin: auto;
 }
 
 #loginpw {
-    width: 100%;
+    width: 500px;
     height: 50px;
     border: 2px solid #ccc;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 160px;
+    left: 500px;
+    margin: auto;
 }
 
 ::placeholder {
@@ -42,34 +47,48 @@
 
 .chk input#idchk {
     margin-left: 10px;
+    position: absolute;
+    top: 233px;
+    left: 500px;
 }
 
 .chk label {
     font-size: 15px;
     color: #7c7b7b;
-    margin-left: 5px;
+    position: absolute;
+    top: 230px;
+    left: 530px;
+
 }
 
 .chk a {
     text-decoration-line: none;
     font-size: 15px;
     color: #7c7b7b;
-    
+    position: absolute;
+    top: 230px;
+    left: 930px;
 }
 
 #loginbtn {
-    width: 100%;
+    width: 500px;
     height: 50px;
     font-size: 20px;
     color: #ffffff;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: auto;
+    position: absolute;
+    top: 260px;
+    left: 500px
 }
 
 .search {
+    width: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: absolute;
+    top: 350px;
+    left: 500px; 
 }
 .search a{
     text-decoration-line: none;
@@ -78,13 +97,16 @@
 
 .sns {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 330px;
 }
 
 .snslog {
+    width: 500px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
 }
 
 

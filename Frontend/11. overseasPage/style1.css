@@ -10,35 +10,30 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   padding: 8px 12px;
 }
- 
-.head__logo a {
-  font-size: 15px;
-  font-weight: bold;
-  color: #000080;
-}
- 
-.head__logo i {
-  color: skyblue;
-  font-size: 30px;
-}
- 
+
 .head__search {
   background-color: #a9a9a9;
   width: 500px;
   height: 50px;
 }
- 
+
 .head__icons {
+  text-decoration: none;
   list-style: none;
   display: flex;
-  color: #000080;
-}
- 
+} 
+
 .head__icons li {
   padding: 8px 12px;
+}
+
+.head__icons li a {
+  text-align: center;
+  font-size: 10px;
+  color: #485170;
 }
 
 .navbar ul{
@@ -46,7 +41,7 @@ a {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #4682b4;
+  background-color: #485170;
   display: flex;
   justify-content: space-around;
 }
@@ -68,7 +63,7 @@ a {
 }
 
 .navbar__menu li a:hover {
-  background-color: pink;
+  background-color: lightgray;
   border-radius: 4px;
 } 
 
@@ -94,101 +89,101 @@ a {
 
 .navbar__menu li:hover ul {
   display: block;
-} 
+}
 
-.content {
-  width: 1500px;
-  height: 700px;
-  background-color: #ffffff;
-  padding: 8px 12px;
+  .content {
+    width: 1500px;
+    height: 700px;
+    background-color: #ffffff;
+    padding: 8px 12px;
 }
 
 .overseas__trip h1 {
-  font-size: 20px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 20px;
+    color: gray;
+    border-bottom: 3px solid #7c7b7b;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .overseas__trip {
-  width: 1500px;
-  height: 350px;
-  margin: auto;
+    width: 1500px;
+    height: 350px;
+    margin: auto;
 }
 
 .trip {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .trip1 {
-  width: 370px;
-  height: 50px;
-  border: 3px solid aqua;
+    width: 370px;
+    height: 50px;
+    border: 3px solid aqua;
 }
 
 .trip2 {
-  width: 370px;
-  height: 50px;
-  border: 3px solid aqua;
+    width: 370px;
+    height: 50px;
+    border: 3px solid aqua;
 }
 
 .trip3 {
-  width: 370px;
-  height: 50px;
-  border: 3px solid aqua;
+    width: 370px;
+    height: 50px;
+    border: 3px solid aqua;
 }
 
 .trip4 {
-  width: 200px;
-  height: 50px;
-  border: 3px solid aqua;
+    width: 200px;
+    height: 50px;
+    border: 3px solid aqua;
 }
 
 .re_pro  h1 {
-  font-size: 20px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
-  padding: 20px;
-  margin-bottom: 20px;
+    font-size: 20px;
+    color: gray;
+    border-bottom: 3px solid #7c7b7b;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .re_pro {
-  width: 1500px;
-  height: 250px;
-  margin: auto;
+    width: 1500px;
+    height: 250px;
+    margin: auto;
 }
 
 .product {
-  width: 1200px;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .pro1 {
-  width: 500px;
-  height: 200px;
-  border: 3px solid tomato;
+    width: 500px;
+    height: 200px;
+    border: 3px solid tomato;
 }
 
 .pro2 {
-  width: 500px;
-  height: 200px;
-  border: 3px solid tomato;
+    width: 500px;
+    height: 200px;
+    border: 3px solid tomato;
 }
 
 .foot {
   height: 100px;
-  background-color:darkseagreen;
+  background-color:#485170;
   padding: 8px 12px;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .head, .navbar, .content, .foot {
-    flex-direction: column;
-  }
+    .head, .navbar, .content, .foot {
+        flex-direction: column;
+    }
 }
