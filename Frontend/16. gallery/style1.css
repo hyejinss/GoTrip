@@ -11,7 +11,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 20px 20px;
 }
 
 .head__search {
@@ -98,7 +98,7 @@ a {
 }
 
 .content h1 {
-  font-size: 20px;
+  font-size: 30px;
   color: gray;
   border-bottom: 3px solid #7c7b7b;
   padding: 20px;

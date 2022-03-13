@@ -11,7 +11,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 20px 20px;
 }
 
 .head__search {
@@ -91,15 +91,15 @@ a {
   display: block;
 }
 
-  .content {
-    width: 1500px;
-    height: 700px;
-    background-color: #ffffff;
-    padding: 8px 12px;
+.content {
+  width: 1000px;
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin-left: 450px;
 }
 
 .content h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
@@ -110,32 +110,27 @@ a {
 .product {
     width: 1400px;
     height: 500px;
-    margin: auto;
-
 }
 
 .pro1 {
-    width: 1300px;
-    height: 150px;
-    border: 3px solid teal;
-    margin: auto;
-    margin-bottom: 20px;
+  width: 1000px;
+  height: 150px;
+  border: 3px solid teal;
+  margin-bottom: 20px;
 }
 
 .pro2 {
-    width: 1300px;
-    height: 150px;
-    border: 3px solid teal;
-    margin: auto;
-    margin-bottom: 20px;
+  width: 1000px;
+  height: 150px;
+  border: 3px solid teal;
+  margin-bottom: 20px;
 }
 
 .pro3 {
-    width: 1300px;
-    height: 150px;
-    border: 3px solid teal;
-    margin: auto;
-    margin-bottom: 20px;
+  width: 1000px;
+  height: 150px;
+  border: 3px solid teal;
+  margin-bottom: 20px;
 }
 
 .foot {

@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -48,8 +52,8 @@ a {
     display: inline-block;
     position: absolute;
     background-color: gray;
-    margin-left: 10px;
-    width: 490px;
+    margin-left: 210px;
+    width: 500px;
     height: 300px;
     margin-top: 20px;
     text-align: center;
@@ -61,6 +65,7 @@ table {
     height: 100%;
     border: 2px solid lightgray;
     margin-top: 20px;
+    margin-left: 200px;
     font-size: 20px;
     text-align: center;
 }
@@ -86,7 +91,7 @@ td {
 
 .content1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .con1 {
     width: 1000px;
@@ -105,7 +110,7 @@ td {
     height: 510px;
     background-color: yellow;
     margin-left: 10px;
-
+    text-align: center;
 }
 
 .con3{
@@ -113,7 +118,7 @@ td {
     border: 3px solid black;
     width: 490px;
     height: 290px;
-    top: 645px;
+    top: 670px;
 }
 
 .con3 h1 {
@@ -127,8 +132,8 @@ td {
     border: 3px solid black;
     width: 490px;
     height: 290px;
-    top: 645px;
-    left: 510px;
+    top: 670px;
+    left: 200px;
 }
 
 .con4 h1 {
@@ -141,7 +146,7 @@ td {
     height: 100px;
     background-color:#485170;
     padding: 8px 12px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {

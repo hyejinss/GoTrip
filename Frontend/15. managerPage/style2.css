@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    padding: 20px 20px;
   }
   
   .head__logo a {
@@ -98,10 +98,10 @@ body {
 
   
   .content {
-      width: 1500px;
-      height: 800px;
+      width: 1000px;
       background-color: #ffffff;
       padding: 8px 12px;
+      margin-left: 450px;
   }
   
   .content h1 {

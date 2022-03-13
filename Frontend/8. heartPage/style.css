@@ -11,7 +11,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 20px 20px;
 }
 
 .head__search {
@@ -91,21 +91,19 @@ a {
   display: block;
 }
   
-  
   .content {
-      width: 1500px;
-      height: 700px;
+      width: 1000px;
       background-color: #ffffff;
-      padding: 8px 12px;
+      padding: 50px 12px;
+      margin-left: 450px;
   }
   
   .content h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
 
 .heart1 {
@@ -116,33 +114,32 @@ a {
 .heart2 {
     display: flex;
     justify-content: space-between;
-  
 }
 
 .pro1 {
       width: 700px;
-      height: 250px;
+      height: 300px;
       border: 3px solid coral;
       margin: 30px 0px 0px 30px;
   }
 
 .pro2 {
     width: 700px;
-    height: 250px;
+    height: 300px;
     border: 3px solid coral;
     margin: 30px 30px 0px 30px;
 }
 
 .pro3 {
     width: 700px;
-    height: 250px;
+    height: 300px;
     border: 3px solid coral;
     margin: 30px 0px 0px 30px;
 }
 
 .pro4 {
     width: 700px;
-    height: 250px;
+    height: 300px;
     border: 3px solid coral;
     margin: 30px 30px 0px 30px;
 }

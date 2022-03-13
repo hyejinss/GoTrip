@@ -11,7 +11,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 8px 12px;
+    padding: 20px 20px;
 }
 
 .head__search {
@@ -93,8 +93,10 @@ a {
 
 
 .content {
-    height: 1000px;
-    padding: 8px 12px;
+  width: 1000px;
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin-left: 450px;
 }
 
 .reservation h1 {
@@ -173,7 +175,7 @@ table.info tbody td {
 
 
 .no1 {
-    width: 1400px;
+    width: 1000px;
     height: 150px;
     margin: auto;
     border: 3px solid saddlebrown;
@@ -208,7 +210,7 @@ table.info tbody td {
     height: 100px;
     background-color:#485170;
     padding: 8px 12px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {

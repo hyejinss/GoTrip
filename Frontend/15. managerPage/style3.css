@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    padding: 20px 20px;
   }
   
   .head__logo a {
@@ -95,7 +95,6 @@ body {
 .navbar__menu li:hover ul {
   display: block;
 }
-  
 
 .content {
     width: 1400px;
@@ -191,8 +190,8 @@ table.mi {
     border: 3px solid skyblue;
     text-align: center;
     position: absolute;
-    top: 900px;
-    left: 650px;
+    top: 910px;
+    left: 860px;
     padding: 10px;
 }
 

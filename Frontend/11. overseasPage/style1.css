@@ -11,7 +11,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 20px 20px;
 }
 
 .head__search {
@@ -92,14 +92,14 @@ a {
 }
 
   .content {
-    width: 1500px;
-    height: 700px;
+    width: 1000px;
     background-color: #ffffff;
-    padding: 8px 12px;
+    padding: 50px 12px;
+    margin-left: 250px;
 }
 
 .overseas__trip h1 {
-    font-size: 20px;
+    font-size: 30px;
     color: gray;
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
@@ -108,9 +108,8 @@ a {
 }
 
 .overseas__trip {
-    width: 1500px;
-    height: 350px;
-    margin: auto;
+  width: 1400px;
+  height: 300px;
 }
 
 .trip {
@@ -151,7 +150,7 @@ a {
 }
 
 .re_pro {
-    width: 1500px;
+    width: 1400px;
     height: 250px;
     margin: auto;
 }
@@ -179,7 +178,7 @@ a {
   height: 100px;
   background-color:#485170;
   padding: 8px 12px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
