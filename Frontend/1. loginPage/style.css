@@ -1,14 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #485170;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin-left: 650px;
+  margin-top: 130px;
+  border-radius: 10px;
 }
 
 .loginbox {
-    width: 1500px;
-    height: 500px;
-    margin: auto;
-    position: absolute;
-    top: 100px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: -250px;
+  margin-top: -250px;
+  left: 50%;
+  top: 50%;
 }
 
 .loginbox h1 {
@@ -22,23 +40,25 @@
 }
 
 #loginid{
-    width: 500px;
-    height: 50px;
-    border: 2px solid #ccc;
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    margin: auto;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  margin-top: -100px;
+  left: 50%;
+  top: 50%;
 }
 
 #loginpw {
-    width: 500px;
-    height: 50px;
-    border: 2px solid #ccc;
-    position: absolute;
-    top: 160px;
-    left: 500px;
-    margin: auto;
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  margin-top: -40px;
+  left: 50%;
+  top: 50%;
 }
 
 ::placeholder {
@@ -46,69 +66,77 @@
 }
 
 .chk input#idchk {
-    margin-left: 10px;
-    position: absolute;
-    top: 233px;
-    left: 500px;
+  position: absolute;
+  margin-left: -180px;
+  margin-top: 30px;
+  left: 50%;
+  top: 50%;
 }
 
 .chk label {
-    font-size: 15px;
-    color: #7c7b7b;
-    position: absolute;
-    top: 230px;
-    left: 530px;
-
+  position: absolute;
+  margin-top: 30px;
+  left: 10%;
+  top: 49%;
+  font-size: 15px;
+  color: #7c7b7b;
 }
 
 .chk a {
-    text-decoration-line: none;
-    font-size: 15px;
-    color: #7c7b7b;
-    position: absolute;
-    top: 230px;
-    left: 930px;
+  position: absolute;
+  margin-top: 30px;
+  right: -20%;
+  top: 49%;
+  font-size: 15px;
+  color: #7c7b7b;
 }
 
 #loginbtn {
-    width: 500px;
-    height: 50px;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    margin: auto;
-    position: absolute;
-    top: 260px;
-    left: 500px
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  margin-top: 55px;
+  left: 50%;
+  top: 50%;
 }
 
 .search {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    top: 350px;
-    left: 500px; 
+  position: absolute;
+  justify-content: space-around;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 150px;
+  left: 50%;
+  top: 50%;
+  display: flex;
+
 }
 .search a{
     text-decoration-line: none;
     color: #7c7b7b;
+
 }
 
 .sns {
-    text-align: center;
-    margin-top: 330px;
+  position: absolute;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 230px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
 }
 
 .snslog {
-    width: 500px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    text-align: center;
+  position: absolute;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 300px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
 }
-
-
-
-

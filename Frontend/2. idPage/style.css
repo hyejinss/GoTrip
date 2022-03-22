@@ -1,14 +1,32 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #485170;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin-left: 650px;
+  margin-top: 130px;
+  border-radius: 10px;
 }
 
 .idbox {
-    width: 1500px;
-    height: 500px;
-    margin: auto;
-    position: absolute;
-    top: 100px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: -250px;
+  margin-top: -250px;
+  left: 50%;
+  top: 50%;
 }
 
 .idbox h1 {
@@ -21,19 +39,103 @@
     margin: auto;
 }
 
-.idbox p {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-   
+.idbox p { line-height: 27px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 400px;
+  font-weight: bold;
+  color: #7c7b7b;
 }
 
-.box {
-    width: 500px;
-    height: 300px;
-    border: 3px solid #dcdcdc;
-    margin: auto;
+.find__id {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  left: 50%;
+  top: 50%;
+}
+
+.inp__wrap {
+  position: relative;
+  padding-bottom: 34px;
+}
+
+.radio__wrap {
+  position: absolute;
+  width: 400px;
+  margin-left: -200px;
+  margin-top: -125px;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  top: 50%;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+.radio__wrap label {
+  margin-right: 30px;
+  color: #575757;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#find__id__name {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: rgb(229, 226, 226);
+  margin-left: -200px;
+  margin-top: -80px;
+  left: 50%;
+  top: 50%;
 } 
+
+#find__id__mobile {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: rgb(229, 226, 226);
+  margin-left: -200px;
+  margin-top: -25px;
+  left: 50%;
+  top: 50%;
+}
+
+::placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(131, 130, 130);
+  padding-left: 7px;
+}
+
+#loginbtn {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: rgb(209, 204, 204);
+  margin-left: -150px;
+  margin-top: 220px;
+  left: 50%;
+  top: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#loginbtn:hover {
+  background: rgb(50, 51, 73);
+  color: white;
+  transition: all 0.5s;
+}
 
 /* @media screen and (max-width: 768px) {
     {

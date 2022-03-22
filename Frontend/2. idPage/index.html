@@ -8,16 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <div class="idbox">
         <h1>아이디 찾기</h1>
-        <form action="#">
-            <label for="loginid" class="labelid"></label>
-            <p>회원가입시 등록한 정보로 <br />
-                아이디를 찾을 수 있습니다.</p>
-                <div class="box">
-                    아이디 찾기 창
-                </div>
-        </div>
-    </form>
+          <p>회원가입 시 등록하신 정보로<br/>
+            아이디를 확인하실 수 있습니다.</p>
+          <form action="#">
+
+            <div class="find__id">
+              <div class="radio__wrap">
+                <label><input type="radio" name="find__id__type" value="mobile">휴대폰번호</label>
+                <label><input type="radio" name="find__id__type" value="email" checked="checked">이메일주소</label>
+              </div>
+
+              <div class="inp__wrap">  
+                <input type="text" class="cust__name" placeholder="이름을 입력하세요." name="cust__name" id="cust__name" value maxlength="20">
+                <input type="text" class="cust__phone" placeholder="휴대폰번호를 입력하세요." name="cust__phone" id="cust__phone" value maxlength="11">
+                  <div tabindex="0" title=" " class="selected__headline">
+                    <span>010</span>
+              </div>  
+
+              <div class="btn">
+                <input type="submit" id="loginbtn" value="확인">
+                <label for="loginbtn"></label>
+              </div>
+            </div>
+          </form>
+    </div>
+  </div>  
 </body>
 </html>
