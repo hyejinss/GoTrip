@@ -202,9 +202,20 @@ table.mi {
     margin-top: 20px;
 }
   
-    
-  @media screen and (max-width: 768px) {
-    .head, .navbar, .content, .foot {
-        flex-direction: column;
-    }
+.foot {
+  background-color:#485170;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.foot span {
+font-size: 12px;
+color: #ddd;
+padding: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .head, .navbar, .content, .foot {
+    flex-direction: column;
   }
+}

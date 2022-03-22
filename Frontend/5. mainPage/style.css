@@ -151,21 +151,41 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .content {
-    height: 1000px;
-    background-color: #ffffff;
-    padding: 8px 12px;
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin: auto;
 }
 
-.content__img {
-    height: 650px;
-    border: 3px solid slateblue;
-    margin: 20px auto;
+.banner {
+  position: relative; 
+  width: 1000px; 
+  height: 500px; 
+  top: 50px; 
+  margin: 0 auto; 
+  padding: 0; 
+  overflow: hidden;
+}
+
+.banner ul {
+  position: absolute; 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+
+.banner ul li {
+  float: left; 
+  width: 1000px; 
+  height: 500px; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .content__introduce {
-    height: 300px;
-    border: 3px solid aqua;
-    margin: 20px auto;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .foot {
