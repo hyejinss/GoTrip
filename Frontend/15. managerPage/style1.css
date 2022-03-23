@@ -43,7 +43,7 @@ a {
 }
 
 .navbar {
-    width: 1000px;
+    width: 1005px;
     height: 300px;
     display: inline-block;
 }
@@ -52,10 +52,10 @@ a {
     display: inline-block;
     position: absolute;
     background-color: gray;
-    margin-left: 210px;
     width: 500px;
     height: 300px;
     margin-top: 20px;
+    margin-left: 15px;
     text-align: center;
     color: white;
 }
@@ -65,7 +65,6 @@ table {
     height: 100%;
     border: 2px solid lightgray;
     margin-top: 20px;
-    margin-left: 200px;
     font-size: 20px;
     text-align: center;
 }
@@ -91,7 +90,7 @@ td {
 
 .content1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .con1 {
     width: 1000px;
@@ -117,7 +116,7 @@ td {
     position: absolute;
     border: 3px solid black;
     width: 490px;
-    height: 290px;
+    height: 280px;
     top: 670px;
 }
 
@@ -131,9 +130,9 @@ td {
     position: absolute;
     border: 3px solid black;
     width: 490px;
-    height: 290px;
+    height: 280px;
     top: 670px;
-    left: 200px;
+    left: 510px;
 }
 
 .con4 h1 {

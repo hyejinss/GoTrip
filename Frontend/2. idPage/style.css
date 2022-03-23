@@ -1,12 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
   margin: 0;
   background-color: #485170;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container {
@@ -39,73 +38,77 @@ body {
     margin: auto;
 }
 
-.idbox p { line-height: 27px;
+.idbox p {
+  line-height: 27px;
   margin-left: 50px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
   width: 400px;
   font-weight: bold;
-  color: #7c7b7b;
+  color: rgb(124, 123, 123);
 }
 
 .find__id {
   position: absolute;
   width: 500px;
   height: 300px;
-  border: 2px solid #ccc;
   margin-left: -200px;
   left: 50%;
   top: 50%;
-}
-
-.inp__wrap {
-  position: relative;
-  padding-bottom: 34px;
-}
+  border: 2px solid rgb(204, 204, 204);
+  z-index: 1;
+} 
 
 .radio__wrap {
   position: absolute;
-  width: 400px;
+  width: 450px;
   margin-left: -200px;
   margin-top: -125px;
   display: flex;
   justify-content: space-around;
   left: 50%;
   top: 50%;
+  z-index: 2;
 }
 
 input[type="radio"] {
   vertical-align: middle;
 }
 
+.radio input .radio {
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
 .radio__wrap label {
   margin-right: 30px;
-  color: #575757;
+  color: rgb(87, 87, 87);
   font-weight: bold;
   font-size: 12px;
 }
 
-#find__id__name {
+.inp__wrap {
   position: absolute;
   width: 400px;
   height: 40px;
-  border: none;
-  background-color: rgb(229, 226, 226);
-  margin-left: -200px;
-  margin-top: -80px;
-  left: 50%;
-  top: 50%;
-} 
+}
 
-#find__id__mobile {
+#cust__name {
+  letter-spacing: 1px;
   position: absolute;
-  width: 400px;
+  width: 410px;
   height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #646262;
   border: none;
-  background-color: rgb(229, 226, 226);
-  margin-left: -200px;
-  margin-top: -25px;
+  background-color: rgb(245, 245, 245);
+  margin-left: -160px;
+  margin-top: 45px;
+  padding-left: 15px;
   left: 50%;
   top: 50%;
 }
@@ -117,14 +120,98 @@ input[type="radio"] {
   padding-left: 7px;
 }
 
+.cust__phone {
+  width: 500px;
+  margin-left: 8px;
+  margin-top: 100px;
+  left: 50%;
+  top: 50%;
+  padding: 20px 2em 2em;
+}
+
+#cust__phone__a {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__phone__b {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__phone__c {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+.cust__email {
+  width: 500px;
+  margin-left: 8px;
+  margin-top: -90px;
+  left: 50%;
+  top: 50%;
+  padding: 20px 2em 2em;
+}
+
+#cust__email__a {
+  letter-spacing: 1px;
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__email__b {
+  letter-spacing: 1px;
+  width: 125px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__email__c {
+  letter-spacing: 1px;
+  width: 125px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
 #loginbtn {
   position: absolute;
-  width: 400px;
+  width: 430px;
   height: 50px;
   border: 1px solid #e8e8e8;
   background-color: rgb(209, 204, 204);
-  margin-left: -150px;
-  margin-top: 220px;
+  margin-left: -212px;
+  margin-top: 50px;
   left: 50%;
   top: 50%;
   font-size: 15px;

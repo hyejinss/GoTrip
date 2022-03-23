@@ -151,10 +151,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
   
   .content {
-      width: 1000px;
       background-color: #ffffff;
       padding: 50px 12px;
-      margin-left: 450px;
+      margin: auto;
   }
   
   .content h1 {

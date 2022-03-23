@@ -151,8 +151,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 } 
 
 .content {
-    height: 700px;
-    padding: 8px 12px;
+  height: 700px;
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin: auto;
 }
 
 .service h1 {

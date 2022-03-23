@@ -150,12 +150,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   display: block;
 }
 
-  .content {
-    width: 1000px;
-    height: 700px;
-    background-color: #ffffff;
-    padding: 50px 12px;
-    margin-left: 200px;
+.content {
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin: auto;
 }
 
 .domestic__tripp1 h1 {
@@ -175,13 +173,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .domestic__tripp1 {
-    width: 1500px;
     height: 350px;
     margin: auto;
 }
 
 .domestic__tripp2 {
-    width: 1500px;
     height: 350px;
     margin: auto;
 }
@@ -216,12 +212,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .btn1 {
-    width: 90%;
-    height: 50px;
-    border: 3px solid aqua;
-    position: absolute;
-    bottom: 5px;
-    margin-left: 20px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border: 3px solid aqua;
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
 }
 
 .tripp2 {
@@ -254,12 +251,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .btn2 {
-    width: 90%;
-    height: 50px;
-    border: 3px solid aqua;
-    position: absolute;
-    bottom: 5px;
-    margin-left: 20px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border: 3px solid aqua;
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
 }
 
 .foot {

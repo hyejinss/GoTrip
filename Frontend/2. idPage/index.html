@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이디 찾기</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="idbox">
-        <h1>아이디 찾기</h1>
-          <p>회원가입 시 등록하신 정보로<br/>
-            아이디를 확인하실 수 있습니다.</p>
-          <form action="#">
+      <h1>아이디 찾기</h1>
+        <p>회원가입 시 등록하신 정보로<br/>
+          아이디를 확인하실 수 있습니다.</p>
+        <form action="#">
 
-            <div class="find__id">
-              <div class="radio__wrap">
-                <label><input type="radio" name="find__id__type" value="mobile">휴대폰번호</label>
-                <label><input type="radio" name="find__id__type" value="email" checked="checked">이메일주소</label>
-              </div>
-
-              <div class="inp__wrap">  
-                <input type="text" class="cust__name" placeholder="이름을 입력하세요." name="cust__name" id="cust__name" value maxlength="20">
-                <input type="text" class="cust__phone" placeholder="휴대폰번호를 입력하세요." name="cust__phone" id="cust__phone" value maxlength="11">
-                  <div tabindex="0" title=" " class="selected__headline">
-                    <span>010</span>
-              </div>  
-
-              <div class="btn">
-                <input type="submit" id="loginbtn" value="확인">
-                <label for="loginbtn"></label>
-              </div>
+          <div class="find__id">
+            <div class="radio__wrap">
+              <label><input type="radio" id="radio1" name="radio" value="phone" checked="checked">휴대폰번호</label>
+              <label><input type="radio" id="radio2" name="radio" value="email" >이메일주소</label>
             </div>
-          </form>
+
+            <div class="inp__wrap">  
+              <input type="text" id="cust__name" autocomplete="off" placeholder="이름을 입력하세요." maxlength="20">
+              <div class="cust__phone">
+                <input type="text" id="cust__phone__a" autocomplete="off" maxlength="3">
+                - 
+                <input type="text" id="cust__phone__b" autocomplete="off" maxlength="4">
+                -
+                <input type="text" id="cust__phone__c" autocomplete="off" maxlength="4">
+              </div>
+              <div class="cust__email">
+                <input type="text" id="cust__email__a" aria-autocomplete="off"  maxlength="20">
+                @
+                <input type="text" id="cust__email__b" aria-autocomplete="off"  maxlength="10">
+                <input type="text" id="cust__email__c" aria-autocomplete="off"  maxlength="10">
+              </div>
+            </div>  
+
+            <div class="btn">
+              <input type="submit" id="loginbtn" value="확인">
+            </div>
+          </div>
+        </form>
     </div>
-  </div>  
+  </div> 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../2. idPage/id.js"></script>
 </html>

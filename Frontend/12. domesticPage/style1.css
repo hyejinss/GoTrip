@@ -151,10 +151,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .content {
-  width: 1000px;
   background-color: #ffffff;
   padding: 50px 12px;
-  margin-left: 250px;
+  margin: auto;
 }
 
 .domestic__trip h1 {
@@ -167,7 +166,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .domestic__trip {
-  width: 1500px;
   height: 350px;
   margin: auto;
 }
@@ -210,7 +208,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .re_pro {
-  width: 1500px;
   height: 250px;
   margin: auto;
 }

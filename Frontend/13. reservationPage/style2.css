@@ -151,10 +151,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .content {
-  width: 1000px;
+  height: 700px;
   background-color: #ffffff;
   padding: 50px 12px;
-  margin-left: 450px;
+  margin: auto;
 }
 
 .reservation h1 {

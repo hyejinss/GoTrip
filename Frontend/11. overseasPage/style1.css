@@ -151,14 +151,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
   .content {
-    width: 1000px;
     background-color: #ffffff;
     padding: 50px 12px;
-    margin-left: 250px;
+    margin: auto;
 }
 
 .overseas__trip h1 {
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
@@ -167,7 +166,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .overseas__trip {
-  width: 1400px;
   height: 300px;
 }
 
@@ -209,7 +207,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .re_pro {
-    width: 1400px;
     height: 250px;
     margin: auto;
 }
