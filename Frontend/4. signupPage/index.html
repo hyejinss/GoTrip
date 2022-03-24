@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
     </script>
 </head>
@@ -16,7 +18,12 @@
                 <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
         </div>
 
-        <div class="head__search">검색창</div>
+        <div class="search__box">
+          <div class="searchform">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+          </div>
+        </div>
 
         <ul class="head__icons">
             <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
@@ -53,12 +60,68 @@
     <main class="content">
         <div class="signup">
             <h1>JOIN MEMBER</h1>
-        
-        </div>
+           <form action="../5. mainPage/index.html">
+             <table class="sign">
+              <tr>
+                <th>이름</th>
+                <td><input type="text" class="form-control" name="name"></td>        
+            </tr>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" class="form-control" name="id"></td>      
+            </tr>
+            <tr>
+              <th>비밀번호</th>
+              <td><input type="password" class="form-control" name="pass1" placeholder="영문+숫자+특수문자 조합 8~15자리"></td>  
+              <th>비밀번호 확인</th>
+              <td><input type="password" class="form-control" name="pass2"></td>       
+          </tr>
+          <tr>
+            <th>생년월일</th>
+            <td><input type="text" class="form-control" name="year" placeholder="년(4자)"></td>      
+            <td>
+             <select name="month" class="form-control" style="width: 80px; height: 30px; text-align: center;">
+                <option value="1월">1월</option>
+                <option value="2월">2월</option>
+                <option value="3월">3월</option>
+                <option value="4월">4월</option>
+                <option value="5월">5월</option>
+                <option value="6월">6월</option>
+                <option value="7월">7월</option>
+                <option value="8월">8월</option>
+                <option value="9월">9월</option>
+                <option value="10월">10월</option>
+                <option value="11월">11월</option>
+                <option value="12월">12월</option>
+             </select>
+            </td>
+            <td><input type="text" class="form-control" name="day" placeholder="일"></td>
+          </tr>
+          <tr>
+            <th>휴대폰번호</th>
+            <td><input type="text" class="form-control" name="phone"></td>        
+        </tr>
+        <tr>
+          <th>여권번호</th>
+          <td><input type="text" class="form-control" name="num"></td>        
+        </tr>
+        <tr>
+          <th>이메일</th>
+          <td><input type="text" class="form-control" name="email1"></td> 
+          <td>@</td>
+          <td><input type="text" class="form-control" name="email2"></td>       
+        </tr>
+        </table>
 
-        <div class="button">
-            <div class="btn1">취소</div>
-            <div class="btn2">확인</div>
+        <table class="btn">
+          <tr>
+            <td>
+            <input type="reset" class="btn1" value="취소">
+            <input type="submit" class="btn2" value="확인">
+            </td>
+        </tr>
+        </table>
+      </form>
     </div>
 </main>
 

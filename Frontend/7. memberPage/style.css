@@ -160,45 +160,77 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   .content h1 {
     font-size: 25px;
     color: gray;
-    border-bottom: 3px solid #7c7b7b;
     padding: 20px;
     text-align: center;
+    margin: auto;
     margin-bottom: 20px;
   }
   
   .signup {
-      height: 500px; 
-      border: 3px solid #000080;
-      position: relative;
-      margin: auto;
-  }
-  
-  .button {
-      height: 100px;
-      position: relative;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 8px 12px;
-  }
-  
-  .btn1 {
-      width: 300px;
-      height: 50px;
-      border: 3px solid #ffff00;
-      position: relative;
-      margin: auto;
-  }
-  
-  .btn2 {
-      width: 300px;
-      height: 50px;
-      border: 3px solid #ffff00;
-      position: relative;
-      margin: auto;
-  } 
+    position: relative;
+    margin: auto;
+}
+
+table.sign {
+  margin: auto;
+  width: 1200px;
+  height: 400px;
+  padding: 20px;
+  border-top: 3px solid #7c7b7b;
+  border-bottom: 3px solid #7c7b7b;
+  border-collapse: collapse;
+}
+
+table.sign tr {
+  border-bottom: 2px solid lightgray ;
+}
+
+table.sign tr th {
+  width: 10%;
+  font-size: 15px;
+}
+
+table.sign td {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+table.sign td input {
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+table.btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+table.btn tr td input {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 100px;
+}
+
+input.btn1 {
+  background-color: skyblue;
+  border: 3px solid skyblue;
+  color:white;
+  margin-right: 50px;
+}
+
+input.btn2 {
+  background-color: skyblue;
+  border: 3px solid skyblue;
+  color: white;
+  margin-left: 50px;
+}
   
 .foot {
   background-color:#485170;

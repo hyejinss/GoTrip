@@ -162,47 +162,66 @@ input[type="radio"] {
   border: none;
 }
 
-.cust__email {
+#cust__email {
   width: 500px;
   margin-left: 8px;
-  margin-top: -90px;
+  margin-top: -92px;
   left: 50%;
   top: 50%;
   padding: 20px 2em 2em;
 }
 
+#textEmail {
+  background-color: white;
+  height: 20px;
+  /* margin-left: -5px; */
+}
+
+/* #textEmail__2 {
+  background-color: white;
+  margin-left: 4px;
+  color: white;
+} */
+
 #cust__email__a {
   letter-spacing: 1px;
-  width: 135px;
+  /* width: 130px; */
+  width: 220px;
   height: 40px;
   font-size: 14px;
   color: #646262;
-  text-align: center;
+  text-align: left;
+  padding-left: 15px;
   background-color: rgb(245, 245, 245);
   border: none;
 }
 
 #cust__email__b {
   letter-spacing: 1px;
-  width: 125px;
+  /* width: 125px; */
+  width: 145px;
   height: 40px;
+  /* margin-left: -3px; */
+  margin-left: -4px;
   font-size: 14px;
   color: #646262;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
   background-color: rgb(245, 245, 245);
   border: none;
 }
 
-#cust__email__c {
+/* #cust__email__c {
   letter-spacing: 1px;
-  width: 125px;
+  width: 130px;
   height: 40px;
+  margin-left: -3px;
   font-size: 14px;
   color: #646262;
   text-align: center;
   background-color: rgb(245, 245, 245);
   border: none;
-}
+} */
 
 #loginbtn {
   position: absolute;

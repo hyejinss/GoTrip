@@ -58,12 +58,68 @@
     <main class="content">
         <div class="signup">
             <h1>회원정보</h1>
-        
-        </div>
-
-        <div class="button">
-            <div class="btn1">회원정보수정</div>
-            <div class="btn2">확인</div>
+            <form action="../5. mainPage/index.html">
+              <table class="sign">
+               <tr>
+                 <th>이름</th>
+                 <td><input type="text" class="form-control" name="name"></td>        
+             </tr>
+             <tr>
+                 <th>아이디</th>
+                 <td><input type="text" class="form-control" name="id"></td>      
+             </tr>
+             <tr>
+               <th>비밀번호</th>
+               <td><input type="password" class="form-control" name="pass1" placeholder="영문+숫자+특수문자 조합 8~15자리"></td>  
+               <th>비밀번호 확인</th>
+               <td><input type="password" class="form-control" name="pass2"></td>       
+           </tr>
+           <tr>
+             <th>생년월일</th>
+             <td><input type="text" class="form-control" name="year" placeholder="년(4자)"></td>      
+             <td>
+              <select name="month" class="form-control" style="width: 80px; height: 30px; text-align: center;">
+                 <option value="1월">1월</option>
+                 <option value="2월">2월</option>
+                 <option value="3월">3월</option>
+                 <option value="4월">4월</option>
+                 <option value="5월">5월</option>
+                 <option value="6월">6월</option>
+                 <option value="7월">7월</option>
+                 <option value="8월">8월</option>
+                 <option value="9월">9월</option>
+                 <option value="10월">10월</option>
+                 <option value="11월">11월</option>
+                 <option value="12월">12월</option>
+              </select>
+             </td>
+             <td><input type="text" class="form-control" name="day" placeholder="일"></td>
+           </tr>
+           <tr>
+             <th>휴대폰번호</th>
+             <td><input type="text" class="form-control" name="phone"></td>        
+         </tr>
+         <tr>
+           <th>여권번호</th>
+           <td><input type="text" class="form-control" name="num"></td>        
+         </tr>
+         <tr>
+           <th>이메일</th>
+           <td><input type="text" class="form-control" name="email1"></td> 
+           <td>@</td>
+           <td><input type="text" class="form-control" name="email2"></td>       
+         </tr>
+         </table>
+ 
+         <table class="btn">
+           <tr>
+             <td>
+             <input type="reset" class="btn1" value="회원정보수정">
+             <input type="submit" class="btn2" value="확인">
+             </td>
+         </tr>
+         </table>
+       </form>
         </div>
     </main>
 

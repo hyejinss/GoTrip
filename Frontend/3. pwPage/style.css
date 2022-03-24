@@ -3,12 +3,29 @@
     padding: 0;
 }
 
+body {
+  margin: 0;
+  background-color: #485170;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin-left: 650px;
+  margin-top: 130px;
+  border-radius: 10px;
+}
+
 .pwbox {
-    width: 1500px;
-    height: 500px;
-    margin: auto;
-    position: absolute;
-    top: 100px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: -250px;
+  margin-top: -250px;
+  left: 50%;
+  top: 50%;
 }
 
 .pwbox h1 {
@@ -22,17 +39,58 @@
 }
 
 .pwbox p {
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 50px;
+  line-height: 27px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 400px;
+  font-weight: bold;
+  color: rgb(124, 123, 123);
 }
 
-.box {
-    width: 500px;
-    height: 300px;
-    border: 3px solid #dcdcdc;
-    margin: auto;
+.find__id {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin-left: -200px;
+  left: 50%;
+  top: 50%;
+  border: 2px solid rgb(204, 204, 204);
+  z-index: 1;
+} 
+
+.radio__wrap {
+  position: absolute;
+  width: 450px;
+  margin-left: -200px;
+  margin-top: -125px;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
 }
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+.radio input .radio {
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.radio__wrap label {
+  margin-right: 30px;
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
 
 /* @media screen and (max-width: 768px) {
     {

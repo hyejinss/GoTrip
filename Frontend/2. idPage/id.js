@@ -34,6 +34,13 @@ $("#cust__name").keyup(function(event) {
   }
 });
 
+$("#cust__email__b").keyup(function(event) {
+  if (!(event.keyCode >= 37 && event.keyCode <= 40)) {
+     var inputVal = $(this).val();
+     $(this).val(inputVal.replace(/[^A-Za-z]/ig, ''));
+  }
+});
+
 //---------- 숫자만 입력 -----------
 $("#cust__phone__a").keyup(function(event) {
   if (!(event.keyCode >= 37 && event.keyCode <= 40)) {
@@ -54,8 +61,11 @@ $("#cust__phone__c").keyup(function(event) {
   }
 });
 
-
-// $("input[id='cust__email']:radio").change(function() {
-//   var cust__email = thsi.value;
-//     alert(cust__email);
-// });
+//---------- radio event -----------
+function div__OnOff(v, id){
+  if (v == "email"){
+    document.getElementById(id).style.display=""; //보여줌
+  }else{
+    document.getElementById(id).style.display="none"; //숨김
+  }
+}

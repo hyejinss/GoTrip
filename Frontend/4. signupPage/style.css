@@ -36,6 +36,71 @@ a {
   color: #485170;
 }
 
+.searchform {
+  width: 700px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.searchform input#search {
+  width: 700px;
+  height: 50px;
+  background: #dcdcdc;
+  border: none;
+  font-size: 12pt;
+  font-weight: 700;
+  float: left;
+  color: #485170;
+  padding-left: 45px;
+  border-radius: 48px;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.searchform input#search::-webkit-input-placeholder {
+  color: #93a2ad;
+}
+
+.searchform input#search:-moz-placeholder { 
+  color: #93a2ad;
+}
+
+.searchform input#search::-moz-placeholder {
+  color: #93a2ad;
+}
+
+.searchform input#search:-ms-input-placeholder {
+  color: #93a2ad;
+ }
+
+.searchform input#search:hover, .searchform input#search:focus, .searchform input#search:active {
+  outline: none;
+  background: #ffffff;
+}
+
+/* 크롬 자동완성 값 삭제 */
+input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
+
+.searchform .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 14px;
+  z-index: 1;
+  color: #93a2ad;
+}
+
+.searchform:hover .icon {
+  margin-top: 14px;
+  color: #485170;
+}
+
 .navbar ul{
   list-style: none;
   margin: 0;
@@ -101,45 +166,77 @@ a {
 .content h1 {
   font-size: 25px;
   color: gray;
-  border-bottom: 3px solid #7c7b7b;
   padding: 20px;
   text-align: center;
+  margin: auto;
   margin-bottom: 20px;
 }
 
 .signup {
-    height: 500px; 
-    border: 3px solid #000080;
     position: relative;
     margin: auto;
 }
 
-.button {
-    height: 100px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 8px 12px;
+table.sign {
+  margin: auto;
+  width: 1200px;
+  height: 400px;
+  padding: 20px;
+  border-top: 3px solid #7c7b7b;
+  border-bottom: 3px solid #7c7b7b;
+  border-collapse: collapse;
 }
 
-.btn1 {
-    width: 300px;
-    height: 50px;
-    border: 3px solid #ffff00;
-    position: relative;
-    margin: auto;
+table.sign tr {
+  border-bottom: 2px solid lightgray ;
 }
 
-.btn2 {
-    width: 300px;
-    height: 50px;
-    border: 3px solid #ffff00;
-    position: relative;
-    margin: auto;
-} 
+table.sign tr th {
+  width: 10%;
+  font-size: 15px;
+}
+
+table.sign td {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+table.sign td input {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(241, 241, 241);
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+table.btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+table.btn tr td input {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 50px;
+}
+
+input.btn1 {
+  background-color: white;
+  border: 3px solid skyblue;
+  color: black;
+  margin-right: 50px;
+}
+
+input.btn2 {
+  background-color: skyblue;
+  border: 3px solid skyblue;
+  color: white;
+  margin-left: 50px;
+}
 
 .foot {
   background-color:#485170;
