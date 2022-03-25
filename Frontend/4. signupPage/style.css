@@ -203,12 +203,15 @@ table.sign td {
 }
 
 table.sign td input {
+  letter-spacing: 1px;
   width: 100%;
   height: 40px;
   background-color: rgb(241, 241, 241);
   border: none;
   text-align: center;
-  font-size: 15px;
+  color: #646262;
+  font-size: 14px;
+  font-weight: 600;
   padding: 5px;
 }
 
@@ -221,21 +224,33 @@ table.btn {
 table.btn tr td input {
   font-weight: bold;
   font-size: 15px;
-  padding: 10px 50px;
+  padding: 10px 70px;
 }
 
 input.btn1 {
   background-color: white;
-  border: 3px solid skyblue;
+  border: 3px solid #4169e1;
   color: black;
   margin-right: 50px;
 }
 
-input.btn2 {
-  background-color: skyblue;
-  border: 3px solid skyblue;
+input.btn1:hover {
+  background: #4169e1;
   color: white;
+  transition: all 0.5s;
+}
+
+input.btn2 {
+  background-color: white;
+  border: 3px solid #4169e1;
+  color: black;
   margin-left: 50px;
+}
+
+input.btn2:hover {
+  background: #4169e1;
+  color: white;
+  transition: all 0.5s;
 }
 
 .foot {

@@ -17,10 +17,12 @@
     <div class="loginbox">
         <h1>LOGIN</h1>
         <form name="login" action="../5. mainPage/index.html">
-            <label for="loginid" class="labelid"></label>
-            <input type="text" id="loginid" placeholder="  아이디를 입력하세요."><br />
-            <label for="loginpw" class="labelpw"></label>
-            <input type="text" id="loginpw" placeholder="  비밀번호를 입력하세요.">
+            <div class="login__id">
+              <input type="text" id="loginid" autocomplete="off" placeholder="아이디를 입력하세요.">
+            </div>
+            <div class="login__pw">
+              <input type="password" id="loginpw" autocomplete="off" placeholder="비밀번호를 입력하세요.">
+            </div>
             <div class="chk">
                 <input type="checkbox" id="idchk">
                 <label for="idchk">아이디 저장</label>
@@ -37,8 +39,8 @@
                 <a href="../3. pwPage/index.html">비밀번호찾기</a>
             </div>
 
-            <div class="sns">
-                <p>SNS 계정으로 로그인하기</p>
+            <div class="sns" style="display: inline-block; margin-top: 210px;">
+                <p style="display: inline-block; font-size: 14px; font-weight: 500;">SNS 계정으로 로그인하기</p>
                 </div>
 
                 <div class="snslog">
@@ -52,7 +54,7 @@
                     <!------------ 네이버 로그인 ------------>
 
                      <!------------ 카카오 로그인 ------------>
-                     <a href="#" id="kakaoLogin"><img src="./kakao_login.png" style="height: 40px;"/></a>
+                     <a href="#" id="kakaoLogin"><img src="../1. loginPage/kakao_login.png" style="height: 40px;"/></a>
                      <!------------ 카카오 로그인 ------------>
 
                      <!------------ 구글 로그인 ------------>

@@ -64,21 +64,21 @@
              <table class="sign">
               <tr>
                 <th>이름</th>
-                <td><input type="text" class="form-control" name="name"></td>        
+                <td><input type="text" class="form-control" name="name"autocomplete="off" maxlength="20"></td>        
             </tr>
             <tr>
                 <th>아이디</th>
-                <td><input type="text" class="form-control" name="id"></td>      
+                <td><input type="text" class="form-control" name="id" autocomplete="off" maxlength="20"></td>      
             </tr>
             <tr>
               <th>비밀번호</th>
-              <td><input type="password" class="form-control" name="pass1" placeholder="영문+숫자+특수문자 조합 8~15자리"></td>  
+              <td><input type="password" class="form-control" name="pass1" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>  
               <th>비밀번호 확인</th>
-              <td><input type="password" class="form-control" name="pass2"></td>       
+              <td><input type="password" class="form-control" name="pass2" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>       
           </tr>
           <tr>
             <th>생년월일</th>
-            <td><input type="text" class="form-control" name="year" placeholder="년(4자)"></td>      
+            <td><input type="text" class="form-control" name="year" autocomplete="off" placeholder="년(네 자리)" maxlength="4"></td>
             <td>
              <select name="month" class="form-control" style="width: 80px; height: 30px; text-align: center;">
                 <option value="1월">1월</option>
@@ -95,21 +95,21 @@
                 <option value="12월">12월</option>
              </select>
             </td>
-            <td><input type="text" class="form-control" name="day" placeholder="일"></td>
+            <td><input type="text" class="form-control" name="day" autocomplete="off" placeholder="일(두 자리)" maxlength="2"></td>
           </tr>
           <tr>
             <th>휴대폰번호</th>
-            <td><input type="text" class="form-control" name="phone"></td>        
+            <td><input type="text" class="form-control" name="phone"autocomplete="off" maxlength="11"></td>        
         </tr>
         <tr>
           <th>여권번호</th>
-          <td><input type="text" class="form-control" name="num"></td>        
+          <td><input type="text" class="form-control" name="num" autocomplete="off" placeholder="영문+숫자 조합 9자리" maxlength="9"></td>        
         </tr>
         <tr>
           <th>이메일</th>
-          <td><input type="text" class="form-control" name="email1"></td> 
+          <td><input type="text" class="form-control" name="email1" autocomplete="off" maxlength="20"></td> 
           <td>@</td>
-          <td><input type="text" class="form-control" name="email2"></td>       
+          <td><input type="text" class="form-control" name="email2" autocomplete="off" maxlength="20"></td>       
         </tr>
         </table>
 
