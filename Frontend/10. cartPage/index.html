@@ -58,11 +58,73 @@
     <main class="content">
       <div class="content__cart">
         <h1>장바구니</h1>
-          <div class="product">
+          <table class="cartinfo">
+            <colgroup>
+              <col style="width: 100px;"> 
+              <col style="width: 350px;">
+              <col style="width: 350px;">
+              <col style="width: 200px;">
+              <col style="width: 150px;">
+              <col style="width: 100px;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <span class="input_button small">
+                    <input type="checkbox" name="checkAll" id="checkAll" class="check__all" checked="checked" onclick="">
+                    <label for="checAll">&nbsp;</label>
+                  </span>
+                  <input type="hidden" id="hdchk" value="0">
+                </th>
+                <th>상품사진</th>
+                <th>상품정보</th>
+                <th>예약정보</th>
+                <th>상품금액</th>
+                <th>선택</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td style="display: none;"> 
+                  <form></form>
+                </td>
+                <td>
+                  <span class="input_button small">
+                    <input type="checkbox" name="chknum_0"value="102079028" checked="checked" onclick="">
+                    <label for="checbox2">&nbsp;</label>
+                  </span>
+                </td>
+                <td class="product">
+                  <a href="" title="">
+                    <div class="img">
+                      <img src="" alt="">
+                    </div>
+                  </a>
+                </td>
+                <td></td>
+                <td class="reservation">예약가능</td>
+                <td class="price">
+                  <em>
+                    <span>500,000원</span>
+                  </em>
+                </td>
+                <td>
+                  <a href="" onclick="" class="micro__btn" id="btn__now" onclick="">바로결제</a>
+                  <button type="button" name="button" class="micro__btn" id="btn__my" onclick="">
+                    MY<i class="fa fa-heart" aria-hidden="true" style="font-size: 12px;"></i>
+                  </button>
+                  <button type="button" name="button" class="micro__btn" id="btn__delete" onclick="">삭제
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+          <!-- <div class="product">
             <div class="cartinfo">장바구니정보</div>
             <div class="cart1">장바구니 품목</div>
             <div class="cart2">장바구니 품목</div>
-          </div>
+          </div> -->
 
           <div class="btn">
             <div class="btn1">선택상품삭제</div>

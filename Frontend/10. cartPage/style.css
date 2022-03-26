@@ -161,16 +161,99 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+table {
+  /* width: 100%; */
+  /* border-top: 1px none #171717; */
+  border-bottom: 2px solid #7c7b7b;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 60px; 
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
 }
 
 .cartinfo {
+  padding: 20px 0;
+}
+
+thead tr {
+  border-bottom: 1px solid #7c7b7b;
+  /* padding: 25px 0; */
+}
+
+thead th {
+  height: 68px;
+  font-family: "yg750";
+  font-size: 14px;
+  color: #171717;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 2px solid #7c7b7b;
+  padding: 10px 0;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  height: 68px;
+  font-family: "yg750";
+  font-size: 14px;
+  color: #171717;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.micro__btn {
+  display: inline-block;
+  max-width: 60px;
+  padding: 0 8px;
+  height: 20px;
+  line-height: 18px;
+  font-family: "yg740";
+  font-size: 12px;
+  color: #000;
+  border: 1px solid #333;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* .micro__btn {
+  display: inline-block;
+  min-width: 70px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid #c5c5c5;
+  line-height: 18px;
+  color: #323232;
+  font-family: "yg740";
+  font-size: 12px;
+  background-color: #fff;
+  text-align: center;
+} */
+
+#btn__now {
+  margin-top: 5px;
+}
+
+#btn__my {
+  margin-top: 5px;
+}
+
+#btn__delete {
+  margin-top: 5px;
+}
+
+/* .cartinfo {
     height: 100px;
     border: 3px solid greenyellow;
     margin-bottom: 20px;
-}
+} */
 
-.cart1 {
+/* .cart1 {
     height: 150px;
     border: 3px solid seagreen;
     margin-bottom: 20px;
@@ -180,7 +263,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     height: 150px;
     border: 3px solid seagreen;
     margin-bottom: 20px;
-}
+} */
 
 .btn {
   display: flex;
