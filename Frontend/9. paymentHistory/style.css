@@ -159,32 +159,88 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .content h1 {
     font-size: 30px;
     color: gray;
-    border-bottom: 3px solid #7c7b7b;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .product {
-    height: 500px;
+  height: 500px;
 }
 
 .pro1 {
   height: 150px;
-  border: 3px solid teal;
   margin-bottom: 20px;
 }
 
 .pro2 {
   height: 150px;
-  border: 3px solid teal;
   margin-bottom: 20px;
 }
 
 .pro3 {
   height: 150px;
-  border: 3px solid teal;
   margin-bottom: 20px;
+}
+
+.pro1 table {
+  width: 1200px;
+  border-top: 3px solid gray;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.pro2 table {
+  width: 1200px;
+  border-top: 3px solid gray;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.pro3 table {
+  width: 1200px;
+  border-top: 3px solid gray;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table thead td {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+}
+
+td img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn ul {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn li {
+  background-color: white;
+  border: 3px solid #4169e1;
+  color:black;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 15px; 
+}
+
+.btn li:hover {
+  background: #4169e1;
+  color: white;
+  transition: all 0.5s;
 }
 
 .foot {

@@ -156,7 +156,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
       margin: auto;
   }
   
-  .content h1 {
+  .heart h1 {
     font-size: 30px;
     color: gray;
     border-bottom: 3px solid #7c7b7b;
@@ -165,11 +165,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   }
 
 .heart1 {
+    width: 1500px;
     display: flex;
     justify-content: space-between;
 }
 
 .heart2 {
+    width: 1500px;
     display: flex;
     justify-content: space-between;
 }
@@ -177,29 +179,146 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pro1 {
       width: 700px;
       height: 300px;
-      border: 3px solid coral;
       margin: 30px 0px 0px 30px;
   }
+
+.pro1 img {
+  width: 400px;
+  height: 300px;
+}
+
+.pro1 i {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pro1 i:hover {
+  color: red;
+  transform: scale(1.5);
+  transition: .5s;
+}
+
+.pro1 span {
+  float: right;
+  margin-top: 50px;
+}
 
 .pro2 {
     width: 700px;
     height: 300px;
-    border: 3px solid coral;
     margin: 30px 30px 0px 30px;
+}
+
+.pro2 img {
+  width: 400px;
+  height: 300px;
+}
+
+.pro2 i {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pro2 i:hover {
+  color: red;
+  transform: scale(1.5);
+  transition: .5s;
+}
+
+.pro2 span {
+  float: right;
+  margin-top: 50px;
 }
 
 .pro3 {
     width: 700px;
     height: 300px;
-    border: 3px solid coral;
     margin: 30px 0px 0px 30px;
+}
+
+.pro3 img {
+  width: 400px;
+  height: 300px;
+}
+
+.pro3 i {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pro3 i:hover {
+  color: red;
+  transform: scale(1.5);
+  transition: .5s;
+}
+
+.pro3 span {
+  float: right;
+  margin-top: 50px;
 }
 
 .pro4 {
     width: 700px;
     height: 300px;
-    border: 3px solid coral;
     margin: 30px 30px 0px 30px;
+}
+
+.pro4 img {
+  width: 400px;
+  height: 300px;
+}
+
+.pro4 i {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.pro4 i:hover {
+  color: red;
+  transform: scale(1.5);
+  transition: .5s;
+}
+
+.pro4 span {
+  float: right;
+  margin-top: 50px;
+}
+
+.btn {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn li {
+  background-color: white;
+  border: 3px solid #4169e1;
+  color:black;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 15px; 
+}
+
+.btn li:hover {
+  background: #4169e1;
+  color: white;
+  transition: all 0.5s;
 }
 
 .foot {

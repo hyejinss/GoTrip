@@ -151,24 +151,24 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
   
   
-  .content {
-      background-color: #ffffff;
-      padding: 50px 12px;
-      margin: auto;
-  }
+.content {
+  background-color: #ffffff;
+  padding: 50px 12px;
+  margin: auto;
+}
   
-  .content h1 {
-    font-size: 25px;
-    color: gray;
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-  }
+.content h1 {
+  font-size: 25px;
+  color: gray;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
   
-  .signup {
-    position: relative;
-    margin: auto;
+.signup {
+  position: relative;
+  margin: auto;
 }
 
 table.sign {
