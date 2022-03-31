@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>예약하기1</title>
+    <title>예약하기1(대기)</title>
     <link rel="stylesheet" href="style1.css">
     <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
     </script>
@@ -35,8 +35,8 @@
             <li><a href="#">해외여행</a>
                 <ul>
                   <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-                  <li><a href="../11. overseasPage/index2.html">미국</a></li>
-                  <li><a href="../11. overseasPage/index2.html">영국</a></li>
+                  <li><a href="../11. overseasPage/index2.html">유럽 / 아프리카</a></li>
+                  <li><a href="../11. overseasPage/index2.html">미주 / 중남미</a></li>
                 </ul>
             </li>
             <li><a href="#">국내여행</a>
@@ -58,7 +58,63 @@
     <main class="content">
         <div class="reservation">
             <h1>예약하기</h1>
-            <table class="re">
+            <div class=" text__wrap">
+              <strong class="tit">
+                <div class="icon"><i class="fa-regular fa-plane" style="font-size: 25px; font-weight: 600; color: #3047a7;"></i> 가는 항공편</div>
+                <div class="route__detail">
+                  <div class="route">
+                    <strong>서울 (ICN)</strong>
+                    <img src="../13. reservationPage/fast-forward.png" width="12px" height="12px">
+                    <strong>하와이 (HNL)</strong>
+                  </div>
+                </div>
+              </strong>
+              <div class="tag__group">
+                <span class="state__type1">예약가능</span>
+                <span class="state__type2">출발확정</span>
+                <span class="state__type3">요금확정</span>
+              </div>
+              <div class="flight__list">
+                <ul>
+                  <li>
+                    <div class="row">
+                      <div class="cell__air">
+                        <p class="air__name">
+                          <img src="../13. reservationPage/korean-air.png" width="17px" height="17px"> 대한항공</p>
+                        <p class="txt">TW0307</p>
+                      </div>
+                      <div class="cell__type">
+                        <div class="item__course">
+                          <div class="time">
+                            <span class="date">2022.04.14(목)</span>09:00
+                            <span class="city"><em>인천 국제공항</em></span>
+                          </div>
+                          <div class="move__arrow">
+                            <p class="direct">직항</p>
+                              <img src="../13. reservationPage/right-arrow(1).png" width="35px" height="30px"> 
+                            <p class="load">8시간 30분</p>
+                          </div>
+                          <div class="time">
+                            <span class="date">2022.04.14(목)</span>17:30
+                            <span class="city"><em>하와이 국제공항</em></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cell__seat">
+                        <p>성인1</p>
+                        <p>일반석</p>
+                      </div>
+                      <div class="cell__luggage">
+                        <p>수하물 포함</p>
+                        <p>20kg</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+
+                <!-- <table class="re">
                 <tbody>
                     <tr>
                         <th scope="row">여행기간</th>
@@ -73,7 +129,11 @@
                         <td>내용이 들어갑니다.</td>
                     </tr>
                     </tbody>
-            </table>
+                </table> -->
+
+
+            </strong>
+           </div> 
         </div>
 
         <div class="tripinfo">
@@ -130,4 +190,6 @@
       </span>
     </div>
 </body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../10. cartPage/cart.js"></script> -->
 </html>

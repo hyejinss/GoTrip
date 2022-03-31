@@ -25,7 +25,18 @@ function carousel() {
 
 
 function showConfirm(){
-  if (confirm("상품을 장바구니에서 삭제하시겠습니까?"))
+  if (confirm("해당 상품을 장바구니에서 삭제하시겠습니까?"))
+  {
+    alert("확인 버튼을 눌렀습니다.");
+  } else 
+  {
+    alert("취소 버튼을 눌렀습니다.");
+  }
+}
+
+
+function selectDelete(){
+  if (confirm("선택 상품을 장바구니에서 삭제하시겠습니까?"))
   {
     alert("확인 버튼을 눌렀습니다.");
   } else 

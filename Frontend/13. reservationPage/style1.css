@@ -96,55 +96,65 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #485170;
-    display: flex;
-    justify-content: space-around;
+  letter-spacing: 0.8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #485170;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar__menu li {
-    display: inline;
-    color: white;
+  display: inline;
+  color: white;
 }
 
 .navbar__menu a {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar__menu li a {
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
+  color: white;
+  padding: 15px;
+  padding-left: 207px;
+  padding-right: 207px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "yg750";
+  white-space: nowrap;
 }
 
 .navbar__menu li a:hover {
-    background-color: lightgray;
-    border-radius: 4px;
+  background-color: lightgray;
+  color: #000;
+  text-align: center;
 } 
 
 .navbar__menu li ul {
-    display: none;
-    height: auto;
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    width: 200px;
-    z-index: 200;    
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 480px;
+  z-index: 200;
+  text-align: center;    
 }
 
 .navbar__menu li ul a{
-    display: block;
-    height: 30px;
-    font-size: 15px;
-    font-style: normal;
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    }
+  display: block;
+  height: 30px;
+  font-size: 16px;
+  font-style: normal; 
+  font-weight: 600;
+  font-family: "yg750";
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 
 .navbar__menu li:hover ul {
     display: block;
@@ -180,7 +190,193 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     margin-bottom: 20px;
 }
 
-table.re {
+.text__wrap {
+  position: relative;
+  margin: 40px;
+  /* margin-left: 15%; */
+  padding: 0;
+  width: 90%;
+}
+
+.text__wrap strong .tit {
+  display: inline-block;
+  font-size: 22px;
+  color: #111;
+  line-height: 1;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 30%;
+}
+
+.route__detail {
+  display: inline-block;
+  width: 30%;
+}
+
+.tag__group {
+  display: inline-block;
+  width: 30%;
+}
+
+.state__type1 {
+  height: 22px;
+  line-height: 22px;
+  color: #5e99cb;
+  font-size: 12px;
+  border: 1px solid #5e99cb;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+
+.state__type2 {
+  height: 22px;
+  line-height: 22px;
+  color: #5e2bb8;
+  font-size: 12px;
+  border: 1px solid #5e2bb8;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+
+.state__type3 {
+  height: 22px;
+  line-height: 22px;
+  color: #13b5b1;
+  font-size: 12px;
+  border: 1px solid #13b5b1;
+  border-radius: 13px;
+  padding: 0 10px;
+}
+
+.flight__list ul {
+  width: 900px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: 1px solid #111;
+  list-style: none;
+}
+
+.row {
+  height: 125px;
+  display: table;
+}
+
+.cell__air {
+  width: 170px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.air__name {
+  font-size: 17px;
+  color: #111;
+  margin-bottom: 3px;
+  position: relative;
+  padding-left: 27px;
+  line-height: 1;
+}
+
+p.txt {
+  position: relative;
+  line-height: 23px;
+  color: #666;
+  font-size: 14px;
+  padding-left: 27px;
+}
+
+.cell__type {
+  width: 438px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.item__course {
+  text-align: center;
+  display: table;
+  width: 387px;
+}
+
+.time {
+  width: 130px;
+  font-size: 15px;
+  color: #111;
+  font-weight: 600;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.date {
+  display: block;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.city {
+  display: block;
+  font-size: 13px;
+  color: #479de7;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.mave__arrow .load {
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  margin-left: -60px;
+  font-size: 13xp;
+  color: #888;
+  line-height: 1;
+  height: 54px;
+  text-indent: 0;
+}
+
+.direct {
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  width: 100%;
+  /* margin-top: -17px; */
+  margin-left: -65px;
+  font-size: 13px;
+  color: #8932db;
+}
+
+.cell__seat {
+  display: table-cell;
+  vertical-align: middle;
+  width: 140px;
+  text-align: center;
+  font-size: 15px;
+  color: #111;
+}
+
+p { 
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.cell__luggage {
+  display: table-cell;
+  vertical-align: middle;
+  /* display: inline-block; */
+  width: 120px;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 30px 0 0;
+}
+
+
+/* table.re {
     border-collapse: collapse;
     text-align: center;
     line-height: 3;
@@ -228,7 +424,7 @@ table.info tbody td {
     vertical-align: top;
     border: 1px solid #ccc;
     background: white;
-}
+} */
 
 
 .no1 {
