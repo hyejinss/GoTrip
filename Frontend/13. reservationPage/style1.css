@@ -254,7 +254,8 @@ ol, ul, li {
 }
 
 .flight__list ul {
-  width: 60%;
+  /* width: 60%; */
+  width: 950px;
   margin-top: 20px;
   margin-bottom: 50px;
   box-sizing: border-box;
@@ -387,11 +388,11 @@ p {
   -webkit-transition: bottom .3s ease-out;
   -moz-transition: bottom .3s ease-out;
   transition: bottom .3s ease-out;
-  float: right;
+  /* float: right; */
 }
 
 .pay__area.tit {
-  position: relative;
+  position: absolute;
   margin-bottom: -8px;
   margin-top: 40px;
   margin: 40px 0 0;
@@ -402,7 +403,7 @@ p {
 }
 
 .info__area1 .tit { 
-  position: absolute;
+  position: relative;
   left: 0;
   text-align: left;
 }

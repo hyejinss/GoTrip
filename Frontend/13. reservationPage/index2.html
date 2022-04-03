@@ -57,8 +57,135 @@
    
     <main class="content">
         <div class="reservation">
-            <h1>예약확인</h1>
-            <table class="rechk">
+          <div class="right__cont">
+            <div class="step__wrap">
+              <ol class="step">
+                <li>
+                  <i class="fa-solid fa-file-lines" style="font-size: 25px; font-weight: 800;"></i> 
+                    약관동의 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                </li>
+                <li class="on">
+                  <i class="fa-regular fa-file-pen" style="font-size: 25px; font-weight: 800;"></i> 
+                    예약정보입력 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 예약완료
+                </li>
+              </ol>
+            </div>
+          </div>
+          <h1>예약확인</h1>
+          <div id="reservation__info" class="text__wrap">
+            <strong class="tit">예약자 정보</strong>
+          </div>
+          <div class="tbl">
+            <table class="type2">
+              <colgroup>
+                <col style="width: 17%;">
+                <col>
+                <col style="width: 17%;">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <input type="text" placeholder="한글이름(ex.홍길동)" class="input__text">
+                  </td>
+                  <th>생년월일</th>
+                  <td>
+                    <input type="text" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>
+                    <input type="text" placeholder="이메일 주소(ex.sample@gmail.com)" class="input__text">
+                  </td>
+                  <th>휴대폰 번호</th>
+                  <td>
+                    <input type="text" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                  </td>
+                  </tr> 
+              </tbody>
+            </table>
+          </div>
+          <div class="text__wrap">
+            <strong class="tit">탑승자 정보</strong>
+          </div>
+          <div id="occupant1" class="text__wrap">
+            <strong class="tit">탑승자 정보 1(성인)</strong>
+            <div class="right__cont">
+              <span class="form__holder">
+                <input type="checkbox" id="chk__same">
+                <label for="chk__same" class="label__checkbox">예약자와 동일</label>
+              </span>
+            </div>
+          </div>
+          <div class="tbl">
+            <table class="type2">
+              <colgroup>
+                <col style="width: 17%;">
+                <col>
+                <col style="width: 17%;">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>성명(한글)</th>
+                  <td>
+                    <input type="text" placeholder="한글이름(ex.홍길동)" class="input__text">
+                  </td>
+                  <th>생년월일</th>
+                  <td>
+                    <input type="text" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>영문 성</th>
+                  <td>
+                    <input type="text" placeholder="영문 성(ex. HONG)" class="input__text">
+                  </td>
+                  <th>영문 이름</th>
+                  <td>
+                    <input type="text" placeholder="영문 이름(ex.GILDONG)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>휴대폰 번호</th>
+                  <td>
+                    <input type="text" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                  </td>
+                  <th>이메일</th>
+                  <td>
+                    <input type="text" placeholder="이메일 주소(ex.sample@gamil.com)" class="input__text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <ul class="list__notice">
+              <li>여권상 영문이름과 다른경우 탑승이 불가하며, 예약 후에는 영문이름 변경이 불가하오니 실제 탑승하실분의 여권상 동일한 영문 성/이름을
+                <br>정확히 입력해 주시기 바랍니다. (영문 성/이름 입력시 띄어쓰기나 "-"표시 없이 영문스펠링만 정확히 입력해 주십시오)</li>
+              <li>등록하신 여권번호/국적/생년월일/여권만료일은 변경사항이 있는 경우 출국 72시간 전까지 재등록이 가능합니다.</li>
+              <li>정확한 승객 정보 확인을 위해 탑승자 별로 휴대폰 번호와 이메일을 입력해주세요.</li> 
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <table class="rechk">
                 <p>예약 상품 정보 확인</p>
                 <tbody>
                     <tr>
@@ -75,7 +202,7 @@
                     </tr>
                     </tbody>
             </table>
-        </div>
+        </div> -->
 
         <div class="paychk">
             <h1>결제내역 정보확인</h1>

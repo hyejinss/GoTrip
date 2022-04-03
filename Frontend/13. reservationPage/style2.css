@@ -163,8 +163,40 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .content {
   height: 700px;
   background-color: #ffffff;
-  padding: 50px 12px;
+  padding: 50px 100px;
   margin: auto;
+}
+
+.right__cont {
+  float: right;
+}
+
+.step__wrap {
+  text-align: center;
+}
+
+.step__wrap .step {
+  display: inline-block;
+}
+
+ol, ul, li {
+  list-style: none;
+  vertical-align: middle;
+}
+
+.step__wrap .step li {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+}
+
+.step__wrap .step li.on {
+  color: #5e2bb8;
+}
+
+.step__wrap .step li.on .fa.line::before {
+  background-position: -27px -365px;
 }
 
 .reservation h1 {
@@ -172,7 +204,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     color: gray;
     border-bottom: 3px solid #7c7b7b;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 .paychk h1{
@@ -183,7 +214,89 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     margin-bottom: 20px;
 }
 
-table.rechk {
+.text__wrap {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.text__wrap strong .tit {
+  display: inline-block;
+  color: #111;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.text__wrap .type2 tr td {
+  border: 1px solid #999;
+}
+
+table {
+  border-spacing: 0;
+  text-indent: initial;
+  border-top: 1px solid #999;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+colgroup {
+  display: table-column-group;;
+}
+
+.tbl table {
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  border-collapse: separate;
+  table-layout: fixed;
+  font-size: 15px;
+}
+
+.tbl tbody {
+  position: relative;
+}
+
+.tbl tr {
+  border-top: 1px solid #999;
+}
+
+.tbl th {
+  background-color: #f7f7f7;
+  border-top: 1px solid #999;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  font-family: "yg750";
+  letter-spacing: -.4px;
+}
+
+.tbl td {
+  color: #333;
+  font-family: "yg750";
+  padding: 15px 20px;
+  border-top: 1px solid #999;
+}
+
+input[type=text] {
+  height: 42px;
+  padding: 0 15px;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+/* table.rechk {
     border-collapse: collapse;
     text-align: center;
     line-height: 3;
@@ -206,7 +319,7 @@ table.rechk tbody td {
     vertical-align: top;
     border: 1px solid #ccc;
     background: white;
-}
+} */
 
 .no1 {
     width: 1000px;
