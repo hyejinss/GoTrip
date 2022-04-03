@@ -7,7 +7,6 @@
     <title>예약하기1(대기)</title>
     <link rel="stylesheet" href="style1.css">
     <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
-    <!-- <script src="js/jquery/js"></script> -->
 </head>
 <body>
     <header class="head">
@@ -204,8 +203,142 @@
                   </div>
                 </div>
               </div>
+              <div class="inr">
+                <strong>인원 별 운임 정보<i class="fa-solid fa-angle-down" id="toggle" onclick="onpeCloseTog()"></i></strong>
+              </div>
+              <div id="toggle__content">
+                <div class="info__area3">
+                  <strong class="tit type">성인 1명</strong>
+                  <ul class="list__detail">
+                    <li>
+                      <strong class="tit">성인 기본 요금
+                        <em>1</em>
+                      </strong>
+                      <span>1,005,000원</span>
+                    </li>
+                    <li>
+                      <strong class="tit">유류할증료 x
+                        <em>1</em>
+                      </strong>
+                      <span>250,000원</span>
+                    </li>
+                    <li>
+                      <strong class="tit">발권대행 수수료
+                        <em>1</em>
+                      </strong>
+                      <span>10,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
+
+          <h1>예약자 정보</h1>
+          <div id="reservation__info" class="text__wrap">
+            <strong class="tit">예약자 정보</strong>
+          </div>
+          <div class="tbl">
+            <table class="type2">
+              <colgroup>
+                <col style="width: 17%;">
+                <col>
+                <col style="width: 17%;">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text">
+                  </td>
+                  <th>생년월일</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gmail.com)" class="input__text">
+                  </td>
+                  <th>휴대폰 번호</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                  </td>
+                  </tr> 
+              </tbody>
+            </table>
+          </div>
+          <div class="text__wrap mid">
+            <strong class="tit">탑승자 정보</strong>
+          </div>
+          <div id="occupant1" class="text__wrap">
+            <strong class="tit">탑승자 정보 1(성인)</strong>
+            <div class="right__cont2">
+              <span class="form__holder">
+                <input type="checkbox" id="chk__same">
+                <label for="chk__same" class="label__checkbox">예약자와 동일</label>
+              </span>
+            </div>
+          </div>
+          <div class="tbl">
+            <table class="type2">
+              <colgroup>
+                <col style="width: 17%;">
+                <col>
+                <col style="width: 17%;">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>성명(한글)</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text">
+                  </td>
+                  <th>생년월일</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>영문 성</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="영문 성(ex. HONG)" class="input__text">
+                  </td>
+                  <th>영문 이름</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="영문 이름(ex.GILDONG)" class="input__text">
+                  </td>
+                </tr>
+                <tr>
+                  <th>휴대폰 번호</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                  </td>
+                  <th>이메일</th>
+                  <td>
+                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gamil.com)" class="input__text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <ul class="list__notice">
+              <li>여권상 영문이름과 다른경우 탑승이 불가하며, 예약 후에는 영문이름 변경이 불가하오니 실제 탑승하실분의 여권상 동일한 영문 성/이름을
+                <br>정확히 입력해 주시기 바랍니다. (영문 성/이름 입력시 띄어쓰기나 "-"표시 없이 영문스펠링만 정확히 입력해 주십시오)</li>
+              <li>등록하신 여권번호/국적/생년월일/여권만료일은 변경사항이 있는 경우 출국 72시간 전까지 재등록이 가능합니다.</li>
+              <li>정확한 승객 정보 확인을 위해 탑승자 별로 휴대폰 번호와 이메일을 입력해주세요.</li> 
+            </ul>
+          </div>
+
+
+
+
+
+
 
 
           <div class="notice">
@@ -224,7 +357,7 @@
           <form name="frm" method="btn" action="index2.html" onSubmit="return Checkform()">
             <div class="btn">
               <label><input type="radio" name="btn1" id="confirm" value="1"> 위 내용을 확인하였습니다. (필수)</label>
-              <input type="submit" class="btn2">
+              <input type="submit" class="btn2" value="확인">
             </div>
           </form>
         </div>
@@ -246,5 +379,5 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../13. reservationPage/reservation1.js"></script>
+<script src="../13. reservationPage/reservation.js"></script>
 </html>
