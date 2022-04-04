@@ -42,7 +42,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -166,7 +166,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   height: 700px;
   background-color: #ffffff;
   padding: 50px 100px;
-  margin: auto;
+  margin-bottom: 50px;
+  /* margin: auto; */
 }
 
 .right__cont {
@@ -190,6 +191,7 @@ ol, ul, li {
   position: relative;
   float: left;
   font-size: 15px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -208,12 +210,62 @@ ol, ul, li {
   padding: 20px;
 }
 
-.paychk h1{
-  font-size: 20px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
-  padding: 20px;
-  margin-bottom: 20px;
+.ly__wrap .history {
+  padding-left: 100px;
+  width: 60%;
+  float: left;
+}
+
+.tbl {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 75px !important;
+}
+
+.tbl table {
+  width: 100%;
+  border-bottom: 1px solid #999;
+  border-collapse: separate;
+  table-layout: fixed;
+  font-size: 15px;
+}
+
+.tbl th {
+  border-top: 1px solid #999;
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+  min-height: 54px;
+  padding: 15px 20px;
+  line-height: 23px;
+  letter-spacing: -.4px;
+}
+
+.tbl td {
+  position: relative;
+  border-top: 1px solid #999;
+  color: #333;
+  font-size: 15px;
+  text-align: left;
+  min-height: 54px;
+  padding: 15px 20px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -.4px;
+}
+
+.tag__group .board {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5e2bb8;
 }
 
 .reservation__right {
@@ -235,6 +287,7 @@ ol, ul, li {
   font-size: 17px;
   color: #111;
   font-weight: 200;
+  text-align: left;
 }
 
 .info__area1 .tit { 
@@ -323,6 +376,7 @@ ol, ul, li {
   padding-left: 5px;
   margin-top: 5px;
   color: #666;
+  text-align: left;
   font-weight: 500;
 } 
 
@@ -348,9 +402,9 @@ ol, ul, li {
 }
 
 .inr {
+  text-align: left;
   padding: 24px 20px;
   float: none;
-  border-bottom: 1px solid #eaeaea;
   font-size: 17px;
   font-weight: 400;
 }
@@ -370,51 +424,55 @@ ol, ul, li {
 em {
   color: #5e2bb8;
   font-weight: 600;
+  font-style: normal;
 }
 
-
-
-
-
+.check__btn {
+  width: 600px;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 70%;
+  font-size: 17px;
+  font-weight: 400;
+}
 
 .btn {
-  width: 550px;
-  height: 80px;
-  margin-top: 40px;
-  margin-left: 60%;
-  justify-content: space-between;
   text-align: center;
-  font-size: 15px;
-  font-weight: 700;
+  margin-top: 10px;
 }
 
-.input.btn1 {
+input.pay__btn2 {
+  position: relative;
   display: inline-block;
+  margin: 0;
+  padding: 0 165px;
+  min-width: 140px;
+  height: 56px;
+  line-height: 54px;
+  font-size: 17px;
+  color: #fff !important;
+  border: 1px solid #5e2bb8;
+  background-color: #5e2bb8;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
 }
 
-input.btn2 {
-  background-color: #fff;
-  border: 3px solid #4169e1;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  padding: 20px 100px;
-}
   
-input.btn2:hover {
+.pay__btn:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
   color:#fff;
   transition: all 0.5s;
 }
 
 .foot {
-  position: fixed;
+  position: absolute;
+  left: 0;
+  width: 100%;
   background-color:#485170;
   padding: 10px 20px;
-  margin-top: 20px;
-  /* bottom: ; */
+  margin-top: 60px;
 }
 
 .foot span {

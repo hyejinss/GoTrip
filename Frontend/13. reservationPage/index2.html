@@ -62,39 +62,95 @@
               <ol class="step">
                 <li>
                   <i class="fa-solid fa-file-lines" style="font-size: 25px; font-weight: 800;"></i> 
-                    약관동의 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                    예약정보입력 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
                 </li>
                 <li class="on">
                   <i class="fa-regular fa-file-pen" style="font-size: 25px; font-weight: 800;"></i> 
-                    예약정보입력 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                    예약내역 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
                 </li>
                 <li>
-                  <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 예약완료
+                  <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 결제완료
                 </li>
               </ol>
             </div>
           </div>
           <h1>예약 정보</h1>
-          <div class="text__wrap">
-            <div class="inr">
+          <div class="ly__wrap">
+            <div class="history">
               <div class="tbl">
                 <table class="type2">
                   <colgroup>
-                    <col style="width: 17%;">
+                    <col style="width: 17%";>
                     <col>
                   </colgroup>
                   <tbody>
                     <tr>
                       <th>예약번호</th>
-                      <td>HA123456789 / 왕복</td>
+                      <td>GO123456789 / 왕복</td>
+                    </tr>
+                    <tr>
+                      <th>결제시한</th>
+                      <td>2022.04.04(월)&nbsp;&nbsp;17:00</td>
+                    </tr>
+                    <tr>
+                      <th>구간</th>
+                      <td>
+                        <div class="item__course">
+                          <p>
+                            <span class="air__name">서울(ICN)</span>&nbsp;&nbsp;
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>&nbsp;&nbsp;
+                            <span class="air__name">호놀룰루(HNL)</span>&nbsp;&nbsp;
+                            <img src="../13. reservationPage/korean-air.png" width="15" height="15" style="vertical-align: middle;">대한항공(KE)
+                          </p>
+                          <p>
+                            출국일 : 2022.04.14(목)&nbsp;&nbsp;20:35&nbsp;
+                            <em>좌석확정</em>
+                          </p>
+                          <p>
+                            귀국일 : 2022.04.19(화)&nbsp;&nbsp;18:05&nbsp;
+                            <em>좌석확정</em>
+                          </p>
+                          <p>
+                            탑승인원 : 1명 &nbsp; 좌석등급 : 일반석
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>예약일</th>
+                      <td>2022.04.04(월)&nbsp;&nbsp;17:00</td>
+                    </tr>
+                    <tr>
+                      <th>예약상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">예약확정</span>&nbsp;/&nbsp;<span class="board">좌석확정</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>요금상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">요금확정</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>결제상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">미결제</span>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-          
-
+              <form name="form" method="btn" action="index2.html" onSubmit="return Checkform()">
+                <div class="check__btn">
+                  <label><input type="radio" name="check__btn1" id="confirm" value="1"> 예약내역을 확인하였습니다. (필수)</label>
+        
 
           <div class="reservation__right">
             <div class="pay__wrap">
@@ -147,22 +203,14 @@
                 </div>
               </div>
             </div>
+
+
+              <input type="submit" class="pay__btn2" value="결제하기">
+            </div>
           </div>
-
-
-
-
-
-
-
-        <!-- <div class="paychk">
-            <h1>결제내역 정보확인</h1>
-            <div class="no1">
-                <li>총 금액</li>
-                <li>결제정보</li>
-                </div> -->
-
-
+        </form>
+      </div>
+    </div>
     </main>
 
     <div class="foot">

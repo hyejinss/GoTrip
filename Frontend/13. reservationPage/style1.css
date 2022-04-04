@@ -42,7 +42,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background-color: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -190,6 +190,7 @@ ol, ul, li {
   position: relative;
   float: left;
   font-size: 15px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -746,6 +747,7 @@ p {
 em {
   color: #5e2bb8;
   font-weight: 600;
+  font-style: normal;
 }
 
 .box__group { 
@@ -778,32 +780,40 @@ em {
 }
 
 .btn {
-  width: 550px;
+  width: 600px;
   height: 80px;
   margin-top: 40px;
   margin-left: 60%;
-  justify-content: space-between;
   text-align: center;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 400;
 }
 
-.input.btn1 {
+input.btn1 {
   display: inline-block;
 }
 
 input.btn2 {
-  background-color: #fff;
-  border: 3px solid #4169e1;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin: 0;
   margin-left: 50px;
   margin-bottom: 20px;
-  padding: 20px 100px;
+  min-width: 140px;
+  height: 56px;
+  line-height: 54px;
+  font-size: 17px;
+  color: #fff !important;
+  border: 1px solid #5e2bb8;
+  background-color: #5e2bb8;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
 }
   
-input.btn2:hover {
+.btn2:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
   color:#fff;
   transition: all 0.5s;

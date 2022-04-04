@@ -61,14 +61,14 @@
                 <ol class="step">
                   <li class="on">
                     <i class="fa-solid fa-file-lines" style="font-size: 25px; font-weight: 800;"></i> 
-                      약관동의 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-file-pen" style="font-size: 25px; font-weight: 800;"></i> 
                       예약정보입력 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
                   </li>
                   <li>
-                    <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 예약완료
+                    <i class="fa-regular fa-file-pen" style="font-size: 25px; font-weight: 800;"></i> 
+                      예약내역 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 결제완료
                   </li>
                 </ol>
               </div>
@@ -239,6 +239,7 @@
           <div id="reservation__info" class="text__wrap">
             <strong class="tit">예약자 정보</strong>
           </div>
+          <form class="form__group">
           <div class="tbl">
             <table class="type2">
               <colgroup>
@@ -251,21 +252,21 @@
                 <tr>
                   <th>이름</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text" id="text__ko1" maxlength="10" onclick="getCheckboxValue()">
                   </td>
                   <th>생년월일</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text" id="text__num1" maxlength="8">
                   </td>
                 </tr>
                 <tr>
                   <th>이메일</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gmail.com)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gmail.com)" class="input__text" id="text__email1" maxlength="20">
                   </td>
                   <th>휴대폰 번호</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text" id="text__num2" maxlength="11">
                   </td>
                   </tr> 
               </tbody>
@@ -278,7 +279,7 @@
             <strong class="tit">탑승자 정보 1(성인)</strong>
             <div class="right__cont2">
               <span class="form__holder">
-                <input type="checkbox" id="chk__same">
+                <input type="checkbox" id="chk__same" onchange="check1(this)">
                 <label for="chk__same" class="label__checkbox">예약자와 동일</label>
               </span>
             </div>
@@ -295,31 +296,31 @@
                 <tr>
                   <th>성명(한글)</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="한글이름(ex.홍길동)" class="input__text" id="text__ko2" maxlength="10">
                   </td>
                   <th>생년월일</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="법정 생년월일(ex.19901225)" class="input__text" id="text__num3" maxlength="8">
                   </td>
                 </tr>
                 <tr>
                   <th>영문 성</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="영문 성(ex. HONG)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="영문 성(ex. HONG)" class="input__text" id="text__eng1" maxlength="20">
                   </td>
                   <th>영문 이름</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="영문 이름(ex.GILDONG)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="영문 이름(ex.GILDONG)" class="input__text" id="text__eng2" maxlength="10"> 
                   </td>
                 </tr>
                 <tr>
                   <th>휴대폰 번호</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" class="input__text" id="text__num4" maxlength="11">
                   </td>
                   <th>이메일</th>
                   <td>
-                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gamil.com)" class="input__text">
+                    <input type="text" autocomplete="off" placeholder="이메일 주소(ex.sample@gamil.com)" class="input__text" id="text__email2" maxlength="20">
                   </td>
                 </tr>
               </tbody>
@@ -333,12 +334,6 @@
               <li>정확한 승객 정보 확인을 위해 탑승자 별로 휴대폰 번호와 이메일을 입력해주세요.</li> 
             </ul>
           </div>
-
-
-
-
-
-
 
 
           <div class="notice">
@@ -357,7 +352,7 @@
           <form name="frm" method="btn" action="index2.html" onSubmit="return Checkform()">
             <div class="btn">
               <label><input type="radio" name="btn1" id="confirm" value="1"> 위 내용을 확인하였습니다. (필수)</label>
-              <input type="submit" class="btn2" value="확인">
+              <input type="submit" class="btn2" value="예약하기">
             </div>
           </form>
         </div>
