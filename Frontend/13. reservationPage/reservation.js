@@ -73,15 +73,7 @@ $("#text__email2").keyup(function(event) {
   }
 });
 
-// ********** 미체크 시 알림창 ***********
-function Checkform() {
-    if (frm.confirm.checked !=true){
-        alert("유의사항 확인 후 체크해주세요.");
-        frm.confirm.focus();
-        return false;
-      }
-}
-
+//********** 미체크 시 알림창 ***********
 function Checkform() {
   if (frm.confirm.checked !=true){
       alert("예약내역 확인 후 체크해주세요.");
@@ -91,7 +83,7 @@ function Checkform() {
 }
 
 // ********** 운임 정보 ***********
-function onpeCloseTog() {
+function onpenCloseTog() {
   if(document.getElementById('toggle__content').style.display === 'block') {
     document.getElementById('toggle__content').style.display = 'none';
     document.getElementById('toggle').textContent = '';
@@ -103,9 +95,7 @@ function onpeCloseTog() {
 
 // ********** 자동 입력 ***********
 function check1(f){
-
   if (f.checked) {
-
     $('#text__ko2').val($('#text__ko1').val());
 
     $('#text__num3').val($('#text__num1').val());
@@ -113,17 +103,22 @@ function check1(f){
     $('#text__email2').val($('#text__email1').val());
 
     $('#text__num4').val($('#text__num2').val());
-
   } else{
+      $('#text__ko2').val('');
 
-  $('#text__ko2').val('');
+      $('#text__num3').val('');
 
-  $('#text__num3').val('');
+      $('#text__email2').val('');
 
-  $('#text__email2').val('');
-
-  $('#text__num4').val('');
-
+      $('#text__num4').val('');
     }
+}
 
-  }
+
+// function agreeCheck(frm)
+// {
+//    if (frm.checkButton.disabled==true)
+//     frm.checkButton.disabled=false
+//    else
+//     frm.checkButton.disabled=true
+// }
