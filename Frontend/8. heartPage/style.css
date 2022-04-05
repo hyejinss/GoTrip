@@ -40,7 +40,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -96,7 +96,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar ul{
-  letter-spacing: 0.8px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -118,8 +117,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -140,7 +139,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;  
 }
 
 .navbar__menu li ul a{
@@ -154,16 +153,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
   
 .content {
-  background-color: #ffffff;
-  padding: 50px 12px;
-  margin: auto;
+    background-color: #ffffff;
+    padding: 50px 12px;
+    margin: auto;
 }
   
 .heart h1 {
@@ -172,7 +171,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   border-bottom: 3px solid #7c7b7b;
   padding: 20px;
   text-align: center;
-}
+  }
 
 .heart1 {
     width: 1500px;
@@ -213,6 +212,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pro1 span {
   float: right;
   margin-top: 50px;
+  list-style: none;
+}
+
+.pro1 span h2 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro1 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .pro2 {
@@ -242,6 +254,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pro2 span {
   float: right;
   margin-top: 50px;
+  list-style: none;
+}
+
+.pro2 span h2 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro2 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .pro3 {
@@ -271,6 +296,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pro3 span {
   float: right;
   margin-top: 50px;
+  list-style: none;
+}
+
+.pro3 span h2 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro3 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .pro4 {
@@ -300,6 +338,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pro4 span {
   float: right;
   margin-top: 50px;
+  list-style: none;
+}
+
+.pro4 span h2 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro4 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .btn {
@@ -317,17 +368,18 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .btn li {
-  background-color: white;
-  border: 3px solid #4169e1;
-  color:black;
+  background-color: #5e2bb8;
+  border: 1px solid #5e2bb8;
+  color: #fff;
   padding: 10px 40px;
   font-weight: bold;
   font-size: 15px; 
 }
 
 .btn li:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
-  color: white;
+  color:#fff;
   transition: all 0.5s;
 }
 

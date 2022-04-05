@@ -40,7 +40,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -118,8 +118,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -154,10 +154,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {

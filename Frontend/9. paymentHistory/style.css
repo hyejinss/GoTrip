@@ -40,7 +40,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -96,7 +96,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar ul{
-  letter-spacing: 0.8px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -118,8 +117,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -140,7 +139,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;       
 }
 
 .navbar__menu li ul a{
@@ -154,10 +153,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {
@@ -175,26 +174,27 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .product {
-  height: 500px;
+  height: 650px;
 }
 
 .pro1 {
-  height: 150px;
+  height: 200px;
   margin-bottom: 20px;
 }
 
 .pro2 {
-  height: 150px;
+  height: 200px;
   margin-bottom: 20px;
 }
 
 .pro3 {
-  height: 150px;
+  height: 200px;
   margin-bottom: 20px;
 }
 
 .pro1 table {
   width: 1200px;
+  height: 100px;
   border-top: 3px solid gray;
   border-collapse: collapse;
   margin: auto;
@@ -202,6 +202,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .pro2 table {
   width: 1200px;
+  height: 100px;
   border-top: 3px solid gray;
   border-collapse: collapse;
   margin: auto;
@@ -209,6 +210,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .pro3 table {
   width: 1200px;
+  height: 100px;
   border-top: 3px solid gray;
   border-collapse: collapse;
   margin: auto;
@@ -221,9 +223,26 @@ table thead td {
   border-bottom: 2px solid gray;
 }
 
+table tbody td {
+  padding: 10px;
+  list-style: none;
+}
+
+table td h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1032ad;
+  margin-top: -20px;
+}
+
+table td li {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 td img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 130px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -239,17 +258,18 @@ td img {
 }
 
 .btn li {
-  background-color: white;
-  border: 3px solid #4169e1;
-  color:black;
+  background-color: #5e2bb8;
+  border: 1px solid #5e2bb8;
+  color:  #fff;
   padding: 10px 40px;
   font-weight: bold;
   font-size: 15px; 
 }
 
 .btn li:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
-  color: white;
+  color:#fff;
   transition: all 0.5s;
 }
 

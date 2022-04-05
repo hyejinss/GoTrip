@@ -32,14 +32,16 @@
  
     <nav class="navbar">
         <ul class="navbar__menu">
-            <li><a href="#">해외여행</a>
-                <ul>
-                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-                  <li><a href="../11. overseasPage/index2.html">유럽 / 아프리카</a></li>
-                  <li><a href="../11. overseasPage/index2.html">미주 / 중남미</a></li>
-                </ul>
-            </li>
-            <li><a href="#">국내여행</a>
+          <li><a href="../11. overseasPage/index1.html">해외여행</a>
+            <ul>
+              <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+              <li><a href="../11. overseasPage/index2.html">미국</a></li>
+              <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+              <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+              <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+            </ul>
+        </li>
+            <li><a href="../12. domesticPage/index1.html">국내여행</a>
                 <ul>
                     <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
                     <li><a href="../12. domesticPage/index2.html">제주</a></li>
@@ -56,9 +58,188 @@
     </nav>
   
     <main class="content">
-        <div class="gallery">
-            <h1>PHOTO GALLERY</h1>
-                <div class="photo1">
+      <div class="gallery">
+        <h1>PHOTO GALLERY</h1>
+          <img src="../16. gallery/travel.png"여행 다녀온 고객분들의 여행 이야기>
+          <div class="title__wrap">여행후기
+            <h3>여행을 다녀온 고객분들의 여행 이야기</h3>
+          </div>  
+          <div class="contents__wrap">
+            <div class="travel__wrap">
+              <div class="photo__list">
+                <div class="photo__slider">
+                  <ul class="photo__review">
+                    <div class="stage__outer">
+                      <div class="stage">
+                      <div class="item__active">
+                        <li>
+                          <a href="">
+                            <img class="thrmb" src="img/swiss.jpg" alt="모든게 완벽했던 스위스일주 여행 2021.10.08~2021.10.16">
+                            <p class="title__txt2">모든게 완벽했던 스위스일주 여행</p>
+                            <P class="desc__txt2">따뜻한 뱅쇼를 들고</P>
+                            <p class="date">김** / 2022-01-04</p>
+                            </a>
+                        </li>
+                      </div>
+                      <div class="item__active">
+                        <li>
+                          <a href="">
+                            <img class="thrmb" src="img/kenya.jpg" alt="노을지는 케냐에서 15일">
+                            <p class="title__txt2">노을지는 케냐에서 15일</p>
+                            <P class="desc__txt2">처음에는 걱정반 두려움반으로 시작된</P>
+                            <p class="date">신** / 2022-02-12</p>
+                            </a>
+                        </li>
+                      </div>
+                      <div class="item__active">
+                        <li>
+                          <a href="">
+                            <img class="thrmb" src="img/jeju.jpg" alt="자연을 담은 제주 5일">
+                            <p class="title__txt2">자연을 담은 여행 제주 5일</p>
+                            <P class="desc__txt2">코로나로 미뤄 두었던 여행</P>
+                            <p class="date">유** / 2022-03-25</p>
+                            </a>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div class="boardTop__wrap">
+                  <div class="boardTop__left">
+                    <div class="form__wrap">
+                      <label for="region" class="hide">지역 선택</label>
+                      <select class="form__control" id="region" name="region">
+                        <option value>전체보기</option>
+                        <option value="미국">미국</option>
+                        <option value="스위스">스위스</option>
+                        <option value="아프리카">아프리카</option>
+                        <option value="뉴질랜드">뉴질랜드</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="boardTop__right">
+                  <div class="form__wrap">
+                    <label for="search" class="hide">제목, 내용 선택하여 검색</label>
+                    <select class="form__control" id="search" name="search">
+                      <option value="1">제목내용</option>
+                      <option value="2">제목</option>
+                      <option value="3">내용</option>
+                      <option value="4">작성자</option>
+                    </select>
+                    <div class="board__search">
+                      <label for="search__text" class="hide">검색</label>
+                      <input class="searchBar" id="search__text" maxlength="10" name="search__text" title="검색" type="text">
+                      <a href="javascript:;" onclick="" class="search__btn">검색</a>
+                    </div>
+                  </div>
+                </div>
+              <div class="tbl1">
+                <table>
+                  <caption>여행후기</caption>
+                  <colgroup>
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 48%;">
+                    <col style="width: 10%;">
+                    <col style="width: 12%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col">구분</th>
+                      <th scope="col">지역</th>
+                      <th scope="col">제목</th>
+                      <th scope="col">작성자</th>
+                      <th scope="col">작성일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class>
+                      <td> 12345 </td>
+                      <td>
+                        <span class="state">항공</span>
+                      </td>
+                      <td>국내</td>
+                      <td class="ta_1">
+                        <a href="" class="brd__cont__text">울릉도, 독도</a>
+                      </td>
+                      <td class="brd__writer">최**</td>
+                      <td class="brd__date">2022.02.25</td>
+                    </tr>
+                    <tr class>
+                      <td> 45678 </td>
+                      <td>
+                        <span class="state">항공</span>
+                      </td>
+                      <td>유럽</td>
+                      <td class="ta_1">
+                        <a href="" class="brd__cont__text">그리스를 다녀오다</a>
+                      </td>
+                      <td class="brd__writer">박**</td>
+                      <td class="brd__date">2022.03.02</td>
+                    </tr>
+                    <tr class>
+                      <td> 98745 </td>
+                      <td>
+                        <span class="state">항공</span>
+                      </td>
+                      <td>전체</td>
+                      <td class="ta_1">
+                        <a href="" class="brd__cont__text">해외여행 못가다가</a>
+                      </td>
+                      <td class="brd__writer">김**</td>
+                      <td class="brd__date">2022.03.15</td>
+                    </tr>
+                    <tr class>
+                      <td> 48458 </td>
+                      <td>
+                        <span class="state">항공</span>
+                      </td>
+                      <td>미국</td>
+                      <td class="ta_1">
+                        <a href="" class="brd__cont__text">드디어 여행</a>
+                      </td>
+                      <td class="brd__writer">신**</td>
+                      <td class="brd__date">2022.04.05</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination__wrap">
+                <div class="pagination" id="board__common">
+                  <a class="page__number" href="#1">1</a>
+                  <a class="page__number" href="#2">2</a>
+                  <a class="page__number" href="#3">3</a>
+                  <a class="page__number" href="#4">4</a>
+                  <a class="page__number" href="#5">5</a>
+                  <a class="paging__side" href="6">
+                    <a href="자바스크립트;" class="page__arrow"><span>끝</span></a>
+                  </a>
+                </div>
+                <a href="" class="write__btn">글등록</a>
+              </div>
+              <div class="notice__list">
+                <p class="notice__title">꼭 읽어주세요</p>
+                <ul>
+                  <li>
+                    글 작성 시 정보 유출에 의한 피해방지를 위해 개인정보 기재는 삼가주시기 바랍니다.
+                    <br>
+                    예) 주민등록번호, 전화번호, 여권번호, 신용카드번호 등
+                  </li>
+                  <li>상업적인 광고 및 욕설, 음해성 글의 경우 서비스 관리자에 의해 임의 삭제될 수 있음을 알려드립니다.</li>
+                  <li>저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관 및 관련법률에 의해 제재를 받을 수 있습니다.</li>
+                </ul>
+              </div>
+            </div>
+           </div>
+          </div>  
+      </div> 
+    </main>
+
+
+                <!-- <div class="photo1">
                     <div class="pho1">여행상품 관련 사진1</div>
                     <div class="pho2">여행상품 관련 사진2</div>
                     <div class="pho3">여행상품 관련 사진3</div>
@@ -82,7 +263,7 @@
                     <a href="../16. gallery/index2.html">작성하기</a>
                 </div>
         </div>
-    </main>
+    </main> -->
     
     <div class="foot">
       <span>

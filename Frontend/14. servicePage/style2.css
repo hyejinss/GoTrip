@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -40,7 +42,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -96,30 +98,30 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar ul{
-  letter-spacing: 0.8px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #485170;
-  display: flex;
-  justify-content: space-around;
+    letter-spacing: 0.8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #485170;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navbar__menu li {
-  display: inline;
-  color: white;
+    display: inline;
+    color: white;
 }
 
 .navbar__menu a {
-  display: inline-block;
+    display: inline-block;
 }
 
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -127,9 +129,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar__menu li a:hover {
-  background-color: lightgray;
-  color: #000;
-  text-align: center;
+    background-color: lightgray;
+    color: #000;
+    border-radius: 4px;
 } 
 
 .navbar__menu li ul {
@@ -140,7 +142,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;   
 }
 
 .navbar__menu li ul a{
@@ -154,7 +156,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+    }
 
 .navbar__menu li:hover ul {
     display: block;
@@ -163,9 +165,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .content {
   height: 700px;
   background-color: #ffffff;
-  padding: 50px 12px;
+  padding: 50px 100px;
   margin: auto;
-}
+  padding-bottom: 20px;
+  }
 
 .service h1 {
     font-size: 20px;
@@ -178,23 +181,60 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .service h2 {
     font-size: 20px;
     color: gray;
-    margin-left: 50px;
+    margin-left: 150px;
     margin-top: 40px;
 }
 
 .ser1 {
     width: 1400px;
     height: 400px;
-    border: 3px solid salmon;
     margin: auto;
 }
 
-.ser2 p {
-    width: 150px;
-    border: 3px solid salmon;
+table {
+  width: 1400px;
+  height: 400px;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  border-collapse: collapse;
+}
+
+tr, td {
+  border-bottom: 2px solid lightgray;
+  padding: 10px 30px;
+  text-align: center;
+  border-right: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+td input {
+  width: 1200px;
+  height: 50px;
+  background-color: #f7f7f7;
+  border: none;
+  font-size: 15px;
+}
+
+td select {
+  width: 700px;
+  height: 30px;
+  background-color: #f7f7f7;
+  border: none;
+  float: left;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ser2 {
+    width: 400px;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 70px;
+    margin-left: 150px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .ser3 {
@@ -204,18 +244,26 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
    
 }
 
-.btn1 {
-    width: 100px;
+.btn {
+    width: 300px;
     padding: 10px;
-    border: 3px solid skyblue;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn2 {
-    width: 100px;
-    padding: 10px;
-    background-color: skyblue;
-    text-align: center;
+.btn input {
+  width: 120px;
+  height: 40px;
+  border: 3px solid #4169ed;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn input:hover {
+  color: white;
+  background-color: #4169ed;
 }
 
 .foot {

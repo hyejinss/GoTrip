@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국내여행1</title>
     <link rel="stylesheet" href="style1.css">
-    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
-    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="head">
@@ -32,14 +33,16 @@
  
     <nav class="navbar">
         <ul class="navbar__menu">
-            <li><a href="#">해외여행</a>
+            <li><a href="../11. overseasPage/index1.html">해외여행</a>
                 <ul>
                   <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-                  <li><a href="../11. overseasPage/index2.html">유럽 / 아프리카</a></li>
-                  <li><a href="../11. overseasPage/index2.html">미주 / 중남미</a></li>
+                  <li><a href="../11. overseasPage/index2.html">미국</a></li>
+                  <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+                  <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+                  <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
                 </ul>
             </li>
-            <li><a href="#">국내여행</a>
+            <li><a href="../12. domesticPage/index1.html">국내여행</a>
                 <ul>
                     <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
                     <li><a href="../12. domesticPage/index2.html">제주</a></li>
@@ -58,22 +61,71 @@
     <main class="content">
         <div class="domestic__trip">
             <h1>국내 여행</h1>
-            <div class="trip">
-                <div class="trip1">여행지</div>
-                <div class="trip2">출발예정일</div>
-                <div class="trip3">도착예정일</div>
-                <div class="trip4">검색하기</div>
-            </div>
+            <form action="../11. overseasPage/index2.html">
+              <div class="trip">
+                <div class="trip1">
+                  <label for="trip" style="margin-top: 10px;">여행지</label>
+                  <select class="form-control" style="width: 550px;">
+                    <option value="choice">여행지를 선택하세요.</option>
+                    <optgroup label="미국">
+                      <option>하와이</option>
+                    </optgroup>
+
+                    <optgroup label="스위스">
+                      <option>취리히</option>
+                    </optgroup>
+
+                    <optgroup label="아프리카">
+                      <option>케냐</option>
+                    </optgroup>
+
+                    <optgroup label="뉴질랜드">
+                      <option>오클랜드</option>
+                    </optgroup>
+
+                    <optgroup label="국내">
+                      <option>제주</option>
+                      <option>부산</option>
+                    </optgroup>
+
+                </select>
+                </div>
+                <div class="trip2" style="margin-top: 10px; font-weight: bold;">출발 예정일
+                  <input type="datetime-local">
+                </div>
+                <div class="trip3" style="margin-top: 10px; font-weight: bold;">도착 예정일
+                  <input type="datetime-local">
+                </div>
+                <div class="trip4">
+                  <input type="button" value="검색하기" onclick="location.href='index2.html'">
+                </div>
+              </div>
+            </form>
         </div>
 
         <div class="re_pro">
-            <h1>추천상품</h1>
-            <div class="product">
-                <div class="pro1">상품1</div>
-                <div class="pro2">상품2</div>
-            </div>
-        </div>
-
+          <h1>추천상품</h1>
+          <div class="product">
+              <div class="pro1">
+                <a href="index2.html"><img src="./img/jieun-lim-oMsXE4kIKC8-unsplash.jpg"/></a>
+                <span>
+                  <h3>JEJU / Korea</h3>
+                    <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+                    <li>인천 출발시간 08:05</li>
+                    <li>제주 도착시간 09:20</li>
+                </span>
+              </div>
+              <div class="pro2">
+                <a href="index2.html"><img src="./img/keiteu-ko-O__TF8SIfZM-unsplash.jpg"/></a>
+                <span>
+                  <h3>BUSAN / Korea</h3>
+                  <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+                  <li>인천 출발시간 07:15</li>
+                  <li>부산 도착시간 08:00</li>
+                </span>
+              </div>
+          </div>
+      </div>
     </main>
 
     <div class="foot">
@@ -88,5 +140,13 @@
         <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
       </span>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
+    <script>
+      // select2 초기화
+      $('select').select2();
+    </script>
+    
 </body>
 </html>

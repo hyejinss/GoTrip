@@ -56,10 +56,6 @@
                      <!------------ 카카오 로그인 ------------>
                      <a href="#" id="kakaoLogin"><img src="../1. loginPage/kakao_login.png" style="height: 40px;"/></a>
                      <!------------ 카카오 로그인 ------------>
-
-                     <!------------ 구글 로그인 ------------>
-                     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="height: 40px;"></div>
-                     <!------------ 구글 로그인 ------------>
                 </div>
 
             </div>
@@ -95,27 +91,6 @@
         }
         });
         console.log(naverLogin);
-
-        // 로그인 하면 로그아웃 버튼이랑 사용자 정보 받아옴(로그인페이지에서 정보가 나오긴 합니다.)
-        // function setLoginStatus(){
-        
-        //   const message_area=document.getElementById('message');
-        //   message_area.innerHTML=`
-        //   <h3>환영합니다.</h3>
-        //   <div>user Name : ${naverLogin.user.name}</div>
-        //   <div>user Email : ${naverLogin.user.email}</div>
-        //   <div>user NickName : ${naverLogin.user.nickname}</div>
-        //   `;
-         
-        //   const button_area=document.getElementById('button_area');
-        //   button_area.innerHTML="<button id='btn_logout'>로그아웃</button>";
-    
-        //   const logout=document.getElementById('btn_logout');
-        //   logout.addEventListener('click',(e)=>{
-        //     naverLogin.logout();
-        //     location.replace("http://127.0.0.1:5500/1.%20loginPage/index.html");
-        //   })
-        // }
       </script>
     <!---------------------- 네이버 로그인 api ---------------------->
 
@@ -152,24 +127,5 @@
         login.addEventListener('click', kakaoLogin);
     </script>
     <!---------------------- 카카오 로그인 api ---------------------->
-
-    <!---------------------- 구글 로그인 api 라이브서버로 접속x localhost로 접속---------------------->
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      }
-    </script>
-    <!---------------------- 구글 로그인 api ---------------------->
 </body>
 </html>

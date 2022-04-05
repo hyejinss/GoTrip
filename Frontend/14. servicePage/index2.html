@@ -32,14 +32,16 @@
  
     <nav class="navbar">
         <ul class="navbar__menu">
-            <li><a href="#">해외여행</a>
-                <ul>
-                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-                  <li><a href="../11. overseasPage/index2.html">유럽 / 아프리카</a></li>
-                  <li><a href="../11. overseasPage/index2.html">미주 / 중남미</a></li>
-                </ul>
-            </li>
-            <li><a href="#">국내여행</a>
+          <li><a href="../11. overseasPage/index1.html">해외여행</a>
+            <ul>
+              <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+              <li><a href="../11. overseasPage/index2.html">미국</a></li>
+              <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+              <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+              <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+            </ul>
+        </li>
+            <li><a href="../12. domesticPage/index1.html">국내여행</a>
                 <ul>
                     <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
                     <li><a href="../12. domesticPage/index2.html">제주</a></li>
@@ -59,16 +61,49 @@
         <div class="service">
             <h1>고객센터</h1>
                 <h2>문의사항</h2>
-                <div class="ser1">게시판</div>
+                <div class="ser1">
+                  <form>
+                    <table>
+                      <tr>
+                        <td>작성자</td>
+                        <td><input type="text"></td>
+                      </tr>
+                      <tr>
+                        <td>문의유형</td>
+                        <td>
+                          <select name="qna" id="qna">
+                            <option value="해외항공권">해외항공권</option>
+                            <option value="국내항공권">국내항공권</option>
+                            <option value="상품예약/결제">상품예약/결제</option>
+                            <option value="회원정보">회원정보</option>
+                            <option value="기타">기타</option>
+                          </select>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td>제목</td>
+                        <td><input type="text"></td>
+                      </tr>
+                      <tr>
+                        <td>문의내용</td>
+                        <td><input type="text" style="height: 200px;"></td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+
             <div class="ser2">
-                <p>개인정보 동의</p>
+              <span>개인정보이용동의</span>
+              <input type="checkbox">
+              </div>
+
                 <div class="ser3">
-                    <div class="btn1">취소</div>
-                    <div class="btn2">등록</div>
+                    <div class="btn">
+                      <input type="button" value="취소" onclick="location.href='../14. servicePage/index1.html'">
+                      <input type="button" value="등록" onclick="alert('등록되었습니다.'); location.href='./index1.html'">
+                    </div>
                 </div>
-                </div>
-            </div>
-            </div>
+
         </div>
     </main>
 
@@ -84,5 +119,6 @@
         <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
       </span>
     </div>
+
 </body>
 </html>

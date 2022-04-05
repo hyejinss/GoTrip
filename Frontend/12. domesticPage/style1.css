@@ -40,7 +40,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -118,8 +118,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -154,10 +154,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {
@@ -173,10 +173,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .domestic__trip {
-  height: 350px;
+  height: 300px;
   margin: auto;
 }
 
@@ -186,27 +187,57 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .trip1 {
-  width: 370px;
+  width: 550px;
   height: 50px;
-  border: 3px solid aqua;
 }
 
 .trip2 {
-  width: 370px;
+  width: 350px;
   height: 50px;
-  border: 3px solid aqua;
+}
+
+.trip2 input {
+width: 350px;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin-top: 5px;
+color: grey;
+font-size: 13px;
 }
 
 .trip3 {
-  width: 370px;
+  width: 350px;
   height: 50px;
-  border: 3px solid aqua;
 }
 
-.trip4 {
-  width: 200px;
-  height: 50px;
-  border: 3px solid aqua;
+.trip3 input {
+width: 350px;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin-top: 5px;
+color: grey;
+font-size: 13px;
+}
+
+.trip4 input{
+  width: 150px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid #4169e1;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trip4 input:hover {
+background-color: #4169e1;
+color: white;
 }
 
 .re_pro  h1 {
@@ -215,6 +246,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   border-bottom: 3px solid #7c7b7b;
   padding: 20px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .re_pro {
@@ -223,22 +255,77 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .product {
-  width: 1200px;
+  width: 1400px;
   display: flex;
   margin: auto;
   justify-content: space-between;
 }
 
 .pro1 {
-  width: 500px;
+  width: 700px;
   height: 200px;
-  border: 3px solid tomato;
+  margin: 10px 70px;
+}
+
+.pro1 img {
+  width: 300px;
+  height: 200px;
+  transition: all 0.3s linear;
+}
+
+.pro1 img:hover {
+  transform:scale(1.2);
+}
+
+.pro1 span {
+  float: right;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.pro1 span h3 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro1 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .pro2 {
-  width: 500px;
+  width: 700px;
   height: 200px;
-  border: 3px solid tomato;
+}
+
+.pro2 img {
+  width: 300px;
+  height: 200px;
+  transition: all 0.3s linear;
+}
+
+.pro2 img:hover {
+  transform:scale(1.2);
+}
+
+.pro2 span {
+  float: right;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.pro2 span h3 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pro2 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .foot {

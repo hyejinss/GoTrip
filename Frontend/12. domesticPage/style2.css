@@ -40,7 +40,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -118,8 +118,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .navbar__menu li a {
   color: white;
   padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
+  padding-left: 206px;
+  padding-right: 206px;
   font-size: 16px;
   font-weight: 600;
   font-family: "yg750";
@@ -140,7 +140,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;      
 }
 
 .navbar__menu li ul a{
@@ -154,10 +154,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {
@@ -199,36 +199,74 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 .tripimg1 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tripimg1 img {
+  width: 370px;
+  height: 250px;
+  margin-left: 30px;
 }
 
 .tripex1 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tripex1 span {
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.tripex1 span h3 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tripex1 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .triploc1 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    position: relative
+  width: 370px;
+  height: 300px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .btn1 {
-  width: 70px;
-  height: 30px;
+  width: 200px;
+  height: 35px;
   text-align: center;
-  border: 3px solid aqua;
   position: absolute;
-  left: 40%;
-  bottom: 5%;
+  left: 85px;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn1 input {
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #4169e1;
+  border-radius: 5px;
+}
+
+.btn1 input:hover {
+  color: white;
+  background-color: #4169e1;
 }
 
 .tripp2 {
@@ -238,36 +276,74 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 .tripimg2 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tripimg2 img {
+  width: 370px;
+  height: 250px;
+  margin-left: 30px;
 }
 
 .tripex2 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tripex2 span {
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.tripex2 span h3 {
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tripex2 span li {
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .triploc2 {
-    width: 370px;
-    height: 200px;
-    border: 3px solid aqua;
-    position: relative
+  width: 370px;
+  height: 300px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .btn2 {
-  width: 70px;
-  height: 30px;
+  width: 200px;
+  height: 35px;
   text-align: center;
-  border: 3px solid aqua;
   position: absolute;
-  left: 40%;
-  bottom: 5%;
+  left: 85px;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn2 input {
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #4169e1;
+  border-radius: 5px;
+}
+
+.btn2 input:hover {
+  color: white;
+  background-color: #4169e1;
 }
 
 .foot {

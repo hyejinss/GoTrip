@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -46,7 +48,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -219,7 +221,7 @@ table.sign td input {
   border: none;
   text-align: center;
   color: #646262;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   padding: 5px;
 }
@@ -233,30 +235,32 @@ table.btn {
 table.btn tr td input {
   font-weight: bold;
   font-size: 15px;
-  padding: 10px 70px;
+  padding: 15px 80px;
 }
 
 input.btn1 {
-  background-color: white;
-  border: 3px solid #4169e1;
-  color: black;
+  background-color: #5e2bb8;
+  border: 1px solid #5e2bb8;
+  color: #fff;
   margin-right: 50px;
 }
 
 input.btn1:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
   color: white;
   transition: all 0.5s;
 }
 
 input.btn2 {
-  background-color: white;
-  border: 3px solid #4169e1;
-  color: black;
+  background-color: #5e2bb8;
+  border: 1px solid #5e2bb8;
+  color: #fff;
   margin-left: 50px;
 }
 
 input.btn2:hover {
+  border: 1px solid #4169e1;
   background: #4169e1;
   color: white;
   transition: all 0.5s;

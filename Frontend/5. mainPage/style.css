@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -40,7 +42,7 @@ a {
 .searchform input#search {
   width: 700px;
   height: 50px;
-  background: #dcdcdc;
+  background: #f0eeee;
   border: none;
   font-size: 12pt;
   font-weight: 700;
@@ -96,23 +98,22 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar ul{
-  letter-spacing: 0.8px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #485170;
-  display: flex;
-  justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #485170;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navbar__menu li {
-  display: inline;
-  color: white;
+    display: inline;
+    color: white;
 }
 
 .navbar__menu a {
-  display: inline-block;
+    display: inline-block;
 }
 
 .navbar__menu li a {
@@ -128,7 +129,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .navbar__menu li a:hover {
   background-color: lightgray;
-  color: #000;
+  color: #111;
   text-align: center;
 } 
 
@@ -140,7 +141,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;  
 }
 
 .navbar__menu li ul a{
@@ -154,7 +155,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   position: relative;
   z-index: 1;
-}
+  }
 
 .navbar__menu li:hover ul {
     display: block;
