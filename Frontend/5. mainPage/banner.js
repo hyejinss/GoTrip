@@ -1,27 +1,65 @@
-$(document).ready(function() {
-    var $banner = $(".banner").find("ul");
+// Navebar Section
+function myFunction() {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+      x.className += 'responsive';
+  } else {
+      x.className = 'topnav';
+  }
+}
 
-    var $bannerWidth = $banner.children().outerWidth();//이미지의 폭
-    var $bannerHeight = $banner.children().outerHeight(); // 높이
-    var $length = $banner.children().length;//이미지의 갯수
-    var rollingId;
-    
-    //정해진 초마다 함수 실행
-    rollingId = setInterval(function() { rollingStart(); }, 5000);//다음 이미지로 롤링 애니메이션 할 시간차
-        
-    function rollingStart() {
-        $banner.css("width", $bannerWidth * $length + "px");
-        $banner.css("height", $bannerHeight + "px");
-        //alert(bannerHeight);
-        //배너의 좌측 위치를 옮겨 준다.
-        $banner.animate({left: - $bannerWidth + "px"}, 1500, function() { //숫자는 롤링 진행되는 시간이다.
-            //첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
-            $(this).append("<li>" + $(this).find("li:first").html() + "</li>");
-            //뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
-            $(this).find("li:first").remove();
-            //다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
-            $(this).css("left", 0);
-            //이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
-        });
-    }
-}); 
+
+
+// Full-width slider Section
+
+var slideIndex = 0; //slide index
+
+// HTML 로드가 끝난 후 동작
+window.onload=function(){
+  showSlides(slideIndex);
+
+  // Auto Move Slide
+  var sec = 3500;
+  setInterval(function(){
+    slideIndex++;
+    showSlides(slideIndex);
+
+  }, sec);
+}
+
+
+// Next/previous controls
+function moveSlides(n) {
+  slideIndex = slideIndex + n
+  showSlides(slideIndex);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides(slideIndex);
+}
+
+function showSlides(n) {
+
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  var size = slides.length;
+
+  if ((n+1) > size) {
+    slideIndex = 0; n = 0;
+  }else if (n < 0) {
+    slideIndex = (size-1);
+    n = (size-1);
+  }
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[n].style.display = "block";
+  dots[n].className += " active";
+}
