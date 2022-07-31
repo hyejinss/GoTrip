@@ -82,11 +82,12 @@
     <main class="container">
       <div class="overseas_trip">
         <h1>어디로 떠나볼까요?</h1>
+        <h2>Where do you want to go?</h2>
         <img src="img/bg_main.png" width="100%">
         <div id="select_panel">
           <forml id="form-panel">
             <div class="panel-block">
-              <label for="form">Where do you want to go?</label>
+              <!-- <label for="form">Where do you want to go?</label> -->
               <select class="form-control">
                 <option value="select"></option>
                   <optgroup label="유럽">
@@ -115,84 +116,20 @@
               </select>
             </div>
 
-            <button type="submit" class="searchBtn">
+
+            <div class="searchBtn" onclick="myFunction()">
               <img src="/Frontend/11. overseasPage/img/icon_search_default.png">
               검색
-            </button>
+            </div>
+
+            <!-- <button type="submit" class="searchBtn">
+              <img src="/Frontend/11. overseasPage/img/icon_search_default.png">
+              검색
+            </button> -->
           </forml>
         </div>
       </div>
     </main>
-
-
-
-
-
-
-                
-
-
-
-
-    <!-- <main class="content">
-        <div class="overseas_trip">
-            <h1>해외 여행</h1>
-            <img src="../11. overseasPage/img/bg_main.png" width="100%">
-            <form action="../11. overseasPage/index2.html">
-              <div class="trip">
-                <div class="trip1">
-                  <label for="trip" style="margin-top: 10px;">여행지</label>
-                  <select class="form-control" style="width: 550px;">
-                    <option value="choice"></option>
-                    <optgroup label="미국">
-                      <option>하와이</option>
-                    </optgroup>
-
-                    <optgroup label="스위스">
-                      <option>취리히</option>
-                    </optgroup>
-
-                    <optgroup label="아프리카">
-                      <option>케냐</option>
-                    </optgroup>
-
-                    <optgroup label="뉴질랜드">
-                      <option>오클랜드</option>
-                    </optgroup>
-
-                    <optgroup label="국내">
-                      <option>제주</option>
-                      <option>부산</option>
-                    </optgroup>
-
-                </select>
-                </div>
-                <div class="trip2" style="margin-top: 10px; font-weight: bold;">출발 예정일
-                  <input type="datetime-local">
-                </div>
-                <div class="trip3" style="margin-top: 10px; font-weight: bold;">도착 예정일
-                  <input type="datetime-local">
-                </div>
-                <div class="trip4">
-                  <input type="button" value="검색하기" onclick="location.href='index2.html'">
-                </div>
-              </div>
-            </form>
-        </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -236,6 +173,7 @@
       </span>
     </div>
 
+    <script src="../11. overseasPage/overseasPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
     <script>
