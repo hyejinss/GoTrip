@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
   font-family: 'EliceDigitalBaeum-Bd';
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -317,7 +318,7 @@ img::selection {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 55%;
   width: auto;
   margin-top: -22px;
   padding: 16px;

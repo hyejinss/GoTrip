@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관심상품</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관심상품</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
+  </script>
 </head>
+
 <body>
-    <header class="head">
-        <div class="head__logo">
-            <a href="../5. mainPage/index.html">
-                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
-        </div>
-        
-        <div class="search__box">
-          <div class="searchform">
-            <span class="icon"><i class="fa fa-search"></i></span>
-            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+  <header class="head">
+    <div class="head__logo">
+      <a href="../5. mainPage/index.html">
+        <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+    </div>
+    
+    <div class="search__box">
+      <div class="searchform">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+      </div>
+    </div>
+
+    <ul class="head__icons">
+      <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+      <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+      <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+    </ul>
+  </header>
+ 
+    <!-- Navbar Section -->
+  <nav id="navbaronder">
+    <div class="topnav unselectable" id="myTopnav">
+      <div id="center1">
+        <div id="center2">
+          <div class="underline">
+            <div id="container2">
+              
+              <div class="dropdown">
+                <button class="dropbtn"><a href="../11. overseasPage/index1.html">해외여행</a></button>
+                <div class="dropdown-content">
+                  <a href="../11. overseasPage/index1.html">추천상품</a>
+                  <a href="../11. overseasPage/index2.html">유럽</a>
+                  <a href="../11. overseasPage/index2.html">미주</a>
+                  <a href="../11. overseasPage/index2.html">아프리카</a>
+                  <a href="../11. overseasPage/index2.html">동남아</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn"><a href="../12. domesticPage/index1.html">국내여행</a></button>
+                <div class="dropdown-content">
+                  <a href="../12. domesticPage/index1.html">추천상품</a>
+                  <a href="../12. domesticPage/index2.html">제주</a>
+                  <a href="../12. domesticPage/index2.html">부산</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn"><a href="../16. gallery/index1.html">갤러리</a></button>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn"><a href="#">고객센터</a></button>
+                <div class="dropdown-content">
+                  <a href="../14. servicePage/index1.html">문의사항</a>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </nav>
 
-        <ul class="head__icons">
-            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
-            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
-            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
-        </ul>
-    </header>
- 
-    <nav class="navbar">
-        <ul class="navbar__menu">
-          <li><a href="../11. overseasPage/index1.html">해외여행</a>
-            <ul>
-              <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-              <li><a href="../11. overseasPage/index2.html">미국</a></li>
-              <li><a href="../11. overseasPage/index2.html">스위스</a></li>
-              <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
-              <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
-            </ul>
-        </li>
-            <li><a href="../12. domesticPage/index1.html">국내여행</a>
-                <ul>
-                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
-                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
-                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
-                  </ul>
-                </li>
-            <li><a href="../16. gallery/index1.html">갤러리</a></li>
-            <li><a href="#">고객센터</a>
-                <ul>
-                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
-                  </ul>
-            </li>
-        </ul>
-    </nav>
+
+
     <main class="content">
         <div class="heart">
             <h1>관심상품</h1>
@@ -111,10 +134,153 @@
                     <a href="#"><li>다음</li></a>
                   </ul>
                 </div>
-
          </div>
     </main>
     
+
+    <!-- 장소 -->
+    <section class="place section" id="place">
+      <h2 class="section_title">관심 상품</h2>
+      <div class="place_container container grid">
+
+
+        <div class="place_container container grid">
+          <!-- place 1 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">4.8</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bali</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$2499</span>
+              </div>
+            </div>
+
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!-- place 2 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">5.0</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bora bora</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$1599</span>
+              </div>
+            </div>
+
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!-- place 3 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">4.8</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bali</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$2499</span>
+              </div>
+            </div>
+            
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!-- place 4 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">4.8</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bali</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$2499</span>
+              </div>
+            </div>
+            
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!-- place 3 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">4.8</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bali</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$2499</span>
+              </div>
+            </div>
+            
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <!-- place 4 -->
+          <div class="place_card">
+            <img src="" alt="" class="place_img">
+            <div class="place_content">
+              <span class="place_rating">
+                <i class="ri-star-line place_rating-icon"></i>
+                <span class="place_rating_number">4.8</span>
+              </span>
+
+              <div class="place_data">
+                <h3 class="place_title">Bali</h3>
+                <span class="place_subtitle">Indonesia</span>
+                <span class="place_price">$2499</span>
+              </div>
+            </div>
+            
+            <button class="button button_flex place_button">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+ 
+
+        
+      </div>
+    </section>
+
+
+
+
+    <!-- Foot Section -->
     <div class="foot">
       <span>
         <strong>(주)여행가조</strong>
