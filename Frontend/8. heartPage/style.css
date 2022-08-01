@@ -152,17 +152,16 @@ img::selection {
   background: transparent;
 }
 
-.underline > a, button {
+.underline a {
   position: relative;
-  color: red;
   text-decoration: white;
 }
 
-.underline > a, button:hover {
+.underline a:hover {
   color: white;
 }
 
-.underline > a, button::before {
+.underline button:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -175,7 +174,7 @@ img::selection {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.underline > a, button:hover::before {
+.underline button:hover::before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -206,6 +205,7 @@ img::selection {
   letter-spacing: 0.1em;
   text-align: center;
   text-decoration: none;
+  font-family: 'EliceDigitalBaeum-Bd';
 }
 
 .topnav .icon {
@@ -223,7 +223,7 @@ img::selection {
   outline: none;
   padding: 6px 20px;
   background-color: inherit;
-  font-family: inherit;
+
 }
 
 .dropdown-content {
