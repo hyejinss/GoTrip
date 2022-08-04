@@ -390,7 +390,7 @@ select {
   background-color: #f1f1f1;
 }
 
-/* 장소 */
+ /* Best Travel  */
 .section_title {
   text-transform: capitalize;
   margin: 13% 0 6%;
@@ -517,103 +517,8 @@ select {
   border-radius: 5px;
   background-color: #26548A;
   transition: 0.3s;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-.re_pro  h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.re_pro {
-    height: 250px;
-    margin: auto;
-}
-
-.product {
-    width: 1400px;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-}
-
-.pro1 {
-    width: 700px;
-    height: 200px;
-    margin: 10px 70px;
-}
-
-.pro1 img {
-  width: 300px;
-  height: 200px;
-  transition: all 0.3s linear;
-}
-
-.pro1 img:hover {
-  transform:scale(1.2);
-}
-
-.pro1 span {
-  float: right;
-  margin-top: 20px;
-  list-style: none;
-}
-
-.pro1 span h3 {
-  color: #1032ad;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.pro1 span li {
-  color: #464545;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.pro2 {
-    width: 700px;
-    height: 200px;
-}
-
-.pro2 img {
-  width: 300px;
-  height: 200px;
-  transition: all 0.3s linear;
-}
-
-.pro2 img:hover {
-  transform:scale(1.2);
-}
-
-.pro2 span {
-  float: right;
-  margin-top: 20px;
-  list-style: none;
-}
-
-.pro2 span h3 {
-  color: #1032ad;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.pro2 span li {
-  color: #464545;
-  font-size: 15px;
-  font-weight: bold;
-}
-
 
 
 /******* Foot Section *******/
