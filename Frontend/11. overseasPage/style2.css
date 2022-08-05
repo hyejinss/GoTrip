@@ -411,6 +411,7 @@ img::selection {
   position: relative;
   width: 100%;
   margin-bottom: 5%;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 .offers_image_background {
@@ -422,6 +423,7 @@ img::selection {
 
 .offer_name {
   position: absolute;
+  display: flex;
   width: 20%;
   height: 15%;
   left: 0;
@@ -431,12 +433,11 @@ img::selection {
 }
 
 .offer_name a {
-  position: absolute;
-  margin-left: 31%;
-  padding-top: 2%;
+  margin: auto;
   color: #fff;
   font-size: 25px;
   letter-spacing: 0.1em;
+  line-height: 65px;
 }
 
 .offers_information {
@@ -449,10 +450,9 @@ img::selection {
   position: relative;
   display: inline-block;
   top: 0;
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 700;
   color: #eda84a;
-  line-height: 25px;
 }
 
 .offers_price span {
@@ -463,16 +463,20 @@ img::selection {
 }
 
 .offers_text {
-  margin-top: 12%;
+  margin-top: 10%;
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 400;
   color: #929191;
+  line-height: 30px;
 }
 
 .days {
-  margin-top: 30px;
-  color: #929191;
+  margin-top: 35px;
+  font-size: 14px;
+  color: #696969;
+  line-height: 30px;
+  letter-spacing: 0.1rem;
 }
 
 .reservation_button {
@@ -491,11 +495,11 @@ img::selection {
 
 .reservation_button a {
   display: block;
-  padding-left: 45px;
-  padding-right: 45px;
-  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
   color: #fff;
-  line-height: 53px;
+  line-height: 63px;
 }
 
 .reservation_button span {
@@ -534,7 +538,6 @@ img::selection {
   font-size: 13px;
   font-weight: 700;
   color: #2d2c2c;
-  /* text-transform: uppercase; */
 }
 
 .offer_reviews_subtitle {
@@ -551,7 +554,7 @@ img::selection {
   font-size: 28px;
   font-weight: 700;
   color: #fff;
-  line-height: 57px;
+  line-height: 65px;
   background: #fa9e1b;
   vertical-align: middle;
   border-radius: 45%;
@@ -585,6 +588,13 @@ img::selection {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
