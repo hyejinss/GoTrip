@@ -1,5 +1,23 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'EliceDigitalBaeum-Bd';
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 a {
@@ -9,36 +27,28 @@ a {
 .head {
   display: flex;
   justify-content: space-between;
+  padding: 20px 20px;
   align-items: center;
   background-color: #ffffff;
-  padding: 20px 20px;
 }
 
-.head__icons {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-} 
-
-.head__icons li {
-  padding: 8px 12px;
+.head__logo {
+  margin-left: 8%;
 }
 
-.head__icons li a {
-  text-align: center;
-  font-size: 10px;
-  color: #485170;
+.search__box {
+  width: 70%;
+  margin-left: 15%;
 }
 
 .searchform {
-  width: 700px;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
 .searchform input#search {
-  width: 700px;
+  width: 70%;
   height: 50px;
   background: #f0eeee;
   border: none;
@@ -95,69 +105,197 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.navbar ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #485170;
+.head__icons {
   display: flex;
-  justify-content: space-around;
-}
-
-.navbar__menu li {
-  display: inline;
-  color: white;
-}
-
-.navbar__menu a {
-  display: inline-block;
-}
-
-.navbar__menu li a {
-  color: white;
-  padding: 15px;
-  padding-left: 207px;
-  padding-right: 207px;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "yg750";
-  white-space: nowrap;
-}
-
-.navbar__menu li a:hover {
-  background-color: lightgray;
-  color: #111;
-  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 13%;
 } 
 
-.navbar__menu li ul {
-  display: none;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  width: 480px;
-  z-index: 200;
-  text-align: center;   
+.head__icons li {
+  padding: 15% 15% 6% 15%;
 }
 
-.navbar__menu li ul a{
-  display: block;
-  height: 30px;
-  font-size: 16px;
-  font-style: normal; 
-  font-weight: 600;
-  font-family: "yg750";
-  padding: 15px;
+.head__icons li a {
   text-align: center;
+  font-size: 14px;
+  color: #485170;
+}
+
+.head__icons a:hover {
+  color: #97cadb;
+}
+
+
+/******* Navbar Section *******/
+#navbaronder {
+  background-color: #97cadb;
+  transition: 0.4s;
+  position: absolute;
+  width: 100%;
+  top: 14%;
+  z-index: 500;
+  outline: 0;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+img::selection {
+  background: transparent;
+}
+
+.underline a {
   position: relative;
+  text-decoration: white;
+}
+
+.underline a:hover {
+  color: white;
+}
+
+.underline button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.underline button:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.topnav {
+  background-color: #dddddd;
+}
+
+#center1 {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#center2 {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  padding: 8px 130px;
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'EliceDigitalBaeum-Bd';
+}
+
+.topnav .icon {
+  display: none;
+  color: #26548A;
+}
+
+.dropdown {
+  float: left;
+  position: relative;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  padding: 6px 20px;
+  background-color: inherit;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  min-width: 60%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #333;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  color: #2651AB;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover 
+.dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), 
+  .dropdown
+  .dropbtn
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .responsive {position: relative;}
+  .topnav .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
-.navbar__menu li:hover ul {
-  display: block;
+  .topnav .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav .responsive .dropdown {float: none;}
+  .topnav .responsive .dropdown-content {position: relative;}
+  .topnav .responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
+
+/******* Content Section *******/
   
   
 .content {
@@ -214,20 +352,30 @@ table.myPage td {
   transition: all 0.5s;
 }
 
+
+/******* Foot Section *******/
 .foot {
   background-color:#485170;
-  padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: -5px;
+  padding: 20px;
 }
 
 .foot span {
   font-size: 12px;
+  letter-spacing: 0.1em;
   color: #ddd;
   padding: 0 50px;
 }
-  
+
 @media screen and (max-width: 768px) {
   .head, .navbar, .content, .foot {
     flex-direction: column;
   }
+}
+
+@font-face {
+  font-family: 'EliceDigitalBaeum-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -180,34 +180,6 @@ img::selection {
   transform: scaleX(1);
 }
 
-/* .underline > a, button {
-  position: relative;
-  text-decoration: white;
-}
-
-.underline > a, button:hover {
-  color: white;
-}
-
-.underline > a, button::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.underline > a, button:hover::before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
-
 .topnav {
   background-color: #dddddd;
 }
@@ -322,6 +294,7 @@ img::selection {
     text-align: left;
   }
 }
+
 
 /******* Content Section *******/
 /* Slideshow container */

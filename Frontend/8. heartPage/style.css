@@ -109,11 +109,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   display: flex;
   text-decoration: none;
   list-style: none;
-  margin-left: 13%;
+  margin-right: 13%;
 } 
 
 .head__icons li {
-  padding: 15% 15% 6% 15%
+  padding: 15% 15% 6% 15%;
 }
 
 .head__icons li a {
@@ -294,6 +294,7 @@ img::selection {
     text-align: left;
   }
 }
+
 
 /******* Content Section *******/
 /* .content {
