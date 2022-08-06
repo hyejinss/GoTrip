@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메인페이지</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>제주여행</title>
+  <link rel="stylesheet" href="jeju.css">
   <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="../5. mainPage/banner.js"></script>
 </head>
 
 <body>
   <header class="head">
     <div class="head__logo">
       <a href="../5. mainPage/index.html">
-      <img src="../5. mainPage/img/goTripIcon.png" width="170" height="90"></a>
+        <img src="../5. mainPage/img/goTripIcon.png" width="170" height="90"></a>
     </div>
 
     <div class="search__box">
@@ -27,13 +24,12 @@
     </div>
 
     <ul class="head__icons">
-      <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
-      <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
-      <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+        <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+        <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+        <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
     </ul>
   </header>
-
-
+ 
   <!-- Navbar Section -->
   <nav id="navbaronder">
     <div class="topnav unselectable" id="myTopnav">
@@ -81,64 +77,92 @@
       </div>
     </div>
   </nav>
-        
+
 
   <!-- Content Section -->
-  <div class="slideshow_container">
-    <!-- Full-width images -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 6</div>
-      <img src="img/france.jpg" style="width:100%">
-      <div class="text">FRANCE</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 6</div>
-      <img src="img/london_1.jpg" style="width:100%">
-      <div class="text">LONDON</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 6</div>
-      <img src="img/newzealand.jpg" style="width:100%">
-      <div class="text">NEW ZEALAND</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 6</div>
-      <img src="img/africa_1.jpg" style="width:100%">
-      <div class="text">AFRICA</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">5 / 6</div>
-      <img src="img/paris_1.jpg" style="width:100%">
-      <div class="text">PARIS</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">6 / 6</div>
-      <img src="img/hawaii_1.jpg" style="width:100%">
-      <div class="text">HAWAII</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-    <a class="next" onclick="moveSlides(1)">&#10095;</a>
-  </div>
-  <!-- <br/> -->
-    
-  <!-- dots -->
-  <div class="dots" style="text-align:center">
-    <span class="dot" onclick="currentSlide(0)"></span>
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-  
+  <main class="container">
 
+    <!-- Condition sort button -->
+    <div class="condition">
+      <div class="offers_sorting_container">
+        
+        <ul class="sorting_price">
+          <li>
+            <span class="sorting_text">가격</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul>
+              <li class="sort_btn">모두 표시</li>
+              <li class="sort_btn">오름차순</li>
+            </ul>
+          </li>
+        </ul>  
+        <ul class="sorting_location">
+          <li>
+            <span class="sorting_text">위치</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul>
+              <li class="sort_btn">기본</li>
+              <li class="sort_btn">알파벳순</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- List -->
+    <div class="travel_list">
+      <div class="offers_grid">
+
+        <!-- Item 1 -->
+        <div class="offers_item">
+          <div class="offers_image_background">
+            <img src="img//jeju.jpg" width="100%">
+          </div>
+          <div class="offer_name">
+            <a href="">JEJU</a>
+          </div>
+          <div class="offers_information">
+            <div class="offers_price">509,000원
+              <span>2박 3일</span>
+            </div>
+            <p class="offers_text">
+              세계문화유산으로 지정되어 있으며 해돋이가 가장 유명한 이곳!<br>
+              #봄의유채꽃 #성산일출봉
+              <br>
+            </p>
+            <p class="days">
+              <span>일정시작 : 2023.04.09 (일)</span><br>
+              <span>일정종료 : 2023.04.11 (화)</span>
+            </p>
+            <div class="reservation_button">
+              <a href="#">
+                지금 예약
+                <span>●</span>
+                <span>●</span>
+                <span>●</span>
+              </a>
+            </div>
+            <div class="offer_reviews">
+              <div class="offer_reviews_content">
+                <div class="offer_reviews_title">
+                  좋은
+                </div>
+                <div class="offer_reviews_subtitle">
+                  리뷰 1개
+                </div>
+              </div>  
+                <div class="offer_reviews_rating text_center">
+                  5.1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </main>   
+
+   
   <!-- Foot Section -->
   <div class="foot">
     <span>

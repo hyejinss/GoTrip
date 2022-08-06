@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>국내여행1</title>
-    <link rel="stylesheet" href="style1.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>해외여행-추천여행지</title>
+  <link rel="stylesheet" href="overseasPage.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="head">
     <div class="head__logo">
       <a href="../5. mainPage/index.html">
-      <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        <img src="../5. mainPage/img/goTripIcon.png" width="170" height="90"></a>
     </div>
 
     <div class="search__box">
@@ -38,26 +38,26 @@
         <div id="center2">
           <div class="underline">
             <div id="container2">
-
+              
               <div class="dropdown">
-                <button class="dropbtn"><a href="../11. overseasPage/index1.html">해외여행</a></button>
+                <button class="dropbtn"><a href="../11. overseasPage/overseasPage.html">해외여행</a></button>
                 <div class="dropdown-content">
-                  <a href="../11. overseasPage/index1.html">추천상품</a>
-                  <a href="../11. overseasPage/index2.html">유럽</a>
-                  <a href="../11. overseasPage/index2.html">미주</a>
-                  <a href="../11. overseasPage/index2.html">아프리카</a>
-                  <a href="../11. overseasPage/index2.html">동남아</a>
+                  <a href="../11. overseasPage/overseasPage.html">추천상품</a>
+                  <a href="../11. overseasPage/europe.html">유럽</a>
+                  <a href="../11. overseasPage/americas.html">미주</a>
+                  <a href="../11. overseasPage/africa.html">아프리카</a>
+                  <a href="../11. overseasPage/asia.html">아시아</a>
                 </div>
               </div>
 
               <div class="dropdown">
-                <button class="dropbtn"><a href="../12. domesticPage/index1.html">국내여행</a></button>
+                <button class="dropbtn"><a href="../12. domesticPage/domesticPage.html">국내여행</a></button>
                 <div class="dropdown-content">
-                  <a href="../12. domesticPage/index1.html">추천상품</a>
-                  <a href="../12. domesticPage/index2.html">서울</a>
-                  <a href="../12. domesticPage/index2.html">부산</a>
-                  <a href="../12. domesticPage/index2.html">여수</a>
-                  <a href="../12. domesticPage/index2.html">제주</a>
+                  <a href="../12. domesticPage/domesticPage.html">추천상품</a>
+                  <a href="../12. domesticPage/seoul.html">서울</a>
+                  <a href="../12. domesticPage/busan.html">부산</a>
+                  <a href="../12. domesticPage/yeosu.html">여수</a>
+                  <a href="../12. domesticPage/jeju.html">제주</a>
                 </div>
               </div>
 
@@ -91,11 +91,27 @@
           <div class="panel-block">
             <select class="form-control">
               <option value="select">
-                <option>서울</option>
-                <option>부산</option>
-                <option>여수</option>
-                <option>제주</option>
-              </option>   
+                <optgroup label="유럽">
+                  <option>스위스</option>
+                  <option>영국</option>
+                  <option>프랑스</option>
+                  <option>체코</option>
+                </optgroup>
+                <optgroup label="미주">
+                  <option>샌프란시스코</option>
+                  <option>뉴욕</option>
+                  <option>하와이</option>
+                  <option>뉴질랜드</option>
+                </optgroup>
+                <optgroup label="아프리카">
+                  <option>케냐</option>
+                </optgroup>
+                <optgroup label="동남아">
+                  <option>태국</option>
+                  <option>싱가포르</option>
+                  <option>인도네시아</option>
+                </optgroup>
+              </option>  
             </select>
           </div>
           <button type="submit" class="searchBtn">
@@ -115,7 +131,7 @@
 
       <!-- Place 1 -->
       <div class="place_card">
-        <img src="img/xavier-von-erlach-ixPeR1YfgOA-unsplash.jpg" width="100%" alt="" class="place_img">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
         <div class="place_content">
           <span class="place_rating">
             <i class="fa-regular fa-star"></i>
@@ -134,7 +150,7 @@
 
       <!-- Place 2 -->
       <div class="place_card">
-        <img src="img/xavier-von-erlach-ixPeR1YfgOA-unsplash.jpg" width="100%" alt="" class="place_img">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
         <div class="place_content">
           <span class="place_rating">
             <i class="fa-regular fa-star"></i>
@@ -153,7 +169,7 @@
 
       <!-- Place 3 -->
       <div class="place_card">
-        <img src="img/xavier-von-erlach-ixPeR1YfgOA-unsplash.jpg" width="100%" alt="" class="place_img">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
         <div class="place_content">
           <span class="place_rating">
             <i class="fa-regular fa-star"></i>
@@ -172,7 +188,45 @@
 
       <!-- Place 4 -->
       <div class="place_card">
-        <img src="img/xavier-von-erlach-ixPeR1YfgOA-unsplash.jpg" width="100%" alt="" class="place_img">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
+        <div class="place_content">
+          <span class="place_rating">
+            <i class="fa-regular fa-star"></i>
+            <span class="place_rating_number">4.8</span>
+          </span>
+          <div class="place_data">
+            <h3 class="place_title">Bali</h3>
+            <span class="place_subtitle">Indonesia</span>
+            <span class="place_price">$2499</span>
+          </div>
+        </div>
+        <button class="button button_flex place_button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Place 5 -->
+      <div class="place_card">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
+        <div class="place_content">
+          <span class="place_rating">
+            <i class="fa-regular fa-star"></i>
+            <span class="place_rating_number">4.8</span>
+          </span>
+          <div class="place_data">
+            <h3 class="place_title">Bali</h3>
+            <span class="place_subtitle">Indonesia</span>
+            <span class="place_price">$2499</span>
+          </div>
+        </div>
+        <button class="button button_flex place_button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Place 6 -->
+      <div class="place_card">
+        <img src="img/france.jpg" width="100%" alt="" class="place_img">
         <div class="place_content">
           <span class="place_rating">
             <i class="fa-regular fa-star"></i>
@@ -192,7 +246,7 @@
     </div>
   </section>
 
-
+    
   <!-- Foot Section -->
   <div class="foot">
     <span>
@@ -207,6 +261,7 @@
     </span>
   </div>
 
+  <script src="../11. overseasPage/overseasPage.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
 </body>
