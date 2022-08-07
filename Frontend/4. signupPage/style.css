@@ -88,7 +88,7 @@ a {
 }
 
 /* 크롬 자동완성 값 삭제 */
-input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
+/* input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;} */
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
 
 .searchform .icon {
@@ -294,32 +294,35 @@ img::selection {
   }
 }
 
+
 /******* Content Section *******/
 .content {
-    background-color: #ffffff;
-    padding: 50px 12px;
-    margin: auto;
+  position: relative;
 }
 
 .content h1 {
-  font-size: 25px;
+  font-size: 35px;
   color: gray;
   padding: 20px;
   text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+  letter-spacing: 0.1rem;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 .signup {
-    position: relative;
-    margin: auto;
+  position: absolute;
+  width: 40%;
+  top: 15%;
+  left: 30%;
+  background-color: rgba( 255, 255, 255, 0.5 );
 }
 
 table.sign {
-  margin: auto;
-  width: 1200px;
-  height: 400px;
-  padding: 20px;
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
   border-top: 3px solid #7c7b7b;
   border-bottom: 3px solid #7c7b7b;
   border-collapse: collapse;
@@ -330,33 +333,63 @@ table.sign tr {
 }
 
 table.sign tr th {
-  width: 10%;
+  width: 20%;
   font-size: 15px;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 table.sign td {
-  text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
 }
 
-table.sign td input {
+.box {
   letter-spacing: 1px;
   width: 100%;
   height: 40px;
   background-color: rgb(241, 241, 241);
   border: none;
   text-align: center;
-  color: #646262;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.email_box {
+  letter-spacing: 1px;
+  width: 28%;
+  height: 30px;
+  background-color: rgb(241, 241, 241);
+  border: none;
+  text-align: left;
+  color: #333;
   font-size: 15px;
   font-weight: 600;
   padding: 5px;
+}
+
+.list {
+  width: 30%;
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  padding: 5px 0 5px 10px;
+  border-radius: 4px;
+  border: 1xp solid #d9d6d6;
+  color: #383838;
+  background-color: #ffffff;
+}
+
+option {
+  font-size: 15px;
 }
 
 table.btn {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 table.btn tr td input {
@@ -369,7 +402,7 @@ input.btn1 {
   background-color: #5e2bb8;
   border: 1px solid #5e2bb8;
   color: #fff;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 input.btn1:hover {
@@ -383,7 +416,7 @@ input.btn2 {
   background-color: #5e2bb8;
   border: 1px solid #5e2bb8;
   color: #fff;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 input.btn2:hover {
@@ -417,6 +450,13 @@ input.btn2:hover {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
