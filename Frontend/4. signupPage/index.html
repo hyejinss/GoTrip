@@ -13,6 +13,45 @@
 </head>
 
 <body>
+  <script>
+    //회원가입 생년월일 
+    $(document).ready(function(){            
+      var now = new Date();
+      var year = now.getFullYear();
+      var mon = (now.getMonth() + 1) > 9 ? ''+(now.getMonth() + 1) : '0'+(now.getMonth() + 1); 
+      var day = (now.getDate()) > 9 ? ''+(now.getDate()) : '0'+(now.getDate());       
+
+      //년도 selectbox만들기               
+      for(var i = 1900 ; i <= year ; i++) {
+          $('#year').append('<option value="' + i + '">' + i + '년</option>');    
+      }
+    
+      // 월별 selectbox 만들기            
+      for(var i=1; i <= 12; i++) {
+          var mm = i > 9 ? i : "0"+i ;            
+          $('#month').append('<option value="' + mm + '">' + mm + '월</option>');    
+      }
+
+      // 일별 selectbox 만들기
+      for(var i=1; i <= 31; i++) {
+          var dd = i > 9 ? i : "0"+i ;            
+          $('#day').append('<option value="' + dd + '">' + dd+ '일</option>');    
+      }
+
+      //현재 일자 표시
+      // $("#year  > option[value="+year+"]").attr("selected", "true");        
+      // $("#month  > option[value="+mon+"]").attr("selected", "true");    
+      // $("#day  > option[value="+day+"]").attr("selected", "true");       
+    });
+
+    //휴대폰 자동 하이픈 생성
+    const hypenTel = (target) => {
+      target.value = target.value
+      .replace(/[^0-9]/g, '')
+      .replace(/^(\d{2,3})(\d{3,4})(\d{4})$/,`$1-$2-$3`);
+    }
+  </script>
+
   <header class="head">
     <div class="head__logo">
       <a href="../5. mainPage/index.html">
@@ -114,13 +153,13 @@
             <th>생년월일</th>
               <td>
                 <div class="info" id="info_birth">
-                  <select class="list" id="birth_year">
+                  <select class="list" id="year">
                     <option disabled selected>년</option>
                   </select>
-                  <select class="list" id="birth_month">
+                  <select class="list" id="month">
                     <option disabled selected>월</option>
                   </select>
-                  <select class="list" id="birth_day">
+                  <select class="list" id="day">
                     <option disabled selected>일</option>
                   </select>
                 </div>
@@ -129,7 +168,7 @@
 
           <tr>
             <th>휴대폰번호</th>
-            <td><input type="text" class="box" name="phone"autocomplete="off" placeholder="ex. 01012345678" maxlength="11"></td>        
+            <td><input type="text" class="box" name="phone"autocomplete="off" maxlength="13" oninput="hypenTel(this)"></td>        
           </tr>
 
           <tr>

@@ -345,28 +345,32 @@ table.sign td {
 
 .box {
   letter-spacing: 1px;
-  width: 100%;
-  height: 40px;
-  background-color: rgb(241, 241, 241);
+  width: 95%;
+  height: 37px;
+  padding: 5px;
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(255, 255, 255);
   border: none;
+  border-radius: 5px;
   text-align: center;
   color: #333;
   font-size: 14px;
   font-weight: 600;
-  padding: 5px;
 }
 
 .email_box {
   letter-spacing: 1px;
   width: 28%;
   height: 30px;
-  background-color: rgb(241, 241, 241);
+  padding: 5px;
+  /* background-color: rgb(241, 241, 241); */
+  background-color: rgb(255, 255, 255);
   border: none;
+  border-radius: 5px;
   text-align: left;
   color: #333;
   font-size: 15px;
   font-weight: 600;
-  padding: 5px;
 }
 
 .list {
@@ -383,6 +387,10 @@ table.sign td {
 
 option {
   font-size: 15px;
+}
+
+option:disabled {
+  background-color: #f7f7f7;
 }
 
 table.btn {
