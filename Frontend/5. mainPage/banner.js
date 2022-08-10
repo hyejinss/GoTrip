@@ -9,7 +9,6 @@ function myFunction() {
 }
 
 
-
 // Full-width slider Section
 
 var slideIndex = 0; //slide index
