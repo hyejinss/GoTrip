@@ -80,206 +80,180 @@
         
 
   <!-- Content Section -->
-    <main class="content">
-        <div class="heart">
-            <h1>관심상품</h1>
-                <div class="heart1">
-                    <div class="pro1">
-                      <i class="fa-solid fa-heart"></i>
-                      <img src="./img/andrew-ruiz-fmz-B9At9iQ-unsplash.jpg">
-                      <span>
-                        <h2>Hawaii / USA</h2>
-                        <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                        <li>인천 출발시간 08:05</li>
-                        <li>하와이 도착시간 17:20</li>
-                      </span>
-                    </div>
-                    <div class="pro2">
-                      <i class="fa-solid fa-heart"></i>
-                      <img src="./img/damian-patkowski-T-LfvX-7IVg-unsplash.jpg">
-                      <span>
-                        <h2>Kenya / Africa </h2>
-                        <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                        <li>인천 출발시간 07:05</li>
-                        <li>아프리카 도착시간 17:20</li>
-                      </span>
-                    </div>
+  <main class="container">
+
+    <!-- Condition sort button -->
+    <div class="condition">
+      <div class="offers_sorting_container">
+        
+        <ul class="sorting_price">
+          <li>
+            <span class="sorting_text">가격</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul>
+              <li class="sort_btn">모두 표시</li>
+              <li class="sort_btn">오름차순</li>
+            </ul>
+          </li>
+        </ul>  
+        <ul class="sorting_location">
+          <li>
+            <span class="sorting_text">위치</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul>
+              <li class="sort_btn">기본</li>
+              <li class="sort_btn">알파벳순</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- List -->
+    <div class="travel_list">
+      <div class="offers_grid">
+
+        <!-- Item 1 -->
+        <div class="offers_item">
+          <div class="offers_image_background">
+            <img src="../11. overseasPage/img/swiss.jpg" width="100%">
+            <button class="heartBtn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="offer_name">
+            <a href="">SWISS</a>
+          </div>
+          <div class="offers_information">
+            <div class="offers_price">4,499,000원
+              <span>6박 8일</span>
+            </div>
+            <p class="offers_text">
+              알프스에서 즐기는 힐링여행!<br>
+              온천, 만년설, 열차까지 다양하게 스위스를 즐기는 여행
+            </p>
+            <p class="days">
+              <span>2022.09.13 인천 출발 - 2022.09.13 프랑크푸르트 도착</span><br>
+              <span>2022.09.19 프랑크푸르트 출발 - 2022.09.20 인천 도착</span>
+            </p>
+            <div class="reservation_button">
+              <a href="#">
+                지금 예약
+                <span>●</span>
+                <span>●</span>
+                <span>●</span>
+              </a>
+            </div>
+            <div class="offer_reviews">
+              <div class="offer_reviews_content">
+                <div class="offer_reviews_title">
+                  매우 좋은
                 </div>
-
-                <div class="heart2">
-                    <div class="pro3">
-                      <i class="fa-solid fa-heart"></i>
-                      <img src="./img/patrick-szylar-45bM3XGqnDE-unsplash.jpg">
-                      <span>
-                        <h2>Auckland / New Zealand</h2>
-                        <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                        <li>인천 출발시간 07:05</li>
-                        <li>뉴질랜드 도착시간 18:20</li>
-                      </span>
-                    </div>
-                    <div class="pro4">
-                      <i class="fa-solid fa-heart"></i>
-                      <img src="./img/xavier-von-erlach-ixPeR1YfgOA-unsplash.jpg">
-                      <span>
-                        <h2>Zurich / Switzerland</h2>
-                        <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                        <li>인천 출발시간 07:05</li>
-                        <li>스위스 도착시간 19:20</li>
-                      </span>
-                    </div>
+                <div class="offer_reviews_subtitle">
+                  리뷰 59개
                 </div>
-
-                <div class="btn"> 
-                  <ul>
-                    <a href="#"><li>이전</li></a>
-                    <a href="#"><li>다음</li></a>
-                  </ul>
+              </div>  
+                <div class="offer_reviews_rating text_center">
+                  8.9
                 </div>
-         </div>
-    </main>
-    
-
-    <!-- 장소 -->
-    <section class="place section" id="place">
-      <h2 class="section_title">관심 상품</h2>
-      <div class="place_container container grid">
-
-
-        <div class="place_container container grid">
-          <!-- place 1 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">4.8</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bali</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$2499</span>
               </div>
             </div>
-
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-
-          <!-- place 2 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">5.0</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bora bora</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$1599</span>
-              </div>
-            </div>
-
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-
-          <!-- place 3 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">4.8</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bali</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$2499</span>
-              </div>
-            </div>
-            
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-
-          <!-- place 4 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">4.8</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bali</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$2499</span>
-              </div>
-            </div>
-            
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-
-          <!-- place 3 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">4.8</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bali</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$2499</span>
-              </div>
-            </div>
-            
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </div>
-
-          <!-- place 4 -->
-          <div class="place_card">
-            <img src="" alt="" class="place_img">
-            <div class="place_content">
-              <span class="place_rating">
-                <i class="ri-star-line place_rating-icon"></i>
-                <span class="place_rating_number">4.8</span>
-              </span>
-
-              <div class="place_data">
-                <h3 class="place_title">Bali</h3>
-                <span class="place_subtitle">Indonesia</span>
-                <span class="place_price">$2499</span>
-              </div>
-            </div>
-            
-            <button class="button button_flex place_button">
-              <i class="ri-arrow-right-line"></i>
-            </button>
           </div>
         </div>
- 
 
-        
-      </div>
-    </section>
+        <!-- Item 2 -->
+        <div class="offers_item">
+          <div class="offers_image_background">
+            <img src="../12. domesticPage/img/seoul.jpg" width="100%">
+            <button class="heartBtn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="offer_name">
+            <a href="" style="font-size: 20px;">GYEONGBOKGUNG</a>
+          </div>
+          <div class="offers_information">
+            <div class="offers_price">249,000원
+              <span>1박 2일</span>
+            </div>
+            <p class="offers_text">
+              서울 시티투어<br>
+              #경복궁 #창덕궁 #청계천
+            </p>
+            <p class="days">
+              <span>일정시작 : 2022.09.23 (금)</span><br>
+              <span>일정종료 : 2022.09.24 (토)</span>
+            </p>
+            <div class="reservation_button">
+              <a href="#">
+                지금 예약
+                <span>●</span>
+                <span>●</span>
+                <span>●</span>
+              </a>
+            </div>
+            <div class="offer_reviews">
+              <div class="offer_reviews_content">
+                <div class="offer_reviews_title">
+                  좋은
+                </div>
+                <div class="offer_reviews_subtitle">
+                  리뷰 0개
+                </div>
+              </div>  
+                <div class="offer_reviews_rating text_center">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
+        <!-- Item 3 -->
+        <div class="offers_item">
+          <div class="offers_image_background">
+            <img src="../11. overseasPage/img/vietnam.jpg" width="100%">
+            <button class="heartBtn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+          <div class="offer_name">
+            <a href="">VIETNAM</a>
+          </div>
+          <div class="offers_information">
+            <div class="offers_price">579,900원
+              <span>5박 8일</span>
+            </div>
+            <p class="offers_text">
+              다양한 특전과 특가가 포함되어 있는 하노이 초특가 프로모션 상품으로,<br>
+              알차게 하노이 / 하롱베이를 즐길 수 있는 상품
+            </p>
+            <p class="days">
+              <span>2022.09.14 인천 출발 - 2022.09.14 하노이 도착</span><br>
+              <span>2022.09.18 하노이 출발 - 2022.09.18 인천 도착</span>
+            </p>
+            <div class="reservation_button">
+              <a href="#">
+                지금 예약
+                <span>●</span>
+                <span>●</span>
+                <span>●</span>
+              </a>
+            </div>
+            <div class="offer_reviews">
+              <div class="offer_reviews_content">
+                <div class="offer_reviews_title">
+                  매우 좋은
+                </div>
+                <div class="offer_reviews_subtitle">
+                  리뷰 246개
+                </div>
+              </div>  
+                <div class="offer_reviews_rating text_center">
+                  7.7
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </main>
+    
 
   <!-- Foot Section -->
   <div class="foot">

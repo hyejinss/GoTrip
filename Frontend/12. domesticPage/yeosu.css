@@ -421,6 +421,18 @@ img::selection {
   width: 44%;
 }
 
+.heartBtn {
+  position: absolute;
+  width: 10%;
+  top: 2%;
+  right: 0;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(253, 252, 252, 0);
+}
+
 .offer_name {
   position: absolute;
   display: flex;

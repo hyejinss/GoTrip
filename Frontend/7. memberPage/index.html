@@ -7,6 +7,8 @@
   <title>회원정보</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
+  <script defer type="text/javascript" src="../4. signupPage/signup.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -81,74 +83,87 @@
         
 
   <!-- Content Section -->
+  <main class="content">
+    <img src="../4. signupPage/sky.jpg" width="100%">
+    <div class="signup">
+      <h1>MEMBER</h1>
+      <form action="../5. mainPage/index.html">
+        <table class="sign">
+          <tr>
+            <th>이름</th>
+            <td><input type="text" class="box" name="name"autocomplete="off" placeholder="한글이름" maxlength="20"></td>        
+          </tr>
 
-    <main class="content">
-        <div class="signup">
-            <h1>회원정보</h1>
-            <form action="../5. mainPage/index.html">
-              <table class="sign">
-               <tr>
-                 <th>이름</th>
-                 <td><input type="text" class="form-control" name="name" autocomplete="off" placeholder="한글이름(ex.홍길동)" maxlength="20"></td>        
-             </tr>
-             <tr>
-                 <th>아이디</th>
-                 <td><input type="text" class="form-control" name="id" autocomplete="off" maxlength="20"></td>      
-             </tr>
-             <tr>
-               <th>비밀번호</th>
-               <td><input type="password" class="form-control" name="pass1" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>  
-               <th>비밀번호 확인</th>
-               <td><input type="password" class="form-control" name="pass2" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>       
-           </tr>
-           <tr>
-             <th>생년월일</th>
-             <td><input type="text" class="form-control" name="year" autocomplete="off" placeholder="(ex.1990)" maxlength="4"></td>      
-             <td>
-              <select name="month" class="form-control" style="width: 80px; height: 30px; text-align: center;">
-                 <option value="1월">1월</option>
-                 <option value="2월">2월</option>
-                 <option value="3월">3월</option>
-                 <option value="4월">4월</option>
-                 <option value="5월">5월</option>
-                 <option value="6월">6월</option>
-                 <option value="7월">7월</option>
-                 <option value="8월">8월</option>
-                 <option value="9월">9월</option>
-                 <option value="10월">10월</option>
-                 <option value="11월">11월</option>
-                 <option value="12월">12월</option>
-              </select>
-             </td>
-             <td><input type="text" class="form-control" name="day" autocomplete="off" placeholder="(ex.15)" maxlength="2"></td>
-           </tr>
-           <tr>
-             <th>휴대폰번호</th>
-             <td><input type="text" class="form-control" name="phone" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" maxlength="11"></td>        
-         </tr>
-         <tr>
-           <th>여권번호</th>
-           <td><input type="text" class="form-control" name="num" autocomplete="off" placeholder="영문+숫자 조합 9자리" maxlength="9"></td> 
-         </tr>
-         <tr>
-           <th>이메일</th>
-           <td><input type="text" class="form-control" name="email1" autocomplete="off" placeholder="(ex.sample007)" maxlength="20"></td> 
-           <td>@</td>
-           <td><input type="text" class="form-control" name="email2" autocomplete="off" placeholder="(ex.gamil.com)" maxlength="20"></td>       
-         </tr>
-         </table>
- 
-         <table class="btn">
-           <tr>
-             <td>
-             <input type="reset" class="btn1" value="회원 정보 수정">
-             <input type="submit" class="btn2" value="확인">
-             </td>
-         </tr>
-         </table>
-       </form>
-        </div>
-    </main>
+          <tr>
+            <th>아이디</th>
+            <td><input type="text" class="box" name="id" autocomplete="off" maxlength="15"></td>      
+          </tr>
+
+          <tr>
+            <th>비밀번호</th>
+            <td><input type="password" class="box" name="pass1" autocomplete="off" placeholder="영문 + 숫자 + 특수문자 조합 8~15자리" maxlength="15"></td>  
+          </tr>
+
+          <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="password" class="box" name="pass2" autocomplete="off" placeholder="영문 + 숫자 + 특수문자 조합 8~15자리" maxlength="15"></td>       
+          </tr>
+
+          <tr>
+            <th>생년월일</th>
+              <td>
+                <div class="info" id="info_birth">
+                  <select class="list" id="year">
+                    <option disabled selected>년</option>
+                  </select>
+                  <select class="list" id="month">
+                    <option disabled selected>월</option>
+                  </select>
+                  <select class="list" id="day">
+                    <option disabled selected>일</option>
+                  </select>
+                </div>
+              </td>
+          </tr>
+
+          <tr>
+            <th>휴대폰번호</th>
+            <td><input type="text" class="box" name="phone"autocomplete="off" maxlength="13" oninput="hypenTel(this)"></td>        
+          </tr>
+
+          <tr>
+            <th>여권번호</th>
+            <td><input type="text" class="box" name="num" autocomplete="off" placeholder="영문 + 숫자 조합 9자리" maxlength="9"></td>        
+          </tr>
+
+          <tr>
+            <th>이메일</th>
+              <td>
+                <input class="email_box" id="email_id" type="text"> @
+                <input class="email_box" id="email_domain" type="text"> 
+                  <select class="list" id="domain_list" onclick="input_email();">
+                    <option value="" disabled selected>선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="1">직접 입력</option>
+                  </select>
+              </td>
+          </tr>
+        </table>
+
+        <table class="btn">
+          <tr>
+            <td>
+              <input type="reset" class="btn1" value="취소">
+              <input type="submit" class="btn2" value="확인">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </main>
 
     
   <!-- Foot Section -->
