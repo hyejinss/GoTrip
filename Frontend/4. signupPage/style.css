@@ -301,12 +301,11 @@ img::selection {
 }
 
 .content h1 {
+  margin-top: 5%;
+  padding: 20px;
   font-size: 35px;
   color: gray;
-  padding: 20px;
   text-align: center;
-  margin-top: 5%;
-  margin-left: 5%;
   letter-spacing: 0.1rem;
   font-family: 'LeferiPoint-BlackA';
 }
@@ -369,7 +368,7 @@ table.sign td {
   /* background-color: rgb(255, 255, 255); */
   background-color: rgb(255, 255, 255, 0.1);
   border: none;
-  /* border-radius: 5px; */
+  border-radius: 5px;
   text-align: left;
   font-size: 14px;
   font-weight: 600;

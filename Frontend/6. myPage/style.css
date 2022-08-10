@@ -296,34 +296,35 @@ img::selection {
 }
 
 /******* Content Section *******/
-  
-  
 .content {
-  background-color: #ffffff;
-  padding: 50px 12px;
-  margin: 40px;
-  margin-bottom: 170px;
+  position: relative;
+  width: 100%;
 }
   
 .content h1 {
-  font-size: 30px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 35px;
   color: gray;
-  padding: 20px;
   text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+  font-family: 'LeferiPoint-BlackA';
 }
-  
-.signup {
-  position: relative;
-  margin: auto;
+
+.content__my {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 12%;
+  left: 22.5%;
+  padding: 4%;
+  background-color: rgba( 255, 255, 255, 0.5 );
 }
 
 table.myPage {
-  margin: auto;
-  width: 1200px;
-  height: 100px;
-  padding: 20px;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
   border-top: 3px solid #7c7b7b;
   border-bottom: 3px solid #7c7b7b;
   border-collapse: collapse;
@@ -333,20 +334,17 @@ table.myPage tr {
   border-bottom: 2px solid lightgray ;
 }
 
-table.myPage td {
-  text-align: center;
-  font-size: 25px;
-}
-
-.inf__btn {
-  width: 1200px;
-  height: 80px;
+.inf_btn {
+  width: 100%;
+  height: 100%;
   border: none;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: rgb(255, 255, 255, 0.1);
 }
 
-.inf__btn:hover {
+.inf_btn:hover {
   background: rgb(50, 51, 73);
   color: white;
   transition: all 0.5s;
@@ -376,6 +374,13 @@ table.myPage td {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
