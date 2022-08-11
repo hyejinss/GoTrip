@@ -82,91 +82,133 @@
 
   <!-- Content Section -->
   <main class="content">
-    <div class="content__pay">
-      <h1>결제내역</h1>
-      <div class="product">
+    <div class="content_pay">
+      <h1>PAYMENT &nbsp; HISTORY</h1>
+      <table class="payment">
 
-        <div class="pro1">
-          <table>
-            <thead>
-              <tr>
-                <td>2022/03/28</td>
-                <td></td>
-                <td style="color: red;">결제완료</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./img/andrew-ruiz-fmz-B9At9iQ-unsplash.jpg">
-                </td>
-                <td>
-                  <h3>Hawaii / USA</h3>
-                  <li>2,500,000원</li>
-                  <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                </td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <colgroup>
+          <col style="width: 450px;">
+          <col style="width: 350px;">
+          <col style="width: 150px;">
+          <col style="width: 100px;">
+        </colgroup>
 
-        <div class="pro2">
-          <table>
-            <thead>
-              <tr>
-                <td>2022/03/28</td>
-                <td></td>
-                <td style="color: red;">결제완료</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./img/damian-patkowski-T-LfvX-7IVg-unsplash.jpg">
-                </td>
-                <td>
-                  <h3>Kenya / Africa</h3>
-                  <li>4,500,000원</li>
-                  <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                  <li></li>
-                </td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- box 1 -->
+        <thead>
+          <tr>
+            <th class="pay_day">2022.06.11</th>
+            <th></th>
+            <th>결제 금액</th>
+            <th>결제 정보</th>
+          </tr>
+        </thead>
 
-        <div class="pro3">
-          <table>
-            <thead>
-              <tr>
-                <td>2022/03/28</td>
-                <td></td>
-                <td style="color: red;">결제완료</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./img/jieun-lim-oMsXE4kIKC8-unsplash.jpg">
-                </td>
-                <td>
-                  <h3>JEJU / Korea</h3>
-                  <li>1,500,000원</li>
-                  <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                  <li></li>
-                </td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="btn"> 
-        <ul>
-          <a href="#"><li>이전</li></a>
-          <a href="#"><li>다음</li></a>
+        <tbody>
+          <tr class="tbody_row">
+            <td>
+              <div class="travel_img">
+                <a href="" title="">
+                  <img class="img_slides" src="../11. overseasPage/img/Hawaii.jpg" width="450px">
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="travel_Information">
+                <h3>HAWAII / AMERICAS</h3>
+                <li>5박 7일</li>
+                <li>2022.08.01 인천 출발 - 2022.08.01 호놀룰루 도착</li>
+                <li>2022.08.06 호놀룰루 출발 - 2022.08.07 인천 도착</li>
+              </div>
+            </td>
+            <td class="price">
+              <span>2,500,000원</span>
+            </td>
+            <td class="payment_status">
+              <span>결제완료</span>
+            </td>
+          </tr>
+        </tbody>  
+
+        <!-- box 2 -->
+        <thead>
+          <tr>
+            <th class="pay_day">2022.01.25</th>
+            <th></th>
+            <th>결제 금액</th>
+            <th>결제 정보</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="tbody_row">
+            <td>
+              <div class="travel_img">
+                <a href="" title="">
+                  <img class="img_slides" src="../11. overseasPage/img/croatia.jpg" width="450px">
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="travel_Information">
+                <h3>CROATIA / EUROPE</h3>
+                <li>7박 9일</li>
+                <li>2022.04.7 인천 출발 - 2022.04.07 뮌헨 도착</li>
+                <li>2022.04.14 뮌헨 출발 - 2022.04.15 인천 도착</li>
+              </div>
+            </td>
+            <td class="price">
+              <span>3,590,000원</span>
+            </td>
+            <td class="payment_status">
+              <span>결제완료</span>
+            </td>
+          </tr>
+        </tbody> 
+
+        <!-- box 3 -->
+        <thead>
+          <tr>
+            <th class="pay_day">2021.10.27</th>
+            <th></th>
+            <th>결제 금액</th>
+            <th>결제 정보</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="tbody_row">
+            <td>
+              <div class="travel_img">
+                <a href="" title="">
+                  <img class="img_slides" src="../11. overseasPage/img/taiwan.jpg" width="450px">
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="travel_Information">
+                <h3>TAIWAN / ASIA</h3>
+                <li>3박 4일</li>
+                <li>2021.12.22 인천 출발 - 2021.12.22 타이베이 도착</li>
+                <li>2021.12.25 타이베이 출발 - 2021.12.25 인천 도착</li>
+              </div>
+            </td>
+            <td class="price">
+              <span>1,063,860원</span>
+            </td>
+            <td class="payment_status">
+              <span>결제완료</span>
+            </td>
+          </tr>
+        </tbody> 
+      </table>
+
+      <div class="pageBtn">
+        <ul class="pagination">
+          <li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+          <li><a class="green" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
         </ul>
       </div>
     </div>

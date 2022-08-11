@@ -384,14 +384,23 @@ td {
   font-weight: 600;
 }
 
-.reservation span {position:relative;  display: inline-block; color:red; letter-spacing: 0.8px;
-  animation:txtup 1.5s infinite; -webkit-animation:txtup 1.5s infinite;  -ms-animation:txtup 1.5s infinite;   -moz-animation: txtup 1.5s infinite; 
+.reservation span {
+  position:relative;  
+  display: inline-block; 
+  color:red; 
+  letter-spacing: 0.8px;
+  animation:txtup 1.5s infinite; 
+  -webkit-animation:txtup 1.5s infinite;  
+  -ms-animation:txtup 1.5s infinite;   
+  -moz-animation: txtup 1.5s infinite; 
   }
+
   .reservation span:nth-of-type(1){animation-delay:0.1s;}
   .reservation span:nth-of-type(2){animation-delay:0.2s;}
   .reservation span:nth-of-type(3){animation-delay:0.3s;}
   .reservation span:nth-of-type(4){animation-delay:0.4s;} 
   .reservation span:nth-of-type(5){animation-delay:0.4s;} 
+  
   @-webkit-keyframes txtup {
       0%{top:0;}
       20% {top:-0.2rem;}

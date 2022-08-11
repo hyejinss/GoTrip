@@ -297,119 +297,163 @@ img::selection {
 
 
 /******* Content Section *******/
-
 .content {
-  background-color: #ffffff;
-  padding: 50px 12px;
-  margin: auto;
+  position: relative;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 .content h1 {
-    font-size: 30px;
-    color: gray;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  padding: 20px;
+  font-size: 35px;
+  color: gray;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
-.product {
-  height: 650px;
+.content_pay {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  left: 6%;
+  margin: 8%;
 }
 
-.pro1 {
-  height: 200px;
-  margin-bottom: 20px;
+.payment {
+  position: relative;
+  width: 100%;
 }
 
-.pro2 {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.pro3 {
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.pro1 table {
-  width: 1200px;
-  height: 100px;
-  border-top: 3px solid gray;
+table {
   border-collapse: collapse;
-  margin: auto;
+  table-layout: fixed;
+  margin-bottom: 20px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.pro2 table {
-  width: 1200px;
-  height: 100px;
-  border-top: 3px solid gray;
-  border-collapse: collapse;
-  margin: auto;
+thead th {
+  padding: 17px;
+  font-family: "yg750";
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  border-top: 3px solid #485170;
+  border-bottom: 2px solid #97cadb;
 }
 
-.pro3 table {
-  width: 1200px;
-  height: 100px;
-  border-top: 3px solid gray;
-  border-collapse: collapse;
-  margin: auto;
+.pay_day {
+  padding-left: 5%;
+  text-align: left;
+  font-size: 16px;
 }
 
-table thead td {
-  padding: 10px;
-  font-weight: bold;
-  font-size: 20px;
-  border-bottom: 2px solid gray;
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  height: 68px;
+  font-family: "yg750";
+  font-size: 14px;
+  color: #171717;
+  text-align: center;
+  vertical-align: middle;
 }
 
-table tbody td {
-  padding: 10px;
+td {
+  padding-top: 20px;
+  padding-bottom: 7%;
+  font-weight: 600;
+  color: #464545;
+}
+
+.travel_Information {
+  text-align: left;
   list-style: none;
+  line-height: 30px;
+  font-family: 'LeferiPoint-BlackA';
 }
 
-table td h3 {
+.travel_Information h3 {
+  padding-bottom: 5%;
   font-size: 20px;
   font-weight: bold;
   color: #1032ad;
-  margin-top: -20px;
 }
 
-table td li {
-  font-size: 15px;
-  font-weight: bold;
+.travel_Information li {
+  color: #79848b;
 }
 
-td img {
-  width: 150px;
-  height: 130px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.price {
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.btn ul {
-  width: 400px;
-  margin: auto;
-  margin-top: 50px;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
+.payment_status {
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.btn li {
-  background-color: #5e2bb8;
-  border: 1px solid #5e2bb8;
-  color:  #fff;
-  padding: 10px 40px;
-  font-weight: bold;
-  font-size: 15px; 
+.payment_status span {
+  position:relative;  
+  display: inline-block; 
+  color: blue; 
+  letter-spacing: 0.8px;
+  animation:txtup 1.5s infinite; 
+  -webkit-animation:txtup 1.5s infinite;  
+  -ms-animation:txtup 1.5s infinite;   
+  -moz-animation: txtup 1.5s infinite; 
+  }
+
+  .payment_status span:nth-of-type(1){animation-delay:0.1s;}
+  .payment_status span:nth-of-type(2){animation-delay:0.2s;}
+  .payment_status span:nth-of-type(3){animation-delay:0.3s;}
+  .payment_status span:nth-of-type(4){animation-delay:0.4s;} 
+  .payment_status span:nth-of-type(5){animation-delay:0.4s;} 
+
+  @-webkit-keyframes txtup {
+      0%{top:0;}
+      20% {top:-0.2rem;}
+      40% {top:0;}
+      60% {top:0;}
+      80% {top:0;}
+      100% {top:0}
+  }
+  @keyframes txtup {
+      0% {top:0;}
+      20% {top:-0.2rem;}
+      40% {top:0}
+      60% {top:0}
+      80% {top:0}
+      100% {top:0}
 }
 
-.btn li:hover {
-  border: 1px solid #4169e1;
-  background: #4169e1;
-  color:#fff;
-  transition: all 0.5s;
+.pageBtn {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination li {
+  display: inline;
+  font-family: "yg750";
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.pagination li a {
+  text-decoration: noen;
+  color: #333;
+  float: left;
+  padding: 8px 16px;
+}
+
+.pagination a:hover {
+  color: #fff;
+  background-color: #97cadb;
 }
 
 
@@ -436,6 +480,13 @@ td img {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
