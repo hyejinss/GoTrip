@@ -297,31 +297,201 @@ img::selection {
 
 
 /******* Content Section *******/
-
 .content {
-  /* height: 1000px; */
-  background-color: #ffffff;
-  padding: 50px 100px;
-  margin: auto;
+  position: relative;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 .content h1 {
-  font-size: 30px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
+  margin-top: 5%;
+  margin-bottom: 3%;
   padding: 20px;
+  font-size: 35px;
+  color: gray;
   text-align: center;
-  margin-bottom: 60px;
+  letter-spacing: 0.1rem;
 }
 
-.title__wrap {
+.gallery {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  left: 7%;
+  margin: 8%;
+}
+
+.testimonials {
+  width: 100%;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section_title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d2c2c;
+  margin-top: -8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section_title h2 {
+  text-shadow: rgba(0, 0, 0 / 1%) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  width: 100%;
+}
+
+.test_slider_container {
+  width: 100%;
+  margin-top: 54px;
+}
+
+.owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+}
+
+.owl-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding-top: 36px;
+}
+
+.test_icon {
+  position: absolute;
+  top: 0;
+  left: 41px;
+  width: 72px;
+  height: 72px;
+  background: #fa9e1b;
+  border-radius: 50%;
+}
+
+.test_icon img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto !important;
+}
+
+.test_content_container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 44%;
+  background: rgba(49, 18, 75, 0.8);
+}
+
+.test_content {
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+  padding-left: 38px;
+  padding-right: 40px;
+}
+
+.test_item_info {
+  position: absolute;
+  left: 41px;
+  bottom: calc(100% - 18px);
+  background: #fff;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+
+.test_name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d2c2c;
+}
+
+.test_date {
+  font-size: 11px;
+  margin-top: 2px;
+  padding-left: 2px;
+  color: #2d2c2c;
+}
+
+.test_quote_title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 3px;
+  color: #fff;
+}
+
+.test_quote_text {
+  margin-top: 11px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-prev{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  cursor: pointer;
+}
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* .title__wrap {
   position: relative;
   height: 100px;
   margin-left: 100px;
   padding-bottom: 10px;
-  min-height: 48px;
+  min-height: 48px; */
   /* text-align: left; */
-}
+/* }
 
 .title {
   color: #333;
@@ -363,11 +533,11 @@ img::selection {
 
 .review__list ul {
   position: relative;
-  width: 100%;
+  width: 100%; */
   /* margin: 20px auto 50px; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* margin-left: 160px; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px;
   padding: 0;
   list-style: none;
 }
@@ -381,16 +551,16 @@ img::selection {
 .stage {
   position: relative;
   transform: translate3d(0px, 0px, 0px);
-  transition: all 0s ease 0s;
+  transition: all 0s ease 0s; */
   /* width: 916px; */
-  touch-action: manipulation;
+  /* touch-action: manipulation;
 }
 
 .item__active1 {
   justify-content: space-around;
-  width: 27px;
+  width: 27px; */
   /* margin-left: 275px; */
-  margin-left: 150px;
+  /* margin-left: 150px;
   min-height: 1px;
   float: left;
 }
@@ -401,9 +571,9 @@ img::selection {
 }
 
 .review__list1 ul li {
-  position: relative;
+  position: relative; */
   /* width: 270px; */
-  width: 500px;
+  /* width: 500px;
   float: left;
   margin: 0;
   padding: 0;
@@ -411,9 +581,9 @@ img::selection {
 
 .item__active2 {
   justify-content: space-around;
-  width: 27px;
+  width: 27px; */
   /* margin-left: 275px; */
-  margin-left: 230px;
+  /* margin-left: 230px;
   min-height: 1px;
   float: left;
 }
@@ -424,9 +594,9 @@ img::selection {
 }
 
 .review__list2 ul li {
-  position: relative;
+  position: relative; */
   /* width: 270px; */
-  width: 500px;
+  /* width: 500px;
   float: left;
   margin: 0;
   padding: 0;
@@ -434,9 +604,9 @@ img::selection {
 
 .item__active3 {
   justify-content: space-around;
-  width: 27px;
+  width: 27px; */
   /* margin-left: 275px; */
-  margin-left: 280px;
+  /* margin-left: 280px;
   min-height: 1px;
   float: left;
 }
@@ -447,9 +617,9 @@ img::selection {
 }
 
 .review__list3 ul li {
-  position: relative;
+  position: relative; */
   /* width: 270px; */
-  width: 500px;
+  /* width: 500px;
   float: left;
   margin: 0;
   padding: 0;
@@ -457,9 +627,9 @@ img::selection {
 
 .item__active4 {
   justify-content: space-around;
-  width: 27px;
+  width: 27px; */
   /* margin-left: 275px; */
-  margin-left: 340px;
+  /* margin-left: 340px;
   min-height: 1px;
   float: left;
 }
@@ -470,9 +640,9 @@ img::selection {
 }
 
 .review__list4 ul li {
-  position: relative;
+  position: relative; */
   /* width: 270px; */
-  width: 500px;
+  /* width: 500px;
   float: left;
   margin: 0;
   padding: 0;
@@ -610,18 +780,18 @@ button>span {
   background: #fff calc(100% - 10px) center no-repeat;
 }
 
-.boardTop__right {
+.boardTop__right { */
   /* float: left; */
-  float: right;
+  /* float: right;
   width: 370px;
 }
 
 .board__search {
   position: relative;
   display: inline-block;
-  width: 230px;
+  width: 230px; */
   /* height: 38; */
-  padding: 0;
+  /* padding: 0;
   text-align: left;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -662,7 +832,7 @@ input {
 
 .tbl {
   /* position: relative; */
-  width: 100;
+  /* width: 100;
 }
 
 table {
@@ -700,11 +870,11 @@ thead th {
   font-size: 18px;
   border-bottom: 1px solid #363636;
   background-color: #fff;
-}
+} */
 
 
-tbody {  /* 입력하지 않아도 자동 입력되어있는 값? */
-  display: table-row-group;
+/* tbody {  입력하지 않아도 자동 입력되어있는 값?  */
+  /* display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
@@ -950,7 +1120,7 @@ tbody td {
   border: 3px solid skyblue;
   text-align: center;
   margin-top: 40px;
-}
+} */
 
 
 /******* Foot Section *******/

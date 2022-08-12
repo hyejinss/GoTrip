@@ -344,7 +344,7 @@ thead th {
 }
 
 .pay_day {
-  padding-left: 5%;
+  padding-left: 3%;
   text-align: left;
   font-size: 16px;
 }
@@ -358,9 +358,17 @@ tbody {
 
 td {
   padding-top: 20px;
+  padding-left: 3%;
   padding-bottom: 7%;
   font-weight: 600;
   color: #464545;
+}
+
+.carousel-inner img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 270px;
 }
 
 .travel_Information {
@@ -382,11 +390,13 @@ td {
 }
 
 .price {
+  padding: 0;
   font-size: 16px;
   font-weight: 600;
 }
 
 .payment_status {
+  padding: 0;
   font-size: 16px;
   font-weight: 600;
 }
@@ -430,25 +440,25 @@ td {
   text-align: center;
 }
 
-.pagination {
+.page_number {
   display: inline-block;
 }
 
-.pagination li {
+.page_number li {
   display: inline;
   font-family: "yg750";
   font-size: 17px;
   font-weight: 800;
 }
 
-.pagination li a {
+.page_number li a {
   text-decoration: noen;
   color: #333;
   float: left;
   padding: 8px 16px;
 }
 
-.pagination a:hover {
+.page_number a:hover {
   color: #fff;
   background-color: #97cadb;
 }
