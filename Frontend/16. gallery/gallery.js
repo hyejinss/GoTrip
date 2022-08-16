@@ -18,10 +18,14 @@ var functionName = "";
 
 // owl slide API
 $('.owl-carousel').owlCarousel({
-  items : 4, //한번에 보여줄 아이템 수
+  items : 3, //한번에 보여줄 아이템 수
   loop : true, //반복여부
   margin : 35,
   nav : true,
+  navText : [
+    '<i class="fa-solid fa-angle-left fa-2x"></i>',
+    '<i class="fa-solid fa-angle-right fa-2x"></i>'
+  ],
   responsive : {
       0 : {
           items : 1
@@ -30,19 +34,7 @@ $('.owl-carousel').owlCarousel({
           items : 3
       },
       1000 : {
-          items : 4
+          items : 3
       }
   }
-})
-
-// Go to the next item
-$('.customNextBtn').click(function() {
-  owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.customPrevBtn').click(function() {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl.trigger('prev.owl.carousel', [300]);
-})
-
+});
