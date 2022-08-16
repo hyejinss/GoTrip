@@ -96,7 +96,7 @@
             <div class="col">
               <div class="test_slider_container">
 
-                <!-- owl-carousel -->
+                <!-- Owl Carousel -->
                 <div class="owl-carousel owl-theme owl-loaded">
                   <div class="owl-stage-outer">
                     <div class="owl-stage">
@@ -295,195 +295,241 @@
       </div>
 
 
+      <!-- Review text list -->
+      <div class="boardTop_wrap">
+        <div class="boardTop_left">
+          <div class="form_wrap">
 
+            <label for="category" class="hide">구분선택</label>
+            <select class="form_control" id="category" onchange="categoryChange(this)">
+              <option value="" disabled selected>구분선택</option>
+              <option value="overseas">해외</option>
+              <option value="domestic">국내</option>
+            </select> 
 
-
-
-
-
-          <!-- <div class="title__wrap">
-            <div class="title">여행후기</div>
-              <div class="title__desc">여행을 다녀온 고객분들의 여행 이야기
-            </div>
-          </div> 
-
-                    <div class="nav__disabled">
-                      <button type="button" role="presentation" class="prev__disabled">
-                        <span aria__lable="previous">＜</span>
-                      </button>
-                      <button type="button" role="presentation" class="prev__disabled">
-                        <span aria__lable="next">＞</span>
-                      </button>
-                    </div>
-                    <div class="dots__disbled">
-                      <button role="button" class="dot__active">
-                        <span></span>
-                      </button>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-              <div class="boardTop__wrap">
-                <div class="boardTop__left">
-                  <div class="form__wrap">
-                    <label for="category" class="hide">구분 선택</label>
-                    <select class="form__control" id="category" name="category">
-                      <option value>전체선택</option>
-                      <option value="1">항공</option>
-                      <option value="2">국내</option>
-                    </select> 
-                    <label for="region" class="hide">지역 선택</label>
-                    <select class="form__control" id="region" name="region">
-                      <option value>전체보기</option>
-                      <option value="미국">미국</option>
-                      <option value="스위스">스위스</option>
-                      <option value="아프리카">아프리카</option>
-                      <option value="뉴질랜드">뉴질랜드</option>
-                      <option value="제주">제주</option>
-                      <option value="부산">부산</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="boardTop__right">
-                  <div class="form__wrap">
-                    <label for="search__type" class="hide">제목, 내용 선택하여 검색</label>
-                    <select class="form__control type" id="search__type" name="search__type">
-                      <option value="1">제목내용</option>
-                      <option value="2">제목</option>
-                      <option value="3">내용</option>
-                      <option value="4">작성자</option>
-                    </select>
-                    <div class="board__search">
-                      <label for="search__text" class="hide">검색</label>
-                      <input class="search__bar" id="search__text" max="10" name="search__text" title="검색" type="text">
-                      <a href="" onclick="" class="search__btn"><i class="fa-solid fa-magnifying-glass">검색</i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-              <div class="tbl">
-                <table>
-                  <caption>여행후기</caption>
-                  <colgroup>
-                    <col style="width: 10%;">
-                    <col style="width: 10%;">
-                    <col style="width: 10%;">
-                    <col style="width: 48%;">
-                    <col style="width: 10%;">
-                    <col style="width: 12%;">
-                  </colgroup>
-                  <thead>
-                  <tr>
-                    <th scope="col">번호</th>
-                    <th scope="col">구분</th>
-                    <th scope="col">지역</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col">작성일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class>
-                    <td> 12345 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>국내</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">울릉도, 독도</a>
-                    </td>
-                    <td class="brd__writer">박**</td>
-                    <td class="brd__date">2022.01.14</td>
-                  </tr>
-                  <tr class>
-                    <td> 67891 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>유럽</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">꿈의 스위스를 마치고</a>
-                    </td>
-                    <td class="brd__writer">유**</td>
-                    <td class="brd__date">2022.02.22</td>
-                  </tr>
-                  <tr class>
-                    <td> 98765 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>미국</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">2년동안 해외여행 못나가다</a>
-                    </td>
-                    <td class="brd__writer">이**</td>
-                    <td class="brd__date">2022.03.01</td>
-                  </tr>
-                  <tr class>
-                    <td> 74515 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>하와이</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">코로나로 고민했던 신혼여행</a>
-                    </td>
-                    <td class="brd__writer">신**</td>
-                    <td class="brd__date">2022.03.15</td>
-                  </tr>
-                  <tr class>
-                    <td> 15072 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>동남아</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">엄마랑 태국여행을 다녀왔어요</a>
-                    </td>
-                    <td class="brd__writer">사**</td>
-                    <td class="brd__date">2022.04.01</td>
-                  </tr>
-                  <tr class>
-                    <td> 35845 </td>
-                    <td>
-                      <span class="state">항공</span>
-                    </td>
-                    <td>러시아</td>
-                    <td class="ta_1">
-                      <a href="" class="brd__cont__text">고민 끝에 근교로 여행 떠나다</a>
-                    </td>
-                    <td class="brd__writer">박**</td>
-                    <td class="brd__date">2022.04.05</td>
-                  </tr>
-                </tbody>
-              </table>
-              </div> -->
-            <!-- <dic class="pagination__wrap">
-              <div class="pagination" id="board__commonlist">
-                <a class="pageNumber__active" href="#1">1</a>
-                <a class="pageNumber" href="#2">2</a>
-                <a class="pageNumber" href="#3">3</a>
-                <a class="pageNumber" href="#4">4</a>
-                <a class="paging__side" href="#5">5
-                  <a href="" class="page__next">
-                    <span>다음</span>
-                  </a>
-                </a>
-              </div> -->
-              <!-- <script type="text/javascript"></script>   **********  페이지스크립트 -->
-              <!-- <a href="" class="btn__middle__reg__btn">글등록</a>
-            </dic>
-            <div class="notice__wrap">
-              <p class="title__notice">꼭 읽어주세요</p>
-              <ul>
-                <li>
-                  글 작성 시 정보 유출에 의한 피해방지를 위해 개인정보 기재는 삼가주시기 바랍니다. 예) 주민등록번호, 전화번호, 여권번호, 신용카드번호 등</li>
-                <li>해당 게시판과 글의 성격이 맞지 않을 경우, 관리자에 의해 게시글이 이동될 수 있습니다.</li>
-                <li>저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관 및 관련법률에 의해 제재를 받을 수</li>
-              </ul>
-            </div> -->
-          </div> 
+            <label for="region" class="hide">지역선택</label>
+            <select class="form_control" id="region" onclick="">
+              <option value="" disabled selected>지역선택</option>
+              <option value="europe">유럽</option>
+              <option value="americas">미주</option>
+              <option value="africa">아프리카</option>
+              <option value="asia">아시아</option>
+              <option value="seoul">서울</option>
+              <option value="busan">부산</option>
+              <option value="yeosu">여수</option>
+              <option value="jeju">제주</option>
+            </select>
+          </div>
         </div>
+        
+        <div class="boardTop_right">
+          <div class="form_wrap">
+            <label for="search_type" class="hide">제목, 내용 선택하여 검색</label>
+            <select class="form_control type" id="search_type">
+              <option value="" disabled selected>제목내용</option>
+              <option value="1">제목</option>
+              <option value="2">내용</option>
+              <option value="3">작성자</option>
+            </select>
+
+            <div class="board_search">
+              <input class="search_bar" id="search_text" max="10" name="search_text" title="검색" type="text">
+              <button type="button" class="serchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="review_talbe">
+        <table>
+          <colgroup>
+            <col style="width: 5%;">
+            <col style="width: 7%;">
+            <col style="width: 5%;">
+            <col style="width: 50%;">
+            <col style="width: 10%;">
+            <col style="width: 8%;">
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">구분</th>
+              <th scope="col">지역</th>
+              <th scope="col">제목</th>
+              <th scope="col">작성자</th>
+              <th scope="col">작성일</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td> 12345 </td>
+              <td>
+                <span class="domestic" >국내</span>
+              </td>
+              <td>제주</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">2박 3일 제주도</a>
+              </td>
+              <td class="brd_writer">박 * *</td>
+              <td class="brd_date">2022.06.11</td>
+            </tr>
+
+            <tr>
+              <td> 67891 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>유럽</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">꿈의 스위스를 마치고</a>
+              </td>
+              <td class="brd_writer">유 * *</td>
+              <td class="brd_date">2022.05.22</td>
+            </tr>
+
+            <tr>
+              <td> 98765 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>미주</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">2년동안 해외여행 못나가다</a>
+              </td>
+              <td class="brd_writer">이 * *</td>
+              <td class="brd_date">2022.04.07</td>
+            </tr>
+
+            <tr>
+              <td> 74515 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>미주</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">코로나로 고민했던 하와이 신혼여행</a>
+              </td>
+              <td class="brd_writer">신 * *</td>
+              <td class="brd_date">2022.03.01</td>
+            </tr>
+
+            <tr>
+              <td> 15072 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>아시아</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">엄마랑 태국여행을 다녀왔어요</a>
+              </td>
+              <td class="brd_writer">서 * *</td>
+              <td class="brd_date">2022.01.30</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="domestic">국내</span>
+              </td>
+              <td>여수</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">고민 끝에 여수여행 떠나다</a>
+              </td>
+              <td class="brd_writer">박 * *</td>
+              <td class="brd_date">2021.12.15</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="domestic">국내</span>
+              </td>
+              <td>부산</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">겨울의 부산</a>
+              </td>
+              <td class="brd_writer">김 * *</td>
+              <td class="brd_date">2021.11.29</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>유럽</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">낭만의 거리 프랑스 여행</a>
+              </td>
+              <td class="brd_writer">한 * *</td>
+              <td class="brd_date">2019.12.01</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>아프리카</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">아프리카는 처음이라</a>
+              </td>
+              <td class="brd_writer">윤 * *</td>
+              <td class="brd_date">2021.10.14</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="domestic">국내</span>
+              </td>
+              <td>제주</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">아이와 비행기타고</a>
+              </td>
+              <td class="brd_writer">권 * *</td>
+              <td class="brd_date">2021.12.15</td>
+            </tr>
+
+            <tr>
+              <td> 35845 </td>
+              <td>
+                <span class="overseas">해외</span>
+              </td>
+              <td>아시아</td>
+              <td class="ta_1">
+                <a href="" class="brd_title">가족과 함께 첫 해외여행</a>
+              </td>
+              <td class="brd_writer">이 * *</td>
+              <td class="brd_date">2021.12.15</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div> 
+
+      <button type="button" class="writepostBtn">글등록</div>
+
+      <div class="pageBtn">
+        <ul class="page_number">
+          <li><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+          <li><a class="" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="notice_wrap">
+        <p class="title_notice">&#8251; 꼭 읽어주세요</p>
+        <ul>
+          <li>&#9702;글 작성 시 정보 유출에 의한 피해방지를 위해 개인정보 기재는 삼가주시기 바랍니다. 예) 주민등록번호, 전화번호, 여권번호, 신용카드번호 등</li>
+          <li>&#9702;해당 게시판과 글의 성격이 맞지 않을 경우, 관리자에 의해 게시글이 이동될 수 있습니다.</li>
+          <li>&#9702;저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관 및 관련법률에 의해 제재를 받을 수 있습니다.</li>
+        </ul>
+      </div>
     </div>
   </main>  
 
