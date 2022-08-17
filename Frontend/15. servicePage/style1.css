@@ -297,114 +297,272 @@ img::selection {
 
 
 /******* Content Section *******/
-
 .content {
-  height: 700px;
-  background-color: #ffffff;
-  padding: 50px 100px;
-  margin: auto;
-  padding-bottom: 20px;
-  }
+  position: relative;
+  font-family: 'LeferiPoint-BlackA';
+  border: 3px solid green;
+}
+
+.service {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  left: 10%;
+  margin: 5%;
+}
 
 .service h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-bottom: 20px;
+  margin-top: 11%;
+  margin-bottom: 5%;
+  padding: 20px;
+  font-size: 35px;
+  color: gray;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 .service h2 {
-    font-size: 20px;
-    color: gray;
-    margin-left: 150px;
-    margin-top: 40px;
+  width: 100%;
+  left: 0;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(49, 18, 75, 0.8);
+  text-transform: uppercase;
 }
 
-.ser1 {
-    width: 1400px;
-    height: 400px;
-    margin: auto;
+.boardTop_wrap {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50%;
+  font-family: "yg750";
+}
+
+.boardTop_left {
+  position: relative;
+  float: left;
+  width: 25%;
+}
+
+.form_wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.form_control {
+  display: inline-block;
+  width: 130px;
+  height: 36px;
+  padding: 0 31px 0 8px;
+  font-size: 15px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff calc(100% - 10px) center no-repeat;
+}
+
+.boardTop_right {
+  float: right;
+  width: 370px;
+}
+
+.board_search {
+  position: absolute;
+  display: inline-block;
+  width: 230px;
+  height: 34px;
+  margin-left: 5px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.serchBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.serchBtn:hover {
+  color: #97cadb;
+}
+
+.search_bar {
+  border: none;
+  width: 220px;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #595959;
+  background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+.serchBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: white;
+}
+
+.service_table {
+  width: 100%;
+  margin-top: 5%;
 }
 
 table {
-  width: 1400px;
-  height: 400px;
-  border-top: 3px solid gray;
-  border-bottom: 3px solid gray;
+  position: relative;
+  width: 100%;
+  border-top: 3px solid #404656;
   border-collapse: collapse;
 }
 
-th, td {
-  border-bottom: 2px solid lightgray;
-  padding: 10px;
+thead th {
+  padding: 14px 8px;
+  font-family: "yg750";
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #97cadb;
+}
+
+tbody {
+  font-family: "yg750";
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
   text-align: center;
 }
 
-th {
+tbody tr {
+  padding: 14px 8px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 14px 8px;
+  border: none;
+  text-align: center;
+  color: #404656;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody .overseas {
+  display: block;
+  width: 68px;
+  height: 28px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  color: #008aff;
+  border: 1px solid #008aff;
+}
+
+tbody .domestic {
+  display: block;
+  width: 68px;
+  height: 28px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  color: #fa9e1b;
+  border: 1px solid #fa9e1b;
+}
+
+tbody .member {
+  display: block;
+  width: 68px;
+  height: 28px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  color: #00c69e;
+  border: 1px solid #00c69e;
+}
+
+.brd_title {
+  color: #485170;
+}
+
+.contect {
+  display: flex;
+  padding-top: 50px;
+  color: red;
+}
+
+.call {
+  position: absolute;
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.writepostBtn {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  margin-right: 0;
+  font-size: 16px;
+  font-family: "yg750";
+  color: #fff;
+  font-weight: 800;
+  border: 1px solid #1351a5;
+  border-radius: 5px;
+  background-color: #1351a5;
+}
+
+.writepostBtn:hover {
+  border: 1px solid #4169e1;
+  background: #4169e1;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.pageBtn {
+  position: relative;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.page_number {
+  display: inline-block;
+}
+
+.page_number li {
+  display: inline;
+  font-family: "yg750";
   font-size: 17px;
-  background-color: #eeeeee;
-  padding: 15px;
+  font-weight: 800;
 }
 
-td {
-  font-size: 12px;
+.page_number li a {
+  text-decoration: none;
+  color: #333;
+  float: left;
+  padding: 8px 16px;
 }
 
-.ser2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.ser2 p {
-    color: red;
-}
-
-.btn1 {
-    width: 300px;
-    padding: 10px;
-    margin-top: 40px;
-    margin-right: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn1 input {
-  width: 100px;
-  height: 40px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 3px solid #4169ed;
-  background-color: white;
-}
-
-.btn1 input:hover {
-  color: white;
-  background-color: #4169ed;
-}
-
-.btn2 {
-    width: 100px;
-    height: 20px;
-    padding: 10px;
-    margin-right: 40px;
-    text-align: center;
-}
-
-.btn2 input {
-  font-size: 15px;
-  font-weight: bold;
-  width: 100px;
-  height: 40px;
-  border: 3px solid #4169ed;
-  background-color: white;
-}
-
-.btn2 input:hover {
-  color: white;
-  background-color: #4169ed;
+.page_number a:hover {
+  color: #fff;
+  background-color: #97cadb;
 }
 
 
@@ -431,6 +589,13 @@ td {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

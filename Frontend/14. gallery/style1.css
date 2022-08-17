@@ -549,6 +549,11 @@ img::selection {
   right: 10px;
   border: none;
   background-color: white;
+  cursor: pointer;
+}
+
+.serchBtn:hover {
+  color: #97cadb;
 }
 
 .review_talbe {
@@ -571,7 +576,6 @@ thead th {
   text-align: center;
   border-bottom: 2px solid #97cadb;
 }
-
 
 tbody { /* 입력하지 않아도 자동 입력되어있는 값 */
   font-family: "yg750";
@@ -617,8 +621,6 @@ tbody .domestic {
   font-size: 13px;
   font-weight: 700;
   text-align: center;
-  color: #008aff;
-  border: 1px solid #008aff;
   color: #fa9e1b;
   border: 1px solid #fa9e1b;
 }
