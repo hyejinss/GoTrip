@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객센터 문의하기</title>
+  <title>고객센터 - 문의페이지</title>
   <link rel="stylesheet" href="style2.css">
   <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
 </head>
@@ -81,56 +81,83 @@
         
 
   <!-- Content Section -->
-   
-    <main class="content">
-        <div class="service">
-            <h1>고객센터</h1>
-                <h2>문의사항</h2>
-                <div class="ser1">
-                  <form>
-                    <table>
-                      <tr>
-                        <td>작성자</td>
-                        <td><input type="text"></td>
-                      </tr>
-                      <tr>
-                        <td>문의유형</td>
-                        <td>
-                          <select name="qna" id="qna">
-                            <option value="해외항공권">해외항공권</option>
-                            <option value="국내항공권">국내항공권</option>
-                            <option value="상품예약/결제">상품예약/결제</option>
-                            <option value="회원정보">회원정보</option>
-                            <option value="기타">기타</option>
-                          </select>
-                      </td>
-                      </tr>
-                      <tr>
-                        <td>제목</td>
-                        <td><input type="text"></td>
-                      </tr>
-                      <tr>
-                        <td>문의내용</td>
-                        <td><input type="text" style="height: 200px;"></td>
-                      </tr>
-                    </table>
-                  </form>
-                </div>
+  <main class="content">
+    <div class="service">
+    <h1>SERVICE CENTER</h1>
+      <h2>문의사항</h2>
 
-            <div class="ser2">
-              <span>개인정보이용동의</span>
-              <input type="checkbox">
-              </div>
+      <div class="inquiry_table">
+        <form>
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row">제목</th>
+                <td>
+                  <input type="text" class="title" autocomplete="off" placeholder="제목을 입력해주세요." maxlength="20">
+                </td>
+              </tr>
 
-                <div class="ser3">
-                    <div class="btn">
-                      <input type="button" value="취소" onclick="location.href='../14. servicePage/index1.html'">
-                      <input type="button" value="등록" onclick="alert('등록되었습니다.'); location.href='./index1.html'">
-                    </div>
-                </div>
+              <tr>
+                <th scope="row">문의유형</th>
+                <td>
+                  <select name="category" id="category" onchange="categoryChange(this)">
+                    <option value="" disabled selected>구분선택</option>
+                    <option value="overseas">해외</option>
+                    <option value="domestic">국내</option>
+                    <option value="member">회원정보</option>
+                  </select>
 
-        </div>
-    </main>
+                  <select name="inquiry" id="inquiry">
+                    <option value="" disabled selected>문의유형</option>
+                    <option value="airline_ticket">항공권</option>
+                    <option value="payment">결제</option>
+                    <option value="point">적립금</option>
+                    <option value="products">상품</option>
+                    <option value="member">회원정보</option>
+                    <option value="etc">기타</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">작성자</th>
+                <td>
+                  <input type="text" class="writer" autocomplete="off" maxlength="10">
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">문의내용</th>
+                <td colspan="2">
+                  <textarea type="text" class="review_text" autocomplete="off" placeholder="내용을 입력해주세요." required></textarea>
+                  <div class="review_text" style="white-space: pre-wrap;"><c:out value="${answer.answer}"></c:out></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" class="agree_check">
+        <span>개인정보 수집 및 이용에 대한 동의(필수)</span>
+      </div>
+
+      <div class="serviceBtn">
+        <button type="button" class="delete" onclick="location.href='../15. servicePage/index1.html'">취소</button>
+        <button type="button" class="submit" onclick="alert('등록되었습니다.'); location.href='./index1.html'">완료</button>
+      </div>
+
+      <div class="notice_wrap">
+        <p class="title_notice">&#8251; 꼭 읽어주세요</p>
+        <ul>
+          <li>&#9702;글 작성 시 정보 유출에 의한 피해방지를 위해 개인정보 기재는 삼가주시기 바랍니다. 예) 주민등록번호, 전화번호, 여권번호, 신용카드번호 등</li>
+          <li>&#9702;해당 게시판과 글의 성격이 맞지 않을 경우, 관리자에 의해 게시글이 이동될 수 있습니다.</li>
+          <li>&#9702;저작권 등 다른 사람의 권리를 침해하거나 명예를 훼손하는 게시글은 이용약관 및 관련법률에 의해 제재를 받을 수 있습니다.</li>
+        </ul>
+      </div>
+    </div> 
+  </main>
 
     
   <!-- Foot Section -->
@@ -146,5 +173,8 @@
       <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
     </span>
   </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="../15. servicePage/service.js"></script>
 </body>
 </html>

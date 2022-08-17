@@ -84,9 +84,10 @@
   <!-- Content Section -->
   <main class="content">
     <div class="gallery">
-      <h1>PHOTO REVIEW</h1>
-      <table class="drawup">
+    <h1>PHOTO REVIEW</h1>
+      <h2>고객리뷰</h2>
 
+      <table class="drawup">
         <tbody>
           <tr>
             <th scope="row">제목</th>
@@ -110,16 +111,20 @@
           </tr>
         </tbody>
 
-        <tfoot>
+        <tr>
+          <th scope="row">내용</th>
           <td colspan="2">
             <textarea type="text" class="review_text" autocomplete="off" placeholder="내용을 입력해주세요." required></textarea>
             <div class="review_text" style="white-space: pre-wrap;"><c:out value="${answer.answer}"></c:out></div>
           </td>
-        </tfoot>
+        </tr>
       </table>
     </div>
     
-    <button type="submit" class="submitBtn">완료</button>
+    <div class="submitBtn">
+      <button type="button" class="delete" onclick="location.href='../14. gallery/index1.html'">취소</button>
+      <button type="button" class="submit" onclick="alert('등록되었습니다.'); location.href='./index1.html'">완료</button>
+    </div>
 
     <div class="notice_wrap">
       <p class="title_notice">&#8251; 꼭 읽어주세요</p>
