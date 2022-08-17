@@ -296,66 +296,163 @@ img::selection {
 
 
 /******* Content Section *******/
-
 .content {
-  height: 700px;
-  background-color: whitesmoke;
-  padding: 8px 12px;
+  position: relative;
+  font-family: 'LeferiPoint-BlackA';
 }
 
 .gallery h1 {
-  font-size: 30px;
-  color: gray;
-  border-bottom: 3px solid #7c7b7b;
+  margin-top: 5%;
+  margin-bottom: 3%;
   padding: 20px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  color: gray;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
-table.drawup {
+.gallery {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  left: 7%;
+  margin: 8%;
+}
+
+.drawup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 20%;
   border-collapse: collapse;
   text-align: center;
-  line-height: 3;
-  margin: auto;
+  line-height: 2;
+  font-family: "yg750";
 }
 
-table.drawup tbody th {
-  width: 200px;
-  padding: 10px;
-  font-weight: bold;
-  vertical-align: top;
-  border: 2px solid #ccc;
-  background: lightgray;
-}
-
-table.drawup tbody td {
-  width: 800px;
-  padding: 10px;
-  font-weight: bold;
-  vertical-align: top;
-  border: 1px solid #ccc;
-  background: white;
-}
-
-table.drawup tfoot td {
-  width: 200px;
-  padding: 100px;
-  font-weight: bold;
-  vertical-align: top;
-  border: 1px solid #ccc;
-  background: white;
+tbody th {
+  width: 13%;
+  height: 50px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
   text-align: center;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background-color: rgba(216, 212, 212, 0.2)
 }
 
-.btn {
+tbody td {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.title {
+  width: 98%;
+  height: 50px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+.writer {
+  width: 99%;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+.select_file {
+  width: 99%;
+}
+
+tfoot td {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 98.5%;
+  height: 500px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: none;
+}
+
+.submitBtn {
+  position: relative;
+  width: 200px;
+  height: 60px;
   float: right;
-  width: 100px;
-  padding: 10px;
-  border: 3px solid skyblue;
-  text-align: center;
-  margin-top: 40px;
-  margin-right: 420px;
+  right: 15%;
+  margin-top: -10%;
+  font-size: 16px;
+  font-family: "yg750";
+  color: #fff;
+  font-weight: 800;
+  border: 1px solid #1351a5;
+  border-radius: 5px;
+  background-color: #1351a5;
 }
+
+.submitBtn:hover {
+  border: 1px solid #4169e1;
+  background: #4169e1;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.notice_wrap {
+  position: relative;
+  width: 70%;
+  height: 5%;
+  margin-left: 15%;
+  font-family: "yg750";
+}
+
+.title_notice {
+  line-height: 20px;
+  padding: 0 0 0 30px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+
+.notice_wrap ul {
+  width: 100%;
+  padding-top: 20px;
+  margin-top: 18px;
+  margin-bottom: 5%;
+  border-top: 1px solid #e0e0e0;
+  list-style: none;
+}
+
+.notice_wrap ul li {
+  padding: 0 0 0 40px;
+  margin: 0 0 6px 0;
+  line-height: 1.45;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  color: #404656;
+} 
 
 
 /******* Foot Section *******/
@@ -381,6 +478,13 @@ table.drawup tfoot td {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

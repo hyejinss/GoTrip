@@ -679,43 +679,6 @@ tbody .domestic {
   background-color: #97cadb;
 }
 
-.notice_wrap {
-  position: relative;
-  width: 70%;
-  height: 5%;
-  margin-left: 15%;
-  font-family: "yg750";
-}
-
-.title_notice {
-  line-height: 20px;
-  padding: 0 0 0 30px;
-  text-align: left;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  color: #333;
-}
-
-.notice_wrap ul {
-  width: 100%;
-  padding-top: 20px;
-  margin-top: 18px;
-  margin-bottom: 5%;
-  border-top: 1px solid #e0e0e0;
-  list-style: none;
-}
-
-.notice_wrap ul li {
-  padding: 0 0 0 40px;
-  margin: 0 0 6px 0;
-  line-height: 1.45;
-  text-align: left;
-  font-size: 15px;
-  font-weight: 400;
-  color: #404656;
-} 
-
 
 /******* Foot Section *******/
 .foot {
