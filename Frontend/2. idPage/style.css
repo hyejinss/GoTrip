@@ -50,7 +50,7 @@ body {
   color: rgb(124, 123, 123);
 }
 
-.find__id {
+.find_id {
   position: absolute;
   width: 500px;
   height: 300px;
@@ -61,7 +61,7 @@ body {
   z-index: 1;
 } 
 
-.radio__wrap {
+.radio_wrap {
   position: absolute;
   width: 450px;
   margin-left: -200px;
@@ -77,20 +77,20 @@ input[type="radio"] {
   vertical-align: middle;
 }
 
-.radio__wrap label {
+.radio_wrap label {
   margin-right: 30px;
   color: rgb(87, 87, 87);
   font-weight: bold;
   font-size: 12px;
 }
 
-.inp__wrap {
+.inp_wrap {
   position: absolute;
   width: 400px;
   height: 40px;
 }
 
-#cust__name {
+#cust_name {
   letter-spacing: 1px;
   position: absolute;
   width: 410px;
@@ -114,7 +114,7 @@ input[type="radio"] {
   padding-left: 7px;
 }
 
-.cust__phone {
+.cust_phone {
   width: 500px;
   margin-left: 8px;
   margin-top: 100px;
@@ -123,7 +123,7 @@ input[type="radio"] {
   padding: 20px 2em 2em;
 }
 
-#cust__phone__a {
+#cust_phone_a {
   letter-spacing: 1px;
   width: 130px;
   height: 40px;
@@ -134,7 +134,7 @@ input[type="radio"] {
   border: none;
 }
 
-#cust__phone__b {
+#cust_phone_b {
   letter-spacing: 1px;
   width: 130px;
   height: 40px;
@@ -145,7 +145,7 @@ input[type="radio"] {
   border: none;
 }
 
-#cust__phone__c {
+#cust_phone_c {
   letter-spacing: 1px;
   width: 130px;
   height: 40px;
@@ -156,7 +156,7 @@ input[type="radio"] {
   border: none;
 }
 
-#cust__email {
+#cust_email {
   width: 500px;
   margin-left: 8px;
   margin-top: -92px;
@@ -170,7 +170,7 @@ input[type="radio"] {
   height: 20px;
 }
 
-#cust__email__a {
+#cust_email_a {
   letter-spacing: 1px;
   width: 220px;
   height: 40px;
@@ -182,7 +182,7 @@ input[type="radio"] {
   border: none;
 }
 
-#cust__email__b {
+#cust_email_b {
   letter-spacing: 1px;
   width: 145px;
   height: 40px;

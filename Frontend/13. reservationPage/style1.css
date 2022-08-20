@@ -32,11 +32,11 @@ a {
   background-color: #ffffff;
 }
 
-.head__logo {
+.head_logo {
   margin-left: 8%;
 }
 
-.search__box {
+.search_box {
   width: 70%;
   margin-left: 15%;
 }
@@ -105,24 +105,24 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.head__icons {
+.head_icons {
   display: flex;
   text-decoration: none;
   list-style: none;
   margin-right: 13%;
 } 
 
-.head__icons li {
+.head_icons li {
   padding: 15% 15% 6% 15%;
 }
 
-.head__icons li a {
+.head_icons li a {
   text-align: center;
   font-size: 14px;
   color: #485170;
 }
 
-.head__icons a:hover {
+.head_icons a:hover {
   color: #97cadb;
 }
 
@@ -226,7 +226,7 @@ img::selection {
 
 }
 
-.dropdown-content {
+.dropdown_content {
   display: none;
   position: absolute;
   top: 100%;
@@ -238,7 +238,7 @@ img::selection {
   z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown_content a {
   float: none;
   color: #333;
   padding: 8px;
@@ -253,13 +253,13 @@ img::selection {
   color: #2651AB;
 }
 
-.dropdown-content a:hover {
+.dropdown_content a:hover {
   background-color: #ddd;
   color: black;
 }
 
 .dropdown:hover 
-.dropdown-content {
+.dropdown_content {
   display: block;
 }
 
@@ -287,7 +287,7 @@ img::selection {
   }
 
   .topnav .responsive .dropdown {float: none;}
-  .topnav .responsive .dropdown-content {position: relative;}
+  .topnav .responsive .dropdown_content {position: relative;}
   .topnav .responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -812,14 +812,72 @@ input.input_radio {
 .foot {
   background-color:#485170;
   margin-top: -5px;
-  padding: 20px;
+  padding-top: 20px;
 }
 
-.foot span {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: #ddd;
-  padding: 0 50px;
+.footWrap {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  font-family: 'LeferiPoint-BlackA';
+}
+
+.footer_row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 23%;
+}
+
+.footer_col {
+  width: 20%;
+  margin: 3%;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footer_icon {
+  width: 68px;
+  height: 68px;
+  margin-left: 38%;
+}
+
+.footer_icon img {
+  max-width: 100%;
+}
+
+.footer_title {
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  font-family: "yg750";
+}
+
+.footer_list {
+  margin-top: 19px;
+  margin-bottom: 7px;
+}
+
+.footer_list ul li {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.71;
+}
+
+.text_policy {
+  width: 50%;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  font-size: 14px;
+  text-align: center;
+}
+
+.text_copyright {
+  width: 50%;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  font-size: 14px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
