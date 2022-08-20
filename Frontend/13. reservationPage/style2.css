@@ -575,7 +575,7 @@ em {
   font-size: 13px;
 }
 
-.btn2 {
+.paymentBtn {
   width: 95%;
   height: 70px;
   margin-top: 7%;
@@ -590,7 +590,7 @@ em {
   list-style: 0.1rem;
 }
 
-.btn2:hover {
+.paymentBtn:hover {
   border: 1px solid #4169e1;
   background: #4169e1;
   color: #fff;
