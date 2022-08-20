@@ -302,7 +302,7 @@ img::selection {
   font-family: 'LeferiPoint-BlackA';
 }
 
-.content h1 {
+/* .content h1 {
   margin-top: 5%;
   margin-bottom: 3%;
   padding: 20px;
@@ -310,7 +310,7 @@ img::selection {
   color: gray;
   text-align: center;
   letter-spacing: 0.1rem;
-}
+} */
 
 .gallery {
   position: relative;
@@ -332,10 +332,12 @@ img::selection {
 }
 
 .section_title {
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 700;
   color: rgba(49, 18, 75, 0.8);
-  margin-top: -8px;
+  /* margin-top: -8px; */
+  margin-top: -5%;
+  margin-bottom: 5%;
   text-transform: uppercase;
   text-align: center;
 }
