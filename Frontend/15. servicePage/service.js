@@ -18,3 +18,12 @@ function categoryChange(e) {
     target.appendChild(opt);
   }
 }
+
+//Checkbox check event
+function agree_check(num) {
+  if ($("input:checkbox[name=item_name"+ num +"]").is(":checked")) {
+    alert ("개인정보 수집 및 이용 동의 확인되었습니다.");
+  } else {
+    alert ("개인정보 동의 바랍니다.")
+  }
+}

@@ -297,89 +297,60 @@ img::selection {
 
 
 /******* Content Section *******/
-
 .content {
-  background-color: #ffffff;
-  padding: 50px 100px;
-  margin: auto;
-  padding-bottom: 20px;
+  position: relative;
+  font-family: 'LeferiPoint-BlackA';
 }
 
-.right__cont {
+.reservation {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  left: 5%;
+  margin: 5%;
+}
+
+.right_cont {
   float: right;
 }
 
-.step__wrap {
+.step_wrap {
   text-align: center;
 }
 
-.step__wrap .step {
+.step_wrap .step {
   display: inline-block;
 }
 
-ol, ul, li {
-  list-style: none;
-  vertical-align: middle;
-}
-
-.step__wrap .step li {
+.step_wrap .step li {
   position: relative;
   float: left;
   font-size: 15px;
   font-weight: 600;
-  text-align: center;
 }
 
-.step__wrap .step li.on {
+.step_wrap .step li.on {
   color: #5e2bb8;
 }
 
-.step__wrap .step li.on .fa.line::before {
+.step_wrap .step li.on .fa.line::before {
   background-position: -27px -365px;
 }
 
 .reservation h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-}
-
-.tripinfo h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.notice h1{
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-
-.text__wrap1 {
   position: relative;
-  margin: 45px;
-  margin-bottom: 30px;
-  margin-left: 150px;
-  padding: 0;
-  width: 100%;
+  margin-top: 10%;
+  padding: 20px;
+  font-size: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
 }
 
-.text__wrap strong .tit {
-  display: inline-block;
-  font-size: 22px;
-  color: #111;
-  line-height: 1;
-  font-weight: 400;
+.text_wrap1 {
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 70%;
+  top: 5%;
+  margin: 45px;
 }
 
 .icon {
@@ -388,13 +359,15 @@ ol, ul, li {
   width: 350px;
 }
 
-.route__detail {
+.route_detail {
   display: inline-block;
 }
 
-.flight__list ul {
-  /* width: 60%; */
-  width: 950px;
+.flight_list {
+  width: 95%;
+}
+
+.flight_list ul {
   margin-top: 20px;
   margin-bottom: 50px;
   box-sizing: border-box;
@@ -403,22 +376,23 @@ ol, ul, li {
 }
 
 .row {
-  height: 150px;
   display: table;
+  height: 150px;
 }
 
-.cell__air {
-  width: 170px;
+.cell_air {
   display: table-cell;
+  width: 5%;
+  padding-left: 2%;
   vertical-align: middle;
 }
 
-.air__name {
+.air_name {
+  position: relative;
+  margin-bottom: 3px;
+  padding-left: 30%;
   font-size: 17px;
   color: #111;
-  margin-bottom: 3px;
-  position: relative;
-  padding-left: 27px;
   line-height: 1;
 }
 
@@ -426,56 +400,60 @@ p.txt {
   position: relative;
   line-height: 23px;
   color: #666;
-  font-size: 14px;
-  padding-left: 27px;
+  font-size: 15px;
+  padding-left: 30%;
 }
 
-.cell__type {
-  width: 438px;
+.cell_type {
   display: table-cell;
+  width: 7%;
+  padding-left: 10%;
   vertical-align: middle;
 }
 
-.item__course {
+.item_course {
   text-align: center;
   display: table;
   width: 387px;
 }
 
 .time {
-  width: 130px;
-  font-size: 15px;
-  color: #111;
-  font-weight: 600;
   display: table-cell;
+  width: 15%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
   vertical-align: middle;
 }
 
 .date {
   display: block;
-  font-size: 15px;
-  color: #333;
-  font-weight: 400;
   margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
 }
 
 .city {
   display: block;
-  font-size: 13px;
-  color: #479de7;
   margin-top: 10px;
+  font-size: 14px;
   font-weight: 600;
+  color: #479de7;
 }
 
-.mave__arrow {
+em {
+  color: #5e2bb8;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.move_arrow {
   position: absolute;
-  left: 50%;
-  width: 120px;
-  margin-left: -60px;
-  font-size: 13xp;
+  width: 12%;
+  height: 54px;
   color: #888;
   line-height: 1;
-  height: 54px;
   text-indent: 0;
 }
 
@@ -495,10 +473,10 @@ p.txt {
   font-family: "yg750";
 }
 
-.cell__seat {
+.cell_seat {
   display: table-cell;
+  width: 4%;
   vertical-align: middle;
-  width: 140px;
   text-align: center;
   font-size: 15px;
   color: #111;
@@ -510,41 +488,23 @@ p {
   padding: 0;
 }
 
-.cell__luggage {
+.cell_luggage {
   display: table-cell;
-  vertical-align: middle;
-  width: 120px;
+  width: 5%;
+  padding: 0 30px 0 0;
   text-align: center;
   font-size: 15px;
-  padding: 0 30px 0 0;
+  vertical-align: middle;
 }
 
-.reservation__right {
-  position: absolute;
-  right: 13%;
+.reservation_right {
+  position: relative;
   width: 400px;
-  top: 39%;
+  margin-top: 5%;
+  margin-left: 72%;
   -webkit-transition: bottom .3s ease-out;
   -moz-transition: bottom .3s ease-out;
   transition: bottom .3s ease-out;
-  /* float: right; */
-}
-
-.pay__area.tit {
-  position: absolute;
-  margin-bottom: -8px;
-  margin-top: 40px;
-  margin: 40px 0 0;
-  padding: 0;
-  font-size: 17px;
-  color: #111;
-  font-weight: 200;
-}
-
-.info__area1 .tit { 
-  position: relative;
-  left: 0;
-  text-align: left;
 }
 
 .total {
@@ -554,20 +514,36 @@ p {
   border-top: none;
 }
 
-.pay__area {
-   border-top: 1px solid #ddd;
-   padding: 15px 20px 20px;
-   background: #f7f7f7;
-   border-bottom: 1px solid #ddd;
- }
+.pay_area {
+  border-top: 1px solid #ddd;
+  padding: 15px 20px 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
 
-.info {
+.info_area1 {
   position: relative;
   min-height: 14px;
   margin-top: 0;
   padding-bottom: 10px;
   font-size: 13px;
   text-align: right;
+  color: #111;
+}
+
+.info .tit { 
+  position: relative;
+  left: 0;
+  text-align: left;
+}
+
+.pay_area.tit {
+  position: absolute;
+  margin-top: 40px;
+  margin-bottom: -8px;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 200;
   color: #111;
 }
 
@@ -586,120 +562,145 @@ p {
 
 .tax {
   margin-top: 10px;
-  text-align: right;
   font-size: 13px;
+  text-align: right;
 }
 
-.info__area1 .tit {
+.info_area1 .tit {
   position: absolute;
 }
 
-.info__area2 {
+.info_area2 {
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px dashed rgb(150, 145, 145);
 }
 
-.info__area2 .tit { 
-  position: absolute;
-  left: 0;
+.info_area2 .tit { 
   text-align: left;
 }
 
-.info__area2 span {
+.info span {
+  float: right;
   font-size: 14px;
 }
 
-
-
-
-
-.text__wrap {
-  margin-top: 40px;
-  margin-bottom: 24px;
-  margin-left: 100px;
+.inr {
+  padding: 24px 20px;
+  float: none;
+  font-size: 14px;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.text__wrap strong .tit {
-  display: inline-block;
-  color: #111;
-  font-size: 22px;
-  font-weight: 200;
-  line-height: 30px;
+#toggle {
+  float: right;
+  cursor: pointer;
 }
 
-.text__wrap .type2 tr td {
-  border: 1px solid #999;
+#toggle_content {
+  position: absolute;
+  display: none;
+  width: 90%;
+  padding: 15px 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
 }
 
-.text__wrap.mid {
-  margin-top: 60px;
+.info_area3 .tit.type {
+  position: relative;
+  display: block;
+  left: 0;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-family: "yg750";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #333;
 }
 
-#occupant1 {
-  margin-top: -20px;
-  margin-bottom: 15px;
-  color: #485170;
-}
+.list_detail {
+  padding-left: 5px;
+  margin-top: 5px;
+} 
 
-.form__holder {
-  margin-left: 80%;
-  font-size: 15px;
+.info_area3 .tit {
   font-weight: 600;
 }
 
-table {
-  border-spacing: 0;
-  text-indent: initial;
+.info_area3 li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  font-family: "yg750";
 }
 
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
+.info_area3 li:before {
+  content: '·';
+  font-size: 20px;
+  vertical-align: top;
+  line-height: 20px;
 }
 
-colgroup {
-  display: table-column-group;;
+.info_area3 span {
+  display: inline-block;
+  font-size: 13px;
 }
 
-.tbl table {
+.reservation h2 {
+  position: relative;
+  margin-top: 15%;
+  padding: 20px;
+  font-size: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
+}
+
+.text_wrap {
+  margin-top: 5%;
+  margin-left: 100px;
+  margin-bottom: 24px;
+}
+
+.type2 {
   display: table;
   width: 85%;
+  margin-left: 100px;
   border-bottom: 1px solid #ddd;
   border-collapse: separate;
   table-layout: fixed;
   font-size: 15px;
-  margin-left: 100px;
+  border-spacing: 0;
 }
 
-.tbl tbody {
+colgroup {
+  display: table-column-group;
+}
+
+tbody {
   position: relative;
+  display: table-row-group;
+  vertical-align: middle;
 }
 
-.tbl tr {
-  border-top: 1px solid #999;
-}
-
-.tbl th {
-  background-color: #f7f7f7;
+.type2 th {
   border-top: 1px solid #ddd;
   font-size: 15px;
   font-weight: 600;
-  color: #111;
-  font-family: "yg750";
-  letter-spacing: -.4px;
-}
-
-.tbl td {
   color: #333;
   font-family: "yg750";
+  letter-spacing: -.4px;
+  background-color: #f7f7f7;
+}
+
+.type2 td {
   padding: 15px 20px;
+  color: #333;
   border-top: 0.5px solid #ddd;
+  font-family: "yg750";
 }
 
 input[type=text] {
-  /* width: 250px; */
   width: 90%;
   height: 42px;
   padding: 0 15px;
@@ -708,255 +709,101 @@ input[type=text] {
   border-radius: 2px;
 }
 
-.list__notice {
+#occupant1 {
+  margin-top: -20px;
+  margin-bottom: 15px;
+  color: #485170;
+}
+
+.form_holder {
+  margin-left: 80%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list_notice {
   margin-top: 25px !important;
   margin-left: 100px;
   padding: 0;
 }
 
-.list__notice li {
+.list_notice li {
   padding-left: 15px;
-  font-size: 13px;
+  font-size: 14px;
   color: #888;
-  line-height: 20px;
+  line-height: 25px;
   text-align: left;
   list-style: none;
 }
 
-p { 
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-.reservation__right {
-  position: absolute;
-  right: 13%;
-  width: 400px;
-  top: 39%;
-  -webkit-transition: bottom .3s ease-out;
-  -moz-transition: bottom .3s ease-out;
-  transition: bottom .3s ease-out;
-}
-
-.pay__area.tit {
-  position: absolute;
-  margin-bottom: -8px;
-  margin-top: 40px;
-  margin: 40px 0 0;
-  padding: 0;
-  font-size: 17px;
-  color: #111;
-  font-weight: 200;
-}
-
-.info__area1 .tit { 
-  position: relative;
-  left: 0;
-  text-align: left;
-}
-
-.total {
-  overflow: hidden;
-  overflow-y: auto;
-  margin-top: 25px;
-  border-top: none;
-}
-
-.pay__area {
-   border-top: 1px solid #ddd;
-   padding: 15px 20px 20px;
-   background: #f7f7f7;
-   border-bottom: 1px solid #ddd;
- }
-
-.info {
-  position: relative;
-  min-height: 14px;
-  margin-top: 0;
-  padding-bottom: 10px;
-  font-size: 13px;
-  text-align: right;
-  color: #111;
-}
-
-.price {
-  display: block;
-  margin-top: 15px;
-  font-size: 26px;
-  color: #5216b3;
-  text-align: right;
-}
-
-.price span {
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.tax {
-  margin-top: 10px;
-  text-align: right;
-  font-size: 13px;
-}
-
-.info__area1 .tit {
-  position: absolute;
-}
-
-.info__area2 {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px dashed rgb(150, 145, 145);
-}
-
-.info__area2 span {
-  font-size: 14px;
-}
-
-.info__area2 .tit { 
-  position: absolute;
-  left: 0;
-  text-align: left;
-}
-
-.info__area3 .tit.type {
-  position: relative;
-  display: block;
-  left: 0;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  font-family: "yg750";
-  font-size: 14px;
-  font-weight: 600;
-  text-align: left;
-  color: #111;
-}
-
-.info__area3 .list__detail {
-  padding-left: 5px;
-  margin-top: 5px;
-  color: #666;
-  font-weight: 500;
-} 
-
-.info__area3 li {
-  font-size: 13px;
-}
-
-.info__area3 li:before {
-  content: '·';
+.notice h1{
+  margin-top: 10%;
+  margin-bottom: 50px;
+  padding: 20px;
   font-size: 20px;
-  vertical-align: top;
-  line-height: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
 }
 
-.info__area3 .tit {
-  font-weight: 500;
-}
-
-.info__area3 span {
-  display: inline-block;
-  float: right;
-  font-size: 13px;
-}
-
-.inr {
-  padding: 24px 20px;
-  float: none;
-  border-bottom: 1px solid #eaeaea;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-#toggle {
-  float: right;
-}
-
-#toggle__content {
-  display: none;
-  border-top: 1px solid #ddd;
-  padding: 15px 20px;
-  padding-bottom: 5px;
-  background-color: #f7f7f7;
-}
-
-em {
-  color: #5e2bb8;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.box__group { 
+.box_group { 
   width: 80%;
-  margin-left: 8%;
-  padding: 24px;
-  padding-top: 0;
-  border-width: 3px;
-  border: 1px solid #333;
+  padding-top: 10px;
+  font-size: 17px;
   line-height: 25px;
 }
 
-.box__group .list__notice {
-  margin: -4px;
+.list_notice {
   color: #666!important;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.list__notice li:before {
+.list_notice li:before {
   position: absolute;
-  padding-left: 10px;
-  font-size: 15px;
+  display: inline-block;
   width: auto;
   height: auto;
   margin-right: 3px;
-  display: inline-block;
+  padding-left: 10px;
+  font-size: 15px;
   background-color: transparent;
 }
 
 .btn {
-  width: 550px;
+  justify-content: space-between;
   width: 600px;
   height: 80px;
   margin-top: 40px;
   margin-left: 55%;
-  justify-content: space-between;
-  text-align: center;
   font-size: 15px;
-  font-weight: 700;
-  font-size: 17px;
   font-weight: 400;
+  color: #333;
+  text-align: center;
 }
 
-input.btn1 {
+input.input_radio {
   display: inline-block;
 }
 
-.btn2 {
+.reservationBtn {
   position: relative;
   display: inline-block;
-  margin: 0;
+  width: 200px;
+  height: 60px;
+  margin-top: 7%;
   margin-left: 50px;
-  margin-bottom: 20px;
-  padding-right: 100px;
-  padding-left: 100px;
-  min-width: 140px;
-  height: 56px;
-  line-height: 54px;
-  font-size: 17px;
-  color: #fff !important;
-  border: 1px solid #5e2bb8;
-  background-color: #5e2bb8;
-  font-weight: 400;
-  text-align: center;
-  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "yg750";
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #1351a5;
+  background-color: #1351a5;
 }
 
-.btn2:hover {
+.reservationBtn:hover {
   border: 1px solid #4169e1;
   background: #4169e1;
-  color:#fff;
+  color: #fff;
   transition: all 0.5s;
 }
 
@@ -984,6 +831,13 @@ input.btn1 {
 @font-face {
   font-family: 'EliceDigitalBaeum-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LeferiPoint-BlackA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
